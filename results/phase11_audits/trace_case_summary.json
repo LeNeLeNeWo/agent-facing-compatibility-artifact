@@ -1,0 +1,43 @@
+{
+  "source_raw_artifact": "/mnt/d/study_ecnu/<REDACTED_LOCAL_PATH_SEGMENT>/科研/ccfa/schema_mutation_paper_package_20260612_194214/runs/schema_mutation/phase5/raw/c_semantic_generalization_0000_raw.jsonl",
+  "selection_policy": "Selected a same task/model/seed C1 pair from existing Phase 8C raw artifacts: O0 silent fails with a hidden violation; O3 structured feedback succeeds after the agent revises payment method.",
+  "contains_sensitive_info": false,
+  "cases": [
+    {
+      "case_id": "A_silent_compliant_semantic_failure",
+      "cell_key": "p8c_b5ee615dd16c",
+      "domain": "airline",
+      "model": "dashscope/glm-5.1",
+      "task_id": 0,
+      "seed": 1,
+      "semantic_class": "C1",
+      "mutation_name": "C1_unit_scale_drift",
+      "observability_level": "O0_silent",
+      "schema_changed": false,
+      "typed_client_compatible": true,
+      "target_tool_called": true,
+      "agent_action": "book_reservation with certificate $250 plus card $5",
+      "api_feedback": "No visible policy error; call remains syntactically valid.",
+      "outcome": "reward=0, hidden_business_rule_violation=true",
+      "interpretation": "The agent follows the baseline-compatible payment workflow, but the evolved semantic rule is silent and only the hidden oracle detects the violation."
+    },
+    {
+      "case_id": "B_visible_recovery",
+      "cell_key": "p8c_500fb2fc42ff",
+      "domain": "airline",
+      "model": "dashscope/glm-5.1",
+      "task_id": 0,
+      "seed": 1,
+      "semantic_class": "C1",
+      "mutation_name": "C1_unit_scale_drift",
+      "observability_level": "O3_structured_policy_error",
+      "schema_changed": false,
+      "typed_client_compatible": true,
+      "target_tool_called": true,
+      "agent_action": "book_reservation revised to card-only payment $255",
+      "api_feedback": "Structured policy error on payment_methods: Use a single payment method or request explicit approval.",
+      "outcome": "reward=1, hidden_business_rule_violation=false",
+      "interpretation": "The visible diagnostic exposes the changed semantic rule; the agent changes the payment workflow and completes the task."
+    }
+  ]
+}

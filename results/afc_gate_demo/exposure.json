@@ -1,0 +1,33 @@
+{
+  "tools_called": [
+    "search_flights",
+    "book_reservation"
+  ],
+  "fields_used": [
+    "destination",
+    "flight_ids",
+    "flights",
+    "origin",
+    "payment_methods",
+    "payment_methods.amount",
+    "payment_methods.type",
+    "status"
+  ],
+  "semantic_hints": [
+    "card_payment",
+    "certificate_payment",
+    "mixed_payment_methods"
+  ],
+  "tool_call_counts": {
+    "search_flights": 1,
+    "book_reservation": 1
+  },
+  "tool_call_positions": {
+    "search_flights": [
+      1
+    ],
+    "book_reservation": [
+      2
+    ]
+  }
+}

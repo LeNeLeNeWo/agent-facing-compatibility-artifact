@@ -1,0 +1,34 @@
+{
+  "baseline_oracle_violation_rate": 0.0,
+  "by_env": {
+    "airline": 106,
+    "retail": 74
+  },
+  "by_model": {
+    "dashscope/glm-5.1": 49,
+    "dashscope/kimi-k2.6": 45,
+    "dashscope/qwen-max": 44,
+    "deepseek/deepseek-v4-flash": 42
+  },
+  "by_semantic_class": {
+    "C1": 34,
+    "C2": 32,
+    "C3": 32,
+    "C4": 32,
+    "baseline": 50
+  },
+  "generated_at": "2026-06-21T16:39:35+0800",
+  "o0_negative_consistency": 1.0,
+  "o0_positive_consistency": 1.0,
+  "precision_specificity_proxy_note": "Proxy only: baseline/non-hidden samples approximate specificity and O0 hidden-positive samples approximate rule-trigger consistency. Human annotation is still required for oracle precision.",
+  "recovered_consistency": 1.0,
+  "sample_counts": {
+    "baseline_success_unmutated": 50,
+    "o0_hidden_violation_positive": 50,
+    "o0_non_hidden_violation_negative": 50,
+    "o3_o4_recovered": 30
+  },
+  "suspicious_count": 0,
+  "suspicious_sample_ids": [],
+  "total_samples": 180
+}

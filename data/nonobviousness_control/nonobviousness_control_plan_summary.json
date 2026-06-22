@@ -1,0 +1,57 @@
+{
+  "baseline_reference_cells": 96,
+  "by_condition": {
+    "O0_increased_reasoning_budget": 96,
+    "O0_reflection_scaffold": 96,
+    "rule_in_tool_preamble_upper_bound": 96
+  },
+  "by_env": {
+    "airline": 174,
+    "retail": 114
+  },
+  "by_model": {
+    "dashscope/glm-5.1": 75,
+    "dashscope/kimi-k2.6": 69,
+    "dashscope/qwen-max": 78,
+    "deepseek/deepseek-v4-flash": 66
+  },
+  "by_semantic_class": {
+    "C1": 81,
+    "C2": 57,
+    "C3": 69,
+    "C4": 81
+  },
+  "expected_new_api_calls_if_all_conditions_run": 288,
+  "expected_new_api_calls_runner_ready_only": 192,
+  "formal_shards": [
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0000.jsonl",
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0001.jsonl",
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0002.jsonl",
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0003.jsonl",
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0004.jsonl",
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0005.jsonl",
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0006.jsonl",
+    "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_0007.jsonl"
+  ],
+  "generated_at": "2026-06-21T16:39:35+0800",
+  "metrics": [
+    "success rate by condition",
+    "hidden_business_rule_violation rate",
+    "visible_policy_error/migration_note rates",
+    "delta from matched O0 reference"
+  ],
+  "note": "Reflection scaffold rows are planned but require a runner prompt hook before execution.",
+  "planned_cells": 288,
+  "requires_runner_extension_cells": 96,
+  "runner_ready_cells": 192,
+  "smoke_shard": "runs\\schema_mutation\\phase10\\nonobviousness\\shards\\nonobviousness_smoke.jsonl",
+  "stop_rules": [
+    "provider_error >= 5 in one shard",
+    "timeout >= 5 in one shard",
+    "failed >= 10 in one shard",
+    "fake_run appears",
+    "GPT/WYZ/Grok appears",
+    "schema_changed=true appears",
+    "baseline_success=false appears"
+  ]
+}

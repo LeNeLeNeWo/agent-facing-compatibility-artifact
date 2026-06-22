@@ -1,0 +1,17 @@
+{
+  "name": "book_reservation",
+  "parameters": {
+    "type": "object",
+    "required": ["flights", "payment_methods"],
+    "properties": {
+      "flights": {
+        "type": "array",
+        "items": {"type": "string"}
+      },
+      "payment_methods": {
+        "type": "array",
+        "items": {"type": "object"}
+      }
+    }
+  }
+}

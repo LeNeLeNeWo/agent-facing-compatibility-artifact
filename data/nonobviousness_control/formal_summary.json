@@ -1,0 +1,407 @@
+{
+  "baseline_success_false_rows": [],
+  "by_condition": {
+    "O0_increased_reasoning_budget": {
+      "hidden_violation_n": 92,
+      "hidden_violation_rate": 0.9583333333333334,
+      "migration_note_visible_n": 0,
+      "migration_note_visible_rate": 0.0,
+      "missing": 0,
+      "observed": 96,
+      "ok": 96,
+      "planned": 96,
+      "status_counts": {
+        "ok": 96
+      },
+      "success_n": 3,
+      "success_rate": 0.03125,
+      "visible_policy_error_n": 0,
+      "visible_policy_error_rate": 0.0
+    },
+    "O0_reflection_scaffold": {
+      "hidden_violation_n": 88,
+      "hidden_violation_rate": 0.9263157894736842,
+      "migration_note_visible_n": 0,
+      "migration_note_visible_rate": 0.0,
+      "missing": 0,
+      "observed": 96,
+      "ok": 95,
+      "planned": 96,
+      "status_counts": {
+        "failed": 1,
+        "ok": 95
+      },
+      "success_n": 6,
+      "success_rate": 0.06315789473684211,
+      "visible_policy_error_n": 0,
+      "visible_policy_error_rate": 0.0
+    },
+    "rule_in_tool_preamble_upper_bound": {
+      "hidden_violation_n": 0,
+      "hidden_violation_rate": 0.0,
+      "migration_note_visible_n": 95,
+      "migration_note_visible_rate": 1.0,
+      "missing": 0,
+      "observed": 96,
+      "ok": 95,
+      "planned": 96,
+      "status_counts": {
+        "ok": 95,
+        "timeout": 1
+      },
+      "success_n": 71,
+      "success_rate": 0.7473684210526316,
+      "visible_policy_error_n": 92,
+      "visible_policy_error_rate": 0.968421052631579
+    }
+  },
+  "by_domain": {
+    "airline": {
+      "hidden_violation_n": 107,
+      "hidden_violation_rate": 0.622093023255814,
+      "migration_note_visible_n": 57,
+      "migration_note_visible_rate": 0.3313953488372093,
+      "missing": 0,
+      "observed": 174,
+      "ok": 172,
+      "planned": 174,
+      "status_counts": {
+        "failed": 1,
+        "ok": 172,
+        "timeout": 1
+      },
+      "success_n": 43,
+      "success_rate": 0.25,
+      "visible_policy_error_n": 54,
+      "visible_policy_error_rate": 0.313953488372093
+    },
+    "retail": {
+      "hidden_violation_n": 73,
+      "hidden_violation_rate": 0.6403508771929824,
+      "migration_note_visible_n": 38,
+      "migration_note_visible_rate": 0.3333333333333333,
+      "missing": 0,
+      "observed": 114,
+      "ok": 114,
+      "planned": 114,
+      "status_counts": {
+        "ok": 114
+      },
+      "success_n": 37,
+      "success_rate": 0.32456140350877194,
+      "visible_policy_error_n": 38,
+      "visible_policy_error_rate": 0.3333333333333333
+    }
+  },
+  "by_model": {
+    "dashscope/glm-5.1": {
+      "hidden_violation_n": 47,
+      "hidden_violation_rate": 0.6351351351351351,
+      "migration_note_visible_n": 24,
+      "migration_note_visible_rate": 0.32432432432432434,
+      "missing": 0,
+      "observed": 75,
+      "ok": 74,
+      "planned": 75,
+      "status_counts": {
+        "ok": 74,
+        "timeout": 1
+      },
+      "success_n": 22,
+      "success_rate": 0.2972972972972973,
+      "visible_policy_error_n": 24,
+      "visible_policy_error_rate": 0.32432432432432434
+    },
+    "dashscope/kimi-k2.6": {
+      "hidden_violation_n": 43,
+      "hidden_violation_rate": 0.6231884057971014,
+      "migration_note_visible_n": 23,
+      "migration_note_visible_rate": 0.3333333333333333,
+      "missing": 0,
+      "observed": 69,
+      "ok": 69,
+      "planned": 69,
+      "status_counts": {
+        "ok": 69
+      },
+      "success_n": 22,
+      "success_rate": 0.3188405797101449,
+      "visible_policy_error_n": 22,
+      "visible_policy_error_rate": 0.3188405797101449
+    },
+    "dashscope/qwen-max": {
+      "hidden_violation_n": 46,
+      "hidden_violation_rate": 0.5974025974025974,
+      "migration_note_visible_n": 26,
+      "migration_note_visible_rate": 0.33766233766233766,
+      "missing": 0,
+      "observed": 78,
+      "ok": 77,
+      "planned": 78,
+      "status_counts": {
+        "failed": 1,
+        "ok": 77
+      },
+      "success_n": 22,
+      "success_rate": 0.2857142857142857,
+      "visible_policy_error_n": 24,
+      "visible_policy_error_rate": 0.3116883116883117
+    },
+    "deepseek/deepseek-v4-flash": {
+      "hidden_violation_n": 44,
+      "hidden_violation_rate": 0.6666666666666666,
+      "migration_note_visible_n": 22,
+      "migration_note_visible_rate": 0.3333333333333333,
+      "missing": 0,
+      "observed": 66,
+      "ok": 66,
+      "planned": 66,
+      "status_counts": {
+        "ok": 66
+      },
+      "success_n": 14,
+      "success_rate": 0.21212121212121213,
+      "visible_policy_error_n": 22,
+      "visible_policy_error_rate": 0.3333333333333333
+    }
+  },
+  "by_semantic_class": {
+    "C1": {
+      "hidden_violation_n": 51,
+      "hidden_violation_rate": 0.6296296296296297,
+      "migration_note_visible_n": 27,
+      "migration_note_visible_rate": 0.3333333333333333,
+      "missing": 0,
+      "observed": 81,
+      "ok": 81,
+      "planned": 81,
+      "status_counts": {
+        "ok": 81
+      },
+      "success_n": 22,
+      "success_rate": 0.2716049382716049,
+      "visible_policy_error_n": 27,
+      "visible_policy_error_rate": 0.3333333333333333
+    },
+    "C2": {
+      "hidden_violation_n": 35,
+      "hidden_violation_rate": 0.6140350877192983,
+      "migration_note_visible_n": 19,
+      "migration_note_visible_rate": 0.3333333333333333,
+      "missing": 0,
+      "observed": 57,
+      "ok": 57,
+      "planned": 57,
+      "status_counts": {
+        "ok": 57
+      },
+      "success_n": 18,
+      "success_rate": 0.3157894736842105,
+      "visible_policy_error_n": 18,
+      "visible_policy_error_rate": 0.3157894736842105
+    },
+    "C3": {
+      "hidden_violation_n": 42,
+      "hidden_violation_rate": 0.6268656716417911,
+      "migration_note_visible_n": 22,
+      "migration_note_visible_rate": 0.3283582089552239,
+      "missing": 0,
+      "observed": 69,
+      "ok": 67,
+      "planned": 69,
+      "status_counts": {
+        "failed": 1,
+        "ok": 67,
+        "timeout": 1
+      },
+      "success_n": 20,
+      "success_rate": 0.29850746268656714,
+      "visible_policy_error_n": 21,
+      "visible_policy_error_rate": 0.31343283582089554
+    },
+    "C4": {
+      "hidden_violation_n": 52,
+      "hidden_violation_rate": 0.6419753086419753,
+      "migration_note_visible_n": 27,
+      "migration_note_visible_rate": 0.3333333333333333,
+      "missing": 0,
+      "observed": 81,
+      "ok": 81,
+      "planned": 81,
+      "status_counts": {
+        "ok": 81
+      },
+      "success_n": 20,
+      "success_rate": 0.24691358024691357,
+      "visible_policy_error_n": 26,
+      "visible_policy_error_rate": 0.32098765432098764
+    }
+  },
+  "completed_shards": 8,
+  "completed_status_cells": 288,
+  "extra_status_cells": 0,
+  "fake_rows": [],
+  "formal_all_ok": false,
+  "formal_completed_cleanly": false,
+  "formal_status_complete": true,
+  "metadata_by_shard": {
+    "nonobviousness_0000": {
+      "actually_run_cells": 40,
+      "planned_cells": 40,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "ok": 40
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-21T19:19:15"
+    },
+    "nonobviousness_0001": {
+      "actually_run_cells": 40,
+      "planned_cells": 40,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "ok": 40
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-21T20:07:35"
+    },
+    "nonobviousness_0002": {
+      "actually_run_cells": 40,
+      "planned_cells": 40,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "ok": 40
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-21T20:51:19"
+    },
+    "nonobviousness_0003": {
+      "actually_run_cells": 40,
+      "planned_cells": 40,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "failed": 1,
+        "ok": 39
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-21T21:33:13"
+    },
+    "nonobviousness_0004": {
+      "actually_run_cells": 40,
+      "planned_cells": 40,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "ok": 40
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-21T22:31:40"
+    },
+    "nonobviousness_0005": {
+      "actually_run_cells": 40,
+      "planned_cells": 40,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "ok": 39,
+        "timeout": 1
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-21T23:37:18"
+    },
+    "nonobviousness_0006": {
+      "actually_run_cells": 40,
+      "planned_cells": 40,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "ok": 40
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-22T00:36:23"
+    },
+    "nonobviousness_0007": {
+      "actually_run_cells": 8,
+      "planned_cells": 8,
+      "skipped_existing_cells": 0,
+      "status": "completed",
+      "status_counts": {
+        "ok": 8
+      },
+      "stop_limits": {
+        "failed": 5,
+        "provider_error": 5,
+        "timeout": 5
+      },
+      "timestamp": "2026-06-22T00:47:31"
+    }
+  },
+  "missing_cells": 0,
+  "non_ok_rows": [
+    {
+      "cell_key": "p10_nonobv_a1a33c598319",
+      "condition": "O0_reflection_scaffold",
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "semantic_class": "C3",
+      "status": "failed",
+      "status_file": "nonobviousness_0003_status.jsonl"
+    },
+    {
+      "cell_key": "p10_nonobv_8bc60a8c512f",
+      "condition": "rule_in_tool_preamble_upper_bound",
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "semantic_class": "C3",
+      "status": "timeout",
+      "status_file": "nonobviousness_0005_status.jsonl"
+    }
+  ],
+  "o0_reasoning_reflection_still_struggles": true,
+  "ok_cells": 286,
+  "phase10d_analysis_ready": true,
+  "phase10d_caveat": "exclude or retry non-ok infrastructure rows before final statistical claims",
+  "planned_cells": 288,
+  "retry_needed_cells": 2,
+  "rule_in_prompt_upper_bound_improves": true,
+  "rule_leakage_detected": false,
+  "rule_leakage_issues": [],
+  "status_counts": {
+    "failed": 1,
+    "ok": 286,
+    "timeout": 1
+  },
+  "stopped_shards": {}
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "bytes": 310108,
+    "content_type": "text/plain; charset=utf-8",
+    "error": null,
+    "provider": "Stripe",
+    "status": 200,
+    "url": "https://docs.stripe.com/changelog.md"
+  },
+  {
+    "bytes": 42823,
+    "content_type": "application/rss+xml; charset=UTF-8",
+    "error": null,
+    "provider": "GitHub",
+    "status": 200,
+    "url": "https://github.blog/changelog/feed/"
+  },
+  {
+    "bytes": 454113,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "provider": "Shopify",
+    "status": 200,
+    "url": "https://shopify.dev/changelog"
+  },
+  {
+    "bytes": 584907,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "provider": "Slack",
+    "status": 200,
+    "url": "https://docs.slack.dev/changelog/"
+  },
+  {
+    "bytes": 1197380,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "provider": "Anthropic",
+    "status": 200,
+    "url": "https://docs.anthropic.com/en/release-notes/api"
+  },
+  {
+    "bytes": 440429,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "provider": "OpenAI",
+    "status": 200,
+    "url": "https://platform.openai.com/docs/changelog"
+  },
+  {
+    "bytes": 614151,
+    "content_type": "text/html;charset=utf-8",
+    "error": null,
+    "provider": "Twilio",
+    "status": 200,
+    "url": "https://www.twilio.com/en-us/changelog"
+  },
+  {
+    "bytes": 583204,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "provider": "Square",
+    "status": 200,
+    "url": "https://developer.squareup.com/docs/changelog/connect"
+  },
+  {
+    "bytes": 8422254,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "provider": "Microsoft Graph",
+    "status": 200,
+    "url": "https://developer.microsoft.com/en-us/graph/changelog"
+  },
+  {
+    "bytes": 1231382,
+    "content_type": "text/html; charset=utf-8",
+    "error": null,
+    "provider": "Google Cloud",
+    "status": 200,
+    "url": "https://cloud.google.com/release-notes"
+  },
+  {
+    "bytes": 983613,
+    "content_type": "text/html; charset=\"utf-8\"",
+    "error": null,
+    "provider": "Meta Graph API",
+    "status": 200,
+    "url": "https://developers.facebook.com/docs/graph-api/changelog/"
+  },
+  {
+    "bytes": 1283,
+    "content_type": "text/html",
+    "error": null,
+    "provider": "AWS EC2",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/DocumentHistory.html"
+  }
+]

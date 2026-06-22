@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated paper."
+title: "Compliant Semantic Failures: Testing Agent-Facing Compatibility of Evolving Tool APIs"
+authors:
+  - family-names: "Anonymous"
+    given-names: "Author"
+version: "anonymous-review"
+date-released: "2026-06-22"

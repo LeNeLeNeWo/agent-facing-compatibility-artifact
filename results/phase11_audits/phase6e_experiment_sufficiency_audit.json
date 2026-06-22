@@ -1,0 +1,215 @@
+{
+  "phase": "6E",
+  "date": "2026-06-16",
+  "scope": "offline reviewer-style experiment sufficiency audit",
+  "prohibited_actions_observed": {
+    "api_calls": false,
+    "phase5_shards_run": false,
+    "baseline_or_mutation_reruns": false,
+    "gate_predictor_rerun": false,
+    "gpt_wyz_partial_rows_read_or_merged": false
+  },
+  "main_claims": [
+    {
+      "id": "A",
+      "claim": "Schema/client-compatible changes can be agent-facing breaking.",
+      "evidence": [
+        "strict schema/client-compatible region: 44/130 = 33.8%",
+        "relaxed schema/client-compatible region: 49/156 = 31.4%",
+        "C4b case study: unchanged schema/call signature, no visible policy error, hidden violation, reward 1.0 to 0.0",
+        "static checker misses C1-C4 schema-invisible semantic drift"
+      ],
+      "sufficiency": "sufficient if framed as controlled-suite mechanism evidence, not production base rate"
+    },
+    {
+      "id": "B",
+      "claim": "Observability improves recoverability over silent semantic drift.",
+      "evidence": [
+        "retail formal cells = 525",
+        "airline formal cells = 1290",
+        "combined formal cells = 1815",
+        "combined O0-O4 success = 0.501 / 0.843 / 0.846 / 0.851 / 0.848",
+        "combined O4-O0 = +0.347, CI [0.289, 0.405]",
+        "non-strict monotonicity acknowledged"
+      ],
+      "sufficiency": "strong"
+    },
+    {
+      "id": "C",
+      "claim": "Execution exposure matters.",
+      "evidence": [
+        "exposed airline C4b DeepSeek: 0/17 success with 17/17 oracle and hidden violations",
+        "unused-tool negative control: 5/6 success, 0/6 oracle/visible/hidden violations",
+        "airline audit rules out timeout, max-step cutoff, and target-not-called confounds",
+        "exposure-aware protocol and predictor feature-family analysis"
+      ],
+      "sufficiency": "sufficient as mechanism and protocol claim, not standalone predictor claim"
+    },
+    {
+      "id": "D",
+      "claim": "Schema-only checking is insufficient; AFC-Gate is useful as a screening prototype.",
+      "evidence": [
+        "SchemaCheckerOnly recall = 0.000",
+        "AFCGate silent recall = 0.996",
+        "AFCGate breakage recall = 0.523",
+        "AFCGate precision = 0.557",
+        "AFCGate FPR = 0.134",
+        "AFCGate cost = 0.005"
+      ],
+      "sufficiency": "sufficient for prototype screening claim"
+    }
+  ],
+  "reviewer_attack_surface": [
+    {
+      "attack": "C4b is a worst-case tautology",
+      "risk_level": "high",
+      "current_defense": "Worst-case framing, C4a counterpart, unused-tool negative control, airline replication, five-level observability gradient, audit checks, changelog grounding.",
+      "need_new_experiment": false,
+      "recommended_action": "Keep claims mechanistic and avoid production-frequency implication."
+    },
+    {
+      "attack": "Only C-class data; where are B/D mutations?",
+      "risk_level": "medium-high",
+      "current_defense": "Taxonomy covers A/B/C/D; B/D limitations are explicit; main evidence targets semantic observability.",
+      "need_new_experiment": false,
+      "recommended_action": "Defer B/D or run only a small appendix pilot if time remains."
+    },
+    {
+      "attack": "Predictor is C-class heavy",
+      "risk_level": "medium",
+      "current_defense": "Threats/RQ5 acknowledge this; hard negatives reduce pilot confound.",
+      "need_new_experiment": false,
+      "recommended_action": "Keep predictor as explanatory, not deployment-ready."
+    },
+    {
+      "attack": "Two TAU-BENCH domains only",
+      "risk_level": "medium",
+      "current_defense": "Retail plus airline formal gradients; external-validity threat is explicit.",
+      "need_new_experiment": false,
+      "recommended_action": "Defer third domain to future work."
+    },
+    {
+      "attack": "Models are mostly CN providers",
+      "risk_level": "medium",
+      "current_defense": "Four formal models across DeepSeek and DashScope; model-selection threat is explicit.",
+      "need_new_experiment": false,
+      "recommended_action": "Use GPT only as optional appendix robustness if complete and clean."
+    },
+    {
+      "attack": "GPT/Grok incomplete",
+      "risk_level": "low-medium",
+      "current_defense": "Partial provider rows are excluded unless complete formal packets exist.",
+      "need_new_experiment": false,
+      "recommended_action": "Apply GPT decision tree; never overwrite main 1815-cell denominator."
+    },
+    {
+      "attack": "Exact prompts/system messages missing",
+      "risk_level": "high",
+      "current_defense": "Runtime metadata and runner path are recorded, but exact standalone prompts are not archived.",
+      "need_new_experiment": false,
+      "recommended_action": "Archive exact agent prompt, user-simulator prompt, and system messages before submission."
+    },
+    {
+      "attack": "RQ2 table still weak / n/a paired denominators",
+      "risk_level": "medium-high",
+      "current_defense": "Table labels retail rows as aggregate evidence; main empirical burden is RQ3 gradient.",
+      "need_new_experiment": false,
+      "recommended_action": "Frame RQ2 as evidence slice or move weak rows to appendix."
+    },
+    {
+      "attack": "Page count too long",
+      "risk_level": "high",
+      "current_defense": "Phase 6C defers compression; no evidence issue.",
+      "need_new_experiment": false,
+      "recommended_action": "Compress after prompt/TODO cleanup."
+    },
+    {
+      "attack": "AFCGate evaluated with synthetic/replay evidence, not production deployment",
+      "risk_level": "medium",
+      "current_defense": "Paper frames AFC-Gate as cached-replay screening prototype using deterministic semantic-oracle evidence.",
+      "need_new_experiment": false,
+      "recommended_action": "Avoid production-certification claims."
+    },
+    {
+      "attack": "33.8% may be mistaken as real-world base rate",
+      "risk_level": "high",
+      "current_defense": "Threats say controlled mechanism evidence, not production frequency.",
+      "need_new_experiment": false,
+      "recommended_action": "Keep a near-table controlled-suite note."
+    }
+  ],
+  "must_fix_before_submission": [
+    "Archive exact agent prompt, user-simulator prompt, and system messages.",
+    "Keep GPT/Grok/WYZ partial rows out unless complete formal review packets exist.",
+    "Make RQ2 secondary while paired denominators remain n/a.",
+    "Ensure 33.8% is clearly a controlled-suite rate, not a production base rate.",
+    "Keep artifact manifest links and paths visible and consistent.",
+    "Update stale wording that says exact TAU-BENCH commit still needs recording.",
+    "Resolve visible TODO-HIGH placeholders before submission-quality PDF."
+  ],
+  "optional_experiments": {
+    "gpt_5_5_formal_airline_extension": {
+      "decision": "optional_not_blocker",
+      "include_if": "complete clean formal artifacts with no provider-error contamination",
+      "placement": "appendix or one robustness sentence"
+    },
+    "bd_class_mutation_supplement": {
+      "decision": "defer_or_small_pilot_only",
+      "why_optional": "improves taxonomy and predictor diversity but is not required for semantic-observability claim"
+    },
+    "third_domain": {
+      "decision": "defer",
+      "why": "expensive and likely to dilute current story"
+    },
+    "more_formal_tests": {
+      "decision": "optional_offline_only",
+      "why": "bootstrap CIs are already enough for main observability claim"
+    }
+  },
+  "gpt_decision_tree": {
+    "case_a_complete_clean": [
+      "Generate GPT review packet.",
+      "Do not overwrite existing 1815-cell main result.",
+      "Add appendix table or one robustness sentence.",
+      "Optional supplementary combined summary with separate denominator."
+    ],
+    "case_b_complete_nonmonotone_or_weaker": [
+      "Include as appendix if clean.",
+      "Interpret as model heterogeneity.",
+      "Do not weaken main claim unless O0 versus observable gap reverses entirely."
+    ],
+    "case_c_partial_or_provider_errors": [
+      "Exclude from formal tables.",
+      "Record provider-side instability.",
+      "No main paper change."
+    ]
+  },
+  "bd_recommendation": {
+    "decision": "defer",
+    "contingency_small_pilot": {
+      "models": ["deepseek/deepseek-v4-flash", "dashscope/qwen-max"],
+      "env": "retail",
+      "tasks": 5,
+      "seeds": [0, 1],
+      "mutations": ["B1_type_change", "B3_enum_change", "D2_permission_change", "D4_rate_limit_change"],
+      "protocols": ["used_tool", "unused_tool"],
+      "expected_mutation_cells_before_filtering": 160,
+      "supported_output": "appendix taxonomy/static-checker/gate diversity supplement"
+    }
+  },
+  "page_compression_recommendations": [
+    "Move old C4a/C4b binary table/figure to appendix or summarize in one paragraph.",
+    "Move old predictor pilot table to appendix.",
+    "Compress or move case-study trajectory table.",
+    "Merge combined/per-model observability tables only if severe space pressure remains.",
+    "Move reproduction notes to appendix/artifact manifest.",
+    "Shorten Related Work."
+  ],
+  "final_assessment": {
+    "main_experiment_sufficiency": "sufficient",
+    "biggest_remaining_blocker": "exact prompt/system-message archival and visible high-priority TODO cleanup",
+    "recommended_next_action": "archive prompts/system messages, do a small wording pass for controlled-suite/base-rate/RQ2 framing, then start page compression",
+    "new_experiment_blocks_submission_quality_draft": false,
+    "documentation_or_visible_todo_blocks_submission_quality_pdf_if_unresolved": true
+  }
+}

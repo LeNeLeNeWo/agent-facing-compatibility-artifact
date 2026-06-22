@@ -1,0 +1,85 @@
+{
+  "generated_for": "phase7g_review_hardening",
+  "source_type": "existing offline artifacts only",
+  "api_calls_performed": false,
+  "experiment_reruns_performed": false,
+  "sources": [
+    "ARTIFACT_MANIFEST.md",
+    "runs/schema_mutation/ARTIFACT_MANIFEST_PHASE5.md",
+    "runs/schema_mutation/phase5/combined_observability_review_packet.json",
+    "runs/schema_mutation/phase5/phase5_summary.json",
+    "runs/schema_mutation/phase5/status/*.jsonl"
+  ],
+  "models": [
+    {
+      "model_string_exactly_as_used": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "role": "formal agent",
+      "included_in_frozen_main_table": true,
+      "endpoint_family": "DeepSeek-compatible provider endpoint configured outside artifact by environment",
+      "run_timestamp_min": "2026-06-14T10:12:30",
+      "run_timestamp_max": "2026-06-16T10:52:18",
+      "snapshot_version_id": null,
+      "snapshot_note": "provider snapshot identifier not available in artifact; exact model string and run metadata are recorded"
+    },
+    {
+      "model_string_exactly_as_used": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "role": "formal agent",
+      "included_in_frozen_main_table": true,
+      "endpoint_family": "DashScope provider endpoint configured outside artifact by environment",
+      "run_timestamp_min": "2026-06-14T02:19:41",
+      "run_timestamp_max": "2026-06-16T02:33:46",
+      "snapshot_version_id": null,
+      "snapshot_note": "provider snapshot identifier not available in artifact; exact model string and run metadata are recorded"
+    },
+    {
+      "model_string_exactly_as_used": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "role": "formal agent",
+      "included_in_frozen_main_table": true,
+      "endpoint_family": "DashScope provider endpoint configured outside artifact by environment",
+      "run_timestamp_min": "2026-06-14T00:48:06",
+      "run_timestamp_max": "2026-06-15T23:35:44",
+      "snapshot_version_id": null,
+      "snapshot_note": "provider snapshot identifier not available in artifact; exact model string and run metadata are recorded"
+    },
+    {
+      "model_string_exactly_as_used": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "role": "formal agent",
+      "included_in_frozen_main_table": true,
+      "endpoint_family": "DashScope provider endpoint configured outside artifact by environment",
+      "run_timestamp_min": "2026-06-13T21:43:17",
+      "run_timestamp_max": "2026-06-15T15:34:27",
+      "snapshot_version_id": null,
+      "snapshot_note": "provider snapshot identifier not available in artifact; exact model string and run metadata are recorded"
+    },
+    {
+      "model_string_exactly_as_used": "dashscope/qwen-flash",
+      "provider": "dashscope",
+      "role": "user simulator",
+      "included_in_frozen_main_table": true,
+      "endpoint_family": "DashScope provider endpoint configured outside artifact by environment",
+      "run_timestamp_min": null,
+      "run_timestamp_max": null,
+      "snapshot_version_id": null,
+      "snapshot_note": "provider snapshot identifier not available in artifact; exact model string and run metadata are recorded"
+    },
+    {
+      "model_string_exactly_as_used": "wyzlab/gpt-5.5",
+      "provider": "wyzlab",
+      "role": "supplementary extension agent",
+      "included_in_frozen_main_table": false,
+      "endpoint_family": "WYZLab-compatible provider endpoint configured outside artifact by environment",
+      "run_timestamp_min": "2026-06-16T15:02:48",
+      "run_timestamp_max": "2026-06-17T03:38:11",
+      "snapshot_version_id": null,
+      "snapshot_note": "provider snapshot identifier not available in artifact; exact model string and run metadata are recorded"
+    }
+  ],
+  "notes": [
+    "API keys are read from environment variables and are not stored or printed in the artifact package.",
+    "Supplemental provider extensions are kept outside the frozen 1815-cell main analysis."
+  ]
+}

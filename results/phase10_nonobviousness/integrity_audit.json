@@ -1,0 +1,29 @@
+{
+  "artifact_isolation": {
+    "paper_body_modified": false,
+    "phase10d_writes": [
+      "runs/schema_mutation/phase10/phase10d_nonobviousness_analysis",
+      "IEEE_Conference_Template/tables/nonobviousness_control_auto.tex",
+      "IEEE_Conference_Template/figures/nonobviousness_control.pdf"
+    ],
+    "phase5_or_phase8_rerun": false
+  },
+  "baseline_success_false_rows": 0,
+  "failed_rows": 1,
+  "fake_rows": 0,
+  "forbidden_model_rows": [],
+  "o0_rule_leakage_issues": [],
+  "parse_cleanly": true,
+  "planned_cells": 288,
+  "provider_error_rows": 0,
+  "provider_error_timeout_failed_not_counted_as_agent_failures": true,
+  "rule_visible_upper_bound_missing_visibility_count": 0,
+  "schema_changed_not_false_rows": 0,
+  "status_counts": {
+    "failed": 1,
+    "ok": 286,
+    "timeout": 1
+  },
+  "status_rows": 288,
+  "timeout_rows": 1
+}

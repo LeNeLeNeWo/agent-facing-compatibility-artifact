@@ -1,0 +1,31 @@
+{
+  "task_id": "retail_demo_001",
+  "agent": "demo-agent",
+  "seed": 0,
+  "success": true,
+  "steps": [
+    {
+      "step": 1,
+      "tool": "get_order_details",
+      "arguments": {
+        "order_id": "ORDER-100"
+      },
+      "observation": {
+        "status": "delivered",
+        "items": [{"sku": "SHOE-1", "brand": "Acme"}]
+      }
+    },
+    {
+      "step": 2,
+      "tool": "return_delivered_order_items",
+      "arguments": {
+        "order_id": "ORDER-100",
+        "items": [{"sku": "SHOE-1"}],
+        "refund_method": "original_payment"
+      },
+      "observation": {
+        "status": "return_started"
+      }
+    }
+  ]
+}

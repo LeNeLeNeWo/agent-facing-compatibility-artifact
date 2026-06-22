@@ -1,0 +1,7 @@
+observability:
+  default_level: O0_silent
+planning:
+  high_risk_test: paired_replay
+  visible_change_test: paired_replay_with_observability_check
+report:
+  include_boundary_note: true

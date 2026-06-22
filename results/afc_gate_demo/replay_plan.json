@@ -1,0 +1,22 @@
+[
+  {
+    "task_id": "airline_demo_001",
+    "change_id": "airline_cert_card_policy_2026",
+    "changed_tool": "book_reservation",
+    "execution_exposed": true,
+    "semantic_rule_relevant": true,
+    "reason": "changed tool book_reservation is execution-exposed and the semantic rule is matched by the baseline trajectory without a visible recovery signal",
+    "priority": "high",
+    "recommended_test": "paired_replay",
+    "classification": {
+      "schema_level_compatible": true,
+      "typed_client_compatible": true,
+      "execution_exposed": true,
+      "semantic_rule_relevant": true,
+      "semantic_observability": "O0_silent",
+      "risk_label": "high",
+      "failure_mode": "potential_compliant_semantic_failure",
+      "reason": "schema/client surface is compatible, the change is execution-exposed, and no recovery signal is visible"
+    }
+  }
+]

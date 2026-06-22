@@ -1,0 +1,46 @@
+{
+  "network_available": true,
+  "verified": [
+    {
+      "key": "sigdel2026schemaFirst",
+      "title": "Schema First Tool APIs for LLM Agents: A Controlled Study of Tool Misuse, Recovery, and Budgeted Performance",
+      "status": "verified",
+      "url": "https://arxiv.org/abs/2603.13404"
+    },
+    {
+      "key": "sigdel2026toolmisusebench",
+      "title": "ToolMisuseBench: An Offline Deterministic Benchmark for Tool Misuse and Recovery in Agentic Systems",
+      "status": "verified",
+      "url": "https://arxiv.org/abs/2604.01508"
+    },
+    {
+      "key": "sequeira2026agentsentry",
+      "title": "Agent-Sentry: Bounding LLM Agents via Execution Provenance",
+      "status": "verified",
+      "url": "https://arxiv.org/abs/2603.22868"
+    },
+    {
+      "key": "pysklo2026agentdiff",
+      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
+      "status": "verified",
+      "url": "https://arxiv.org/abs/2602.11224"
+    },
+    {
+      "key": "ashik2026knowledgeconflicts",
+      "title": "When LLMs Lag Behind: Knowledge Conflicts from Evolving APIs in Code Generation",
+      "status": "verified_and_bibtex_updated",
+      "url": "https://arxiv.org/abs/2604.09515"
+    },
+    {
+      "key": "liang2025rustevo2",
+      "title": "RustEvo2: An Evolving Benchmark for API Evolution in LLM-based Rust Code Generation",
+      "status": "verified_and_bibtex_updated",
+      "url": "https://arxiv.org/abs/2503.16922"
+    }
+  ],
+  "removed_or_replaced": [],
+  "notes": [
+    "All currently cited high-risk 2025/2026 references were publicly verifiable.",
+    "Recent arXiv references remain preprint evidence rather than archival SE literature."
+  ]
+}

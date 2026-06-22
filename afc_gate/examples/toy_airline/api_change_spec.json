@@ -1,0 +1,18 @@
+{
+  "change_id": "airline_cert_card_policy_2026",
+  "changed_tool": "book_reservation",
+  "change_type": "C4_business_rule_drift",
+  "schema_changed": false,
+  "typed_client_compatible": true,
+  "semantic_rule": {
+    "name": "certificate_card_mix_policy",
+    "before": "certificate and card payments can be mixed",
+    "after": "certificate and card payments cannot be mixed unless approval_code is provided"
+  },
+  "observability": {
+    "level": "O0_silent",
+    "visible_error": false,
+    "migration_note": null,
+    "structured_diagnostic": null
+  }
+}

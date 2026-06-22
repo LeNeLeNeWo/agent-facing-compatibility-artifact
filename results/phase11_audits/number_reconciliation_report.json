@@ -1,0 +1,116 @@
+{
+  "all_expected_present": true,
+  "checks": {
+    "exposure_control": {
+      "1\\.4\\\\?%": true,
+      "363\\s+exposed\\s+O0": true,
+      "363\\s+matched\\s+unused-tool": true,
+      "44\\.4\\\\?%": true,
+      "50\\.1\\\\?%": true,
+      "77\\.1\\\\?%": true
+    },
+    "observability": {
+      "0\\.501": true,
+      "0\\.843": true,
+      "0\\.846": true,
+      "0\\.848": true,
+      "0\\.851": true,
+      "1,290\\s+formal\\s+airline": true,
+      "1,815\\s+frozen": true,
+      "525\\s+formal\\s+retail": true,
+      "84\\.7\\\\?%": true
+    },
+    "phase10_corpus": {
+      "151\\s+entries": true,
+      "61\\s+C-class": true,
+      "nine\\s+official\\s+providers": true
+    },
+    "phase10_nonobvious": {
+      "288-cell": true,
+      "3\\s+of\\s+96": true,
+      "6\\s+of\\s+95": true,
+      "71\\s+of\\s+95": true
+    },
+    "phase10_replay": {
+      "0\\s+of\\s+23": true,
+      "22\\s+of\\s+23": true,
+      "24\\s+baseline": true
+    },
+    "phase8c": {
+      "43\\.8\\\\?%": true,
+      "480\\s+additional\\s+formal\\s+cells": true,
+      "56\\.2\\\\?%": true,
+      "91\\.2\\\\?%": true
+    },
+    "relaxed_yp": {
+      "31\\.4\\\\?%": true,
+      "49\\s+of\\s+156": true
+    },
+    "strict_schema_client": {
+      "33\\.8\\\\?%": true,
+      "44\\s+of\\s+130": true
+    }
+  },
+  "derived_artifact_values": {
+    "corpus_provider_count": 9,
+    "corpus_schema_invisible_c": 61,
+    "corpus_total_entries": 151,
+    "nonobvious_by_condition": {
+      "O0_increased_reasoning_budget": {
+        "hidden_violation_n": 92,
+        "ok": 96,
+        "success_n": 3
+      },
+      "O0_reflection_scaffold": {
+        "hidden_violation_n": 88,
+        "ok": 95,
+        "success_n": 6
+      },
+      "rule_in_tool_preamble_upper_bound": {
+        "hidden_violation_n": 0,
+        "ok": 95,
+        "success_n": 71
+      }
+    },
+    "nonobvious_ok_cells": 286,
+    "nonobvious_planned_cells": 288,
+    "nonobvious_status_counts": {
+      "failed": 1,
+      "ok": 286,
+      "timeout": 1
+    },
+    "oracle_baseline_violation_rate": 0.0,
+    "oracle_suspicious_count": 0,
+    "oracle_total_samples": 180,
+    "real_replay_all_status_records": 72,
+    "real_replay_by_condition": {
+      "baseline_old_api": {
+        "hidden_violation_n": 0,
+        "ok_n": 24,
+        "success_n": 24
+      },
+      "evolved_o0_silent": {
+        "hidden_violation_n": 23,
+        "ok_n": 23,
+        "success_n": 0
+      },
+      "evolved_visible_feedback": {
+        "hidden_violation_n": 0,
+        "ok_n": 23,
+        "success_n": 22
+      }
+    },
+    "real_replay_status_counts": {
+      "failed": 2,
+      "ok": 70
+    }
+  },
+  "paper_dir": "\\\\wsl.localhost\\Ubuntu\\home\\yang\\ICSE 2027\\schema_mutation_paper_package_20260612_194214\\IEEE_Conference_Template",
+  "suspicious_phrases": {
+    "ambiguous_c1_or": false,
+    "gpt_table_ref": false,
+    "human_kappa": false,
+    "production_frequency_claim": true,
+    "production_incident_claim": true
+  }
+}

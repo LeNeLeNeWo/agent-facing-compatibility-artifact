@@ -1,0 +1,33 @@
+{
+  "task_id": "airline_demo_001",
+  "agent": "demo-agent",
+  "seed": 0,
+  "success": true,
+  "steps": [
+    {
+      "step": 1,
+      "tool": "search_flights",
+      "arguments": {
+        "origin": "JFK",
+        "destination": "SEA"
+      },
+      "observation": {
+        "flight_ids": ["HAT136", "HAT039"]
+      }
+    },
+    {
+      "step": 2,
+      "tool": "book_reservation",
+      "arguments": {
+        "flights": ["HAT136", "HAT039"],
+        "payment_methods": [
+          {"type": "certificate", "amount": 250},
+          {"type": "card", "amount": 5}
+        ]
+      },
+      "observation": {
+        "status": "booked"
+      }
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "by_domain": {
+    "O0_increased_reasoning_budget": {
+      "airline": {
+        "hidden_violation_n": 54,
+        "hidden_violation_rate": 0.9310344827586207,
+        "observed_n": 58,
+        "ok_n": 58,
+        "status_counts": {
+          "ok": 58
+        },
+        "success_n": 3,
+        "success_rate": 0.05172413793103448
+      },
+      "retail": {
+        "hidden_violation_n": 38,
+        "hidden_violation_rate": 1.0,
+        "observed_n": 38,
+        "ok_n": 38,
+        "status_counts": {
+          "ok": 38
+        },
+        "success_n": 0,
+        "success_rate": 0.0
+      }
+    },
+    "O0_reflection_scaffold": {
+      "airline": {
+        "hidden_violation_n": 53,
+        "hidden_violation_rate": 0.9298245614035088,
+        "observed_n": 58,
+        "ok_n": 57,
+        "status_counts": {
+          "failed": 1,
+          "ok": 57
+        },
+        "success_n": 3,
+        "success_rate": 0.05263157894736842
+      },
+      "retail": {
+        "hidden_violation_n": 35,
+        "hidden_violation_rate": 0.9210526315789473,
+        "observed_n": 38,
+        "ok_n": 38,
+        "status_counts": {
+          "ok": 38
+        },
+        "success_n": 3,
+        "success_rate": 0.07894736842105263
+      }
+    },
+    "rule_in_tool_preamble_upper_bound": {
+      "airline": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 58,
+        "ok_n": 57,
+        "status_counts": {
+          "ok": 57,
+          "timeout": 1
+        },
+        "success_n": 37,
+        "success_rate": 0.6491228070175439
+      },
+      "retail": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 38,
+        "ok_n": 38,
+        "status_counts": {
+          "ok": 38
+        },
+        "success_n": 34,
+        "success_rate": 0.8947368421052632
+      }
+    }
+  },
+  "by_model": {
+    "O0_increased_reasoning_budget": {
+      "dashscope/glm-5.1": {
+        "hidden_violation_n": 24,
+        "hidden_violation_rate": 0.96,
+        "observed_n": 25,
+        "ok_n": 25,
+        "status_counts": {
+          "ok": 25
+        },
+        "success_n": 1,
+        "success_rate": 0.04
+      },
+      "dashscope/kimi-k2.6": {
+        "hidden_violation_n": 22,
+        "hidden_violation_rate": 0.9565217391304348,
+        "observed_n": 23,
+        "ok_n": 23,
+        "status_counts": {
+          "ok": 23
+        },
+        "success_n": 1,
+        "success_rate": 0.043478260869565216
+      },
+      "dashscope/qwen-max": {
+        "hidden_violation_n": 24,
+        "hidden_violation_rate": 0.9230769230769231,
+        "observed_n": 26,
+        "ok_n": 26,
+        "status_counts": {
+          "ok": 26
+        },
+        "success_n": 1,
+        "success_rate": 0.038461538461538464
+      },
+      "deepseek/deepseek-v4-flash": {
+        "hidden_violation_n": 22,
+        "hidden_violation_rate": 1.0,
+        "observed_n": 22,
+        "ok_n": 22,
+        "status_counts": {
+          "ok": 22
+        },
+        "success_n": 0,
+        "success_rate": 0.0
+      }
+    },
+    "O0_reflection_scaffold": {
+      "dashscope/glm-5.1": {
+        "hidden_violation_n": 23,
+        "hidden_violation_rate": 0.92,
+        "observed_n": 25,
+        "ok_n": 25,
+        "status_counts": {
+          "ok": 25
+        },
+        "success_n": 2,
+        "success_rate": 0.08
+      },
+      "dashscope/kimi-k2.6": {
+        "hidden_violation_n": 21,
+        "hidden_violation_rate": 0.9130434782608695,
+        "observed_n": 23,
+        "ok_n": 23,
+        "status_counts": {
+          "ok": 23
+        },
+        "success_n": 2,
+        "success_rate": 0.08695652173913043
+      },
+      "dashscope/qwen-max": {
+        "hidden_violation_n": 22,
+        "hidden_violation_rate": 0.88,
+        "observed_n": 26,
+        "ok_n": 25,
+        "status_counts": {
+          "failed": 1,
+          "ok": 25
+        },
+        "success_n": 2,
+        "success_rate": 0.08
+      },
+      "deepseek/deepseek-v4-flash": {
+        "hidden_violation_n": 22,
+        "hidden_violation_rate": 1.0,
+        "observed_n": 22,
+        "ok_n": 22,
+        "status_counts": {
+          "ok": 22
+        },
+        "success_n": 0,
+        "success_rate": 0.0
+      }
+    },
+    "rule_in_tool_preamble_upper_bound": {
+      "dashscope/glm-5.1": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 25,
+        "ok_n": 24,
+        "status_counts": {
+          "ok": 24,
+          "timeout": 1
+        },
+        "success_n": 19,
+        "success_rate": 0.7916666666666666
+      },
+      "dashscope/kimi-k2.6": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 23,
+        "ok_n": 23,
+        "status_counts": {
+          "ok": 23
+        },
+        "success_n": 19,
+        "success_rate": 0.8260869565217391
+      },
+      "dashscope/qwen-max": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 26,
+        "ok_n": 26,
+        "status_counts": {
+          "ok": 26
+        },
+        "success_n": 19,
+        "success_rate": 0.7307692307692307
+      },
+      "deepseek/deepseek-v4-flash": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 22,
+        "ok_n": 22,
+        "status_counts": {
+          "ok": 22
+        },
+        "success_n": 14,
+        "success_rate": 0.6363636363636364
+      }
+    }
+  },
+  "by_semantic_class": {
+    "O0_increased_reasoning_budget": {
+      "C1": {
+        "hidden_violation_n": 27,
+        "hidden_violation_rate": 1.0,
+        "observed_n": 27,
+        "ok_n": 27,
+        "status_counts": {
+          "ok": 27
+        },
+        "success_n": 0,
+        "success_rate": 0.0
+      },
+      "C2": {
+        "hidden_violation_n": 18,
+        "hidden_violation_rate": 0.9473684210526315,
+        "observed_n": 19,
+        "ok_n": 19,
+        "status_counts": {
+          "ok": 19
+        },
+        "success_n": 1,
+        "success_rate": 0.05263157894736842
+      },
+      "C3": {
+        "hidden_violation_n": 21,
+        "hidden_violation_rate": 0.9130434782608695,
+        "observed_n": 23,
+        "ok_n": 23,
+        "status_counts": {
+          "ok": 23
+        },
+        "success_n": 1,
+        "success_rate": 0.043478260869565216
+      },
+      "C4": {
+        "hidden_violation_n": 26,
+        "hidden_violation_rate": 0.9629629629629629,
+        "observed_n": 27,
+        "ok_n": 27,
+        "status_counts": {
+          "ok": 27
+        },
+        "success_n": 1,
+        "success_rate": 0.037037037037037035
+      }
+    },
+    "O0_reflection_scaffold": {
+      "C1": {
+        "hidden_violation_n": 24,
+        "hidden_violation_rate": 0.8888888888888888,
+        "observed_n": 27,
+        "ok_n": 27,
+        "status_counts": {
+          "ok": 27
+        },
+        "success_n": 3,
+        "success_rate": 0.1111111111111111
+      },
+      "C2": {
+        "hidden_violation_n": 17,
+        "hidden_violation_rate": 0.8947368421052632,
+        "observed_n": 19,
+        "ok_n": 19,
+        "status_counts": {
+          "ok": 19
+        },
+        "success_n": 1,
+        "success_rate": 0.05263157894736842
+      },
+      "C3": {
+        "hidden_violation_n": 21,
+        "hidden_violation_rate": 0.9545454545454546,
+        "observed_n": 23,
+        "ok_n": 22,
+        "status_counts": {
+          "failed": 1,
+          "ok": 22
+        },
+        "success_n": 1,
+        "success_rate": 0.045454545454545456
+      },
+      "C4": {
+        "hidden_violation_n": 26,
+        "hidden_violation_rate": 0.9629629629629629,
+        "observed_n": 27,
+        "ok_n": 27,
+        "status_counts": {
+          "ok": 27
+        },
+        "success_n": 1,
+        "success_rate": 0.037037037037037035
+      }
+    },
+    "rule_in_tool_preamble_upper_bound": {
+      "C1": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 27,
+        "ok_n": 27,
+        "status_counts": {
+          "ok": 27
+        },
+        "success_n": 19,
+        "success_rate": 0.7037037037037037
+      },
+      "C2": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 19,
+        "ok_n": 19,
+        "status_counts": {
+          "ok": 19
+        },
+        "success_n": 16,
+        "success_rate": 0.8421052631578947
+      },
+      "C3": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 23,
+        "ok_n": 22,
+        "status_counts": {
+          "ok": 22,
+          "timeout": 1
+        },
+        "success_n": 18,
+        "success_rate": 0.8181818181818182
+      },
+      "C4": {
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "observed_n": 27,
+        "ok_n": 27,
+        "status_counts": {
+          "ok": 27
+        },
+        "success_n": 18,
+        "success_rate": 0.6666666666666666
+      }
+    }
+  },
+  "condition_summary": {
+    "O0_increased_reasoning_budget": {
+      "avg_steps": 17.635416666666668,
+      "avg_token_cost": null,
+      "failed_n": 0,
+      "hidden_violation_n": 92,
+      "hidden_violation_rate": 0.9583333333333334,
+      "label": "O0 + more reasoning",
+      "observed_n": 96,
+      "ok_n": 96,
+      "planned_n": 96,
+      "provider_error_n": 0,
+      "status_counts": {
+        "ok": 96
+      },
+      "success_n": 3,
+      "success_rate": 0.03125,
+      "timeout_n": 0
+    },
+    "O0_reflection_scaffold": {
+      "avg_steps": 17.0,
+      "avg_token_cost": null,
+      "failed_n": 1,
+      "hidden_violation_n": 88,
+      "hidden_violation_rate": 0.9263157894736842,
+      "label": "O0 + reflection",
+      "observed_n": 96,
+      "ok_n": 95,
+      "planned_n": 96,
+      "provider_error_n": 0,
+      "status_counts": {
+        "failed": 1,
+        "ok": 95
+      },
+      "success_n": 6,
+      "success_rate": 0.06315789473684211,
+      "timeout_n": 0
+    },
+    "rule_in_tool_preamble_upper_bound": {
+      "avg_steps": 21.03157894736842,
+      "avg_token_cost": null,
+      "failed_n": 0,
+      "hidden_violation_n": 0,
+      "hidden_violation_rate": 0.0,
+      "label": "Rule-visible upper bound",
+      "observed_n": 96,
+      "ok_n": 95,
+      "planned_n": 96,
+      "provider_error_n": 0,
+      "status_counts": {
+        "ok": 95,
+        "timeout": 1
+      },
+      "success_n": 71,
+      "success_rate": 0.7473684210526316,
+      "timeout_n": 1
+    }
+  },
+  "integrity": {
+    "artifact_isolation": {
+      "paper_body_modified": false,
+      "phase10d_writes": [
+        "runs/schema_mutation/phase10/phase10d_nonobviousness_analysis",
+        "IEEE_Conference_Template/tables/nonobviousness_control_auto.tex",
+        "IEEE_Conference_Template/figures/nonobviousness_control.pdf"
+      ],
+      "phase5_or_phase8_rerun": false
+    },
+    "baseline_success_false_rows": 0,
+    "failed_rows": 1,
+    "fake_rows": 0,
+    "forbidden_model_rows": [],
+    "o0_rule_leakage_issues": [],
+    "parse_cleanly": true,
+    "planned_cells": 288,
+    "provider_error_rows": 0,
+    "provider_error_timeout_failed_not_counted_as_agent_failures": true,
+    "rule_visible_upper_bound_missing_visibility_count": 0,
+    "schema_changed_not_false_rows": 0,
+    "status_counts": {
+      "failed": 1,
+      "ok": 286,
+      "timeout": 1
+    },
+    "status_rows": 288,
+    "timeout_rows": 1
+  },
+  "paths": {
+    "analysis_dir": "runs\\schema_mutation\\phase10\\phase10d_nonobviousness_analysis",
+    "audit_json": "runs\\schema_mutation\\phase10\\phase10d_nonobviousness_analysis\\integrity_audit.json",
+    "audit_md": "runs\\schema_mutation\\phase10\\phase10d_nonobviousness_analysis\\integrity_audit.md",
+    "figure": "IEEE_Conference_Template\\figures\\nonobviousness_control.pdf",
+    "snippet": "runs\\schema_mutation\\phase10\\phase10d_nonobviousness_analysis\\paper_text_snippet.md",
+    "table": "IEEE_Conference_Template\\tables\\nonobviousness_control_auto.tex"
+  },
+  "references": {
+    "O0_standard_reference": {
+      "hidden_violation_n": 96,
+      "hidden_violation_rate": 1.0,
+      "matched_n": 96,
+      "ok_n": 96,
+      "source": "matched prior rows via source_o0_cell_key",
+      "success_n": 0,
+      "success_rate": 0.0
+    },
+    "O1_generic_error_reference": {
+      "hidden_violation_n": 0,
+      "hidden_violation_rate": 0.0,
+      "matched_n": 30,
+      "ok_n": 27,
+      "source": "attempted exact match from prior frozen status rows",
+      "success_n": 20,
+      "success_rate": 0.7407407407407407,
+      "usable_as_matched_reference": false
+    }
+  },
+  "statistics": {
+    "bootstrap_differences": {
+      "o0_reflection_minus_o0_reasoning": {
+        "a": "O0_reflection_scaffold",
+        "b": "O0_increased_reasoning_budget",
+        "ci95": {
+          "hi": 0.09484649122807016,
+          "lo": -0.03070175438596491
+        },
+        "n_boot": 20000,
+        "point": 0.03190789473684211
+      },
+      "rule_visible_minus_o0_reasoning": {
+        "a": "rule_in_tool_preamble_upper_bound",
+        "b": "O0_increased_reasoning_budget",
+        "ci95": {
+          "hi": 0.8106359649122807,
+          "lo": 0.6213815789473685
+        },
+        "n_boot": 20000,
+        "point": 0.7161184210526316
+      },
+      "rule_visible_minus_o0_reflection": {
+        "a": "rule_in_tool_preamble_upper_bound",
+        "b": "O0_reflection_scaffold",
+        "ci95": {
+          "hi": 0.7789473684210526,
+          "lo": 0.5789473684210527
+        },
+        "n_boot": 20000,
+        "point": 0.6842105263157895
+      }
+    },
+    "bootstrap_success_rates": {
+      "O0_increased_reasoning_budget": {
+        "ci95": {
+          "hi": 0.07291666666666667,
+          "lo": 0.0
+        },
+        "n_boot": 20000,
+        "point": 0.03125
+      },
+      "O0_reflection_scaffold": {
+        "ci95": {
+          "hi": 0.11578947368421053,
+          "lo": 0.021052631578947368
+        },
+        "n_boot": 20000,
+        "point": 0.06315789473684211
+      },
+      "rule_in_tool_preamble_upper_bound": {
+        "ci95": {
+          "hi": 0.8315789473684211,
+          "lo": 0.6631578947368421
+        },
+        "n_boot": 20000,
+        "point": 0.7473684210526316
+      }
+    },
+    "cluster_bootstrap_differences": {
+      "o0_reflection_minus_o0_reasoning": {
+        "a": "O0_reflection_scaffold",
+        "b": "O0_increased_reasoning_budget",
+        "ci95": {
+          "hi": 0.08554964539007093,
+          "lo": -0.020614035087719296
+        },
+        "clusters": 96,
+        "n_boot": 20000,
+        "point": 0.03190789473684211
+      },
+      "rule_visible_minus_o0_reasoning": {
+        "a": "rule_in_tool_preamble_upper_bound",
+        "b": "O0_increased_reasoning_budget",
+        "ci95": {
+          "hi": 0.8020833333333334,
+          "lo": 0.6216008771929824
+        },
+        "clusters": 96,
+        "n_boot": 20000,
+        "point": 0.7161184210526316
+      },
+      "rule_visible_minus_o0_reflection": {
+        "a": "rule_in_tool_preamble_upper_bound",
+        "b": "O0_reflection_scaffold",
+        "ci95": {
+          "hi": 0.7772676371780516,
+          "lo": 0.5894736842105263
+        },
+        "clusters": 96,
+        "n_boot": 20000,
+        "point": 0.6842105263157895
+      }
+    },
+    "sensitivity": {
+      "as_planned_denominator": {
+        "O0_increased_reasoning_budget": {
+          "denominator": 96,
+          "hidden_violation_rate_counting_non_ok_as_missing_not_failure": 0.9583333333333334,
+          "success_rate_counting_non_ok_as_missing_not_failure": 0.03125
+        },
+        "O0_reflection_scaffold": {
+          "denominator": 96,
+          "hidden_violation_rate_counting_non_ok_as_missing_not_failure": 0.9166666666666666,
+          "success_rate_counting_non_ok_as_missing_not_failure": 0.0625
+        },
+        "rule_in_tool_preamble_upper_bound": {
+          "denominator": 96,
+          "hidden_violation_rate_counting_non_ok_as_missing_not_failure": 0.0,
+          "success_rate_counting_non_ok_as_missing_not_failure": 0.7395833333333334
+        }
+      },
+      "ok_only_primary": {
+        "O0_increased_reasoning_budget": {
+          "denominator": 96,
+          "hidden_violation_rate": 0.9583333333333334,
+          "success_rate": 0.03125
+        },
+        "O0_reflection_scaffold": {
+          "denominator": 95,
+          "hidden_violation_rate": 0.9263157894736842,
+          "success_rate": 0.06315789473684211
+        },
+        "rule_in_tool_preamble_upper_bound": {
+          "denominator": 95,
+          "hidden_violation_rate": 0.0,
+          "success_rate": 0.7473684210526316
+        }
+      }
+    },
+    "tests": {
+      "o0_reflection_minus_o0_reasoning": {
+        "a": "O0_reflection_scaffold",
+        "b": "O0_increased_reasoning_budget",
+        "chi2": 1.0827061644495863,
+        "chi2_dof": 1,
+        "chi2_expected": [
+          [
+            4.476439790575916,
+            90.52356020942409
+          ],
+          [
+            4.523560209424084,
+            91.47643979057591
+          ]
+        ],
+        "chi2_p": 0.2980929564302327,
+        "fisher_oddsratio": 2.0898876404494384,
+        "fisher_p": 0.33058917798425136,
+        "table": [
+          [
+            6,
+            89
+          ],
+          [
+            3,
+            93
+          ]
+        ]
+      },
+      "rule_visible_minus_o0_reasoning": {
+        "a": "rule_in_tool_preamble_upper_bound",
+        "b": "O0_increased_reasoning_budget",
+        "chi2": 103.17638679924863,
+        "chi2_dof": 1,
+        "chi2_expected": [
+          [
+            36.80628272251309,
+            58.19371727748691
+          ],
+          [
+            37.19371727748691,
+            58.80628272251309
+          ]
+        ],
+        "chi2_p": 3.0659873721080776e-24,
+        "fisher_oddsratio": 91.70833333333333,
+        "fisher_p": 2.091241474690902e-27,
+        "table": [
+          [
+            71,
+            24
+          ],
+          [
+            3,
+            93
+          ]
+        ]
+      },
+      "rule_visible_minus_o0_reflection": {
+        "a": "rule_in_tool_preamble_upper_bound",
+        "b": "O0_reflection_scaffold",
+        "chi2": 92.25951040110333,
+        "chi2_dof": 1,
+        "chi2_expected": [
+          [
+            38.5,
+            56.5
+          ],
+          [
+            38.5,
+            56.5
+          ]
+        ],
+        "chi2_p": 7.602391957514832e-22,
+        "fisher_oddsratio": 43.88194444444444,
+        "fisher_p": 1.1644159737174683e-23,
+        "table": [
+          [
+            71,
+            24
+          ],
+          [
+            6,
+            89
+          ]
+        ]
+      }
+    }
+  },
+  "supports_mechanism_interpretation": true
+}

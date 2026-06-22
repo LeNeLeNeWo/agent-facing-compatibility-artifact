@@ -1,0 +1,745 @@
+{
+  "source_artifacts": [
+    "/mnt/d/study_ecnu/<REDACTED_LOCAL_PATH_SEGMENT>/科研/ccfa/schema_mutation_paper_package_20260612_194214/runs/schema_mutation/phase5/combined_observability_review_packet.json",
+    "/mnt/d/study_ecnu/<REDACTED_LOCAL_PATH_SEGMENT>/科研/ccfa/schema_mutation_paper_package_20260612_194214/runs/schema_mutation/phase5/phase5_summary.json",
+    "/mnt/d/study_ecnu/<REDACTED_LOCAL_PATH_SEGMENT>/科研/ccfa/schema_mutation_paper_package_20260612_194214/runs/schema_mutation/phase5/status/*.jsonl"
+  ],
+  "method": "No API rerun. Read frozen Phase 5 status files from combined_observability_review_packet, filtered to ok formal rows, deduplicated by cell_key, and bootstrapped over complete domain/model/task/seed paired units.",
+  "integrity": {
+    "rows_after_filters": 1815,
+    "complete_paired_units": 363,
+    "level_counts": {
+      "O0_silent": 363,
+      "O1_generic_error": 363,
+      "O2_policy_error": 363,
+      "O3_structured_policy_error": 363,
+      "O4_migration_note": 363
+    },
+    "status_counts": {
+      "ok": 1815
+    },
+    "provider_error_timeout_failed_count": 0
+  },
+  "overall_rates": {
+    "O0_silent": {
+      "n": 363,
+      "success": 182,
+      "success_rate": 0.5013774104683195
+    },
+    "O1_generic_error": {
+      "n": 363,
+      "success": 306,
+      "success_rate": 0.8429752066115702
+    },
+    "O2_policy_error": {
+      "n": 363,
+      "success": 307,
+      "success_rate": 0.8457300275482094
+    },
+    "O3_structured_policy_error": {
+      "n": 363,
+      "success": 309,
+      "success_rate": 0.8512396694214877
+    },
+    "O4_migration_note": {
+      "n": 363,
+      "success": 308,
+      "success_rate": 0.8484848484848485
+    }
+  },
+  "comparisons": {
+    "O0_vs_any_visible": {
+      "a_success": 182,
+      "a_n": 363,
+      "b_success": 1230,
+      "b_n": 1452,
+      "diff": -0.34573002754820936,
+      "fisher_p": 2.4269126418068884e-12,
+      "a_label": "O0_silent",
+      "b_label": "any_visible_O1_O4",
+      "bootstrap_ci": [
+        -0.39531680440771355,
+        -0.29683195592286493
+      ],
+      "paired_units": 363
+    },
+    "O0_vs_O1_generic_error": {
+      "a_success": 182,
+      "a_n": 363,
+      "b_success": 306,
+      "b_n": 363,
+      "diff": -0.3415977961432507,
+      "fisher_p": 1.2485938066572439e-12,
+      "a_label": "O0_silent",
+      "b_label": "O1_generic_error",
+      "bootstrap_ci": [
+        -0.39669421487603307,
+        -0.2837465564738293
+      ],
+      "paired_units": 363
+    },
+    "O0_vs_O2_policy_error": {
+      "a_success": 182,
+      "a_n": 363,
+      "b_success": 307,
+      "b_n": 363,
+      "diff": -0.34435261707988984,
+      "fisher_p": 2.11374529648926e-12,
+      "a_label": "O0_silent",
+      "b_label": "O2_policy_error",
+      "bootstrap_ci": [
+        -0.3994490358126722,
+        -0.2865013774104683
+      ],
+      "paired_units": 363
+    },
+    "O0_vs_O3_structured_policy_error": {
+      "a_success": 182,
+      "a_n": 363,
+      "b_success": 309,
+      "b_n": 363,
+      "diff": -0.34986225895316814,
+      "fisher_p": 1.8765419742165787e-12,
+      "a_label": "O0_silent",
+      "b_label": "O3_structured_policy_error",
+      "bootstrap_ci": [
+        -0.4022038567493113,
+        -0.30027548209366384
+      ],
+      "paired_units": 363
+    },
+    "O0_vs_O4_migration_note": {
+      "a_success": 182,
+      "a_n": 363,
+      "b_success": 308,
+      "b_n": 363,
+      "diff": -0.347107438016529,
+      "fisher_p": 1.1069470864537197e-12,
+      "a_label": "O0_silent",
+      "b_label": "O4_migration_note",
+      "bootstrap_ci": [
+        -0.4049586776859504,
+        -0.2892561983471075
+      ],
+      "paired_units": 363
+    },
+    "O1_vs_O2_policy_error": {
+      "a_success": 306,
+      "a_n": 363,
+      "b_success": 307,
+      "b_n": 363,
+      "diff": -0.0027548209366391463,
+      "fisher_p": 1.0,
+      "a_label": "O1_generic_error",
+      "b_label": "O2_policy_error",
+      "bootstrap_ci": [
+        -0.04683195592286504,
+        0.04132231404958675
+      ],
+      "paired_units": 363
+    },
+    "O1_vs_O3_structured_policy_error": {
+      "a_success": 306,
+      "a_n": 363,
+      "b_success": 309,
+      "b_n": 363,
+      "diff": -0.008264462809917439,
+      "fisher_p": 0.836678672893706,
+      "a_label": "O1_generic_error",
+      "b_label": "O3_structured_policy_error",
+      "bootstrap_ci": [
+        -0.04958677685950419,
+        0.03305785123966942
+      ],
+      "paired_units": 363
+    },
+    "O1_vs_O4_migration_note": {
+      "a_success": 306,
+      "a_n": 363,
+      "b_success": 308,
+      "b_n": 363,
+      "diff": -0.005509641873278293,
+      "fisher_p": 0.9182065548802857,
+      "a_label": "O1_generic_error",
+      "b_label": "O4_migration_note",
+      "bootstrap_ci": [
+        -0.04958677685950408,
+        0.03581267217630857
+      ],
+      "paired_units": 363
+    }
+  },
+  "by_domain": {
+    "airline": {
+      "name": "airline",
+      "n_total": 1290,
+      "paired_units": 258,
+      "rates": {
+        "O0_silent": {
+          "n": 258,
+          "success": 139,
+          "success_rate": 0.5387596899224806
+        },
+        "O1_generic_error": {
+          "n": 258,
+          "success": 216,
+          "success_rate": 0.8372093023255814
+        },
+        "O2_policy_error": {
+          "n": 258,
+          "success": 222,
+          "success_rate": 0.8604651162790697
+        },
+        "O3_structured_policy_error": {
+          "n": 258,
+          "success": 220,
+          "success_rate": 0.8527131782945736
+        },
+        "O4_migration_note": {
+          "n": 258,
+          "success": 218,
+          "success_rate": 0.8449612403100775
+        }
+      },
+      "O0_vs_any_visible": {
+        "a_success": 139,
+        "a_n": 258,
+        "b_success": 876,
+        "b_n": 1032,
+        "diff": -0.31007751937984496,
+        "fisher_p": 2.2276670994963333e-12,
+        "bootstrap_ci": [
+          -0.36724806201550386,
+          -0.25290697674418605
+        ]
+      },
+      "O0_vs_O1": {
+        "a_success": 139,
+        "a_n": 258,
+        "b_success": 216,
+        "b_n": 258,
+        "diff": -0.29844961240310086,
+        "fisher_p": 1.0049138356114229e-12,
+        "bootstrap_ci": [
+          -0.3643410852713178,
+          -0.23643410852713176
+        ]
+      },
+      "O1_marginals": {
+        "O2_policy_error": {
+          "a_success": 216,
+          "a_n": 258,
+          "b_success": 222,
+          "b_n": 258,
+          "diff": -0.023255813953488302,
+          "fisher_p": 0.5390986079777544,
+          "bootstrap_ci": [
+            -0.0736434108527132,
+            0.027131782945736482
+          ]
+        },
+        "O3_structured_policy_error": {
+          "a_success": 216,
+          "a_n": 258,
+          "b_success": 220,
+          "b_n": 258,
+          "diff": -0.015503875968992165,
+          "fisher_p": 0.7153774308008123,
+          "bootstrap_ci": [
+            -0.06589147286821695,
+            0.03100775193798455
+          ]
+        },
+        "O4_migration_note": {
+          "a_success": 216,
+          "a_n": 258,
+          "b_success": 218,
+          "b_n": 258,
+          "diff": -0.007751937984496027,
+          "fisher_p": 0.9042256242270852,
+          "bootstrap_ci": [
+            -0.06201550387596899,
+            0.04263565891472865
+          ]
+        }
+      }
+    },
+    "retail": {
+      "name": "retail",
+      "n_total": 525,
+      "paired_units": 105,
+      "rates": {
+        "O0_silent": {
+          "n": 105,
+          "success": 43,
+          "success_rate": 0.4095238095238095
+        },
+        "O1_generic_error": {
+          "n": 105,
+          "success": 90,
+          "success_rate": 0.8571428571428571
+        },
+        "O2_policy_error": {
+          "n": 105,
+          "success": 85,
+          "success_rate": 0.8095238095238095
+        },
+        "O3_structured_policy_error": {
+          "n": 105,
+          "success": 89,
+          "success_rate": 0.8476190476190476
+        },
+        "O4_migration_note": {
+          "n": 105,
+          "success": 90,
+          "success_rate": 0.8571428571428571
+        }
+      },
+      "O0_vs_any_visible": {
+        "a_success": 43,
+        "a_n": 105,
+        "b_success": 354,
+        "b_n": 420,
+        "diff": -0.43333333333333335,
+        "fisher_p": 4.836014185330721e-13,
+        "bootstrap_ci": [
+          -0.5285714285714287,
+          -0.3380952380952381
+        ]
+      },
+      "O0_vs_O1": {
+        "a_success": 43,
+        "a_n": 105,
+        "b_success": 90,
+        "b_n": 105,
+        "diff": -0.4476190476190476,
+        "fisher_p": 1.4532023904188341e-11,
+        "bootstrap_ci": [
+          -0.5619047619047619,
+          -0.33333333333333337
+        ]
+      },
+      "O1_marginals": {
+        "O2_policy_error": {
+          "a_success": 90,
+          "a_n": 105,
+          "b_success": 85,
+          "b_n": 105,
+          "diff": 0.04761904761904756,
+          "fisher_p": 0.45928010205013503,
+          "bootstrap_ci": [
+            -0.03809523809523807,
+            0.1333333333333333
+          ]
+        },
+        "O3_structured_policy_error": {
+          "a_success": 90,
+          "a_n": 105,
+          "b_success": 89,
+          "b_n": 105,
+          "diff": 0.00952380952380949,
+          "fisher_p": 1.0,
+          "bootstrap_ci": [
+            -0.07619047619047625,
+            0.09523809523809523
+          ]
+        },
+        "O4_migration_note": {
+          "a_success": 90,
+          "a_n": 105,
+          "b_success": 90,
+          "b_n": 105,
+          "diff": 0.0,
+          "fisher_p": 0.9999999999999905,
+          "bootstrap_ci": [
+            -0.07619047619047625,
+            0.07619047619047614
+          ]
+        }
+      }
+    }
+  },
+  "by_model": {
+    "dashscope/glm-5.1": {
+      "name": "dashscope/glm-5.1",
+      "n_total": 540,
+      "paired_units": 108,
+      "rates": {
+        "O0_silent": {
+          "n": 108,
+          "success": 55,
+          "success_rate": 0.5092592592592593
+        },
+        "O1_generic_error": {
+          "n": 108,
+          "success": 89,
+          "success_rate": 0.8240740740740741
+        },
+        "O2_policy_error": {
+          "n": 108,
+          "success": 97,
+          "success_rate": 0.8981481481481481
+        },
+        "O3_structured_policy_error": {
+          "n": 108,
+          "success": 95,
+          "success_rate": 0.8796296296296297
+        },
+        "O4_migration_note": {
+          "n": 108,
+          "success": 92,
+          "success_rate": 0.8518518518518519
+        }
+      },
+      "O0_vs_any_visible": {
+        "a_success": 55,
+        "a_n": 108,
+        "b_success": 373,
+        "b_n": 432,
+        "diff": -0.35416666666666663,
+        "fisher_p": 7.312757027716934e-13,
+        "bootstrap_ci": [
+          -0.4444444444444444,
+          -0.26388888888888895
+        ]
+      },
+      "O0_vs_O1": {
+        "a_success": 55,
+        "a_n": 108,
+        "b_success": 89,
+        "b_n": 108,
+        "diff": -0.31481481481481477,
+        "fisher_p": 1.3819459532960755e-06,
+        "bootstrap_ci": [
+          -0.41666666666666663,
+          -0.21296296296296302
+        ]
+      },
+      "O1_marginals": {
+        "O2_policy_error": {
+          "a_success": 89,
+          "a_n": 108,
+          "b_success": 97,
+          "b_n": 108,
+          "diff": -0.07407407407407407,
+          "fisher_p": 0.16768411516929627,
+          "bootstrap_ci": [
+            -0.13888888888888895,
+            -0.00925925925925919
+          ]
+        },
+        "O3_structured_policy_error": {
+          "a_success": 89,
+          "a_n": 108,
+          "b_success": 95,
+          "b_n": 108,
+          "diff": -0.05555555555555558,
+          "fisher_p": 0.33835856051634805,
+          "bootstrap_ci": [
+            -0.12962962962962965,
+            0.0185185185185186
+          ]
+        },
+        "O4_migration_note": {
+          "a_success": 89,
+          "a_n": 108,
+          "b_success": 92,
+          "b_n": 108,
+          "diff": -0.02777777777777779,
+          "fisher_p": 0.71232604746134,
+          "bootstrap_ci": [
+            -0.10185185185185186,
+            0.04629629629629628
+          ]
+        }
+      }
+    },
+    "dashscope/kimi-k2.6": {
+      "name": "dashscope/kimi-k2.6",
+      "n_total": 495,
+      "paired_units": 99,
+      "rates": {
+        "O0_silent": {
+          "n": 99,
+          "success": 53,
+          "success_rate": 0.5353535353535354
+        },
+        "O1_generic_error": {
+          "n": 99,
+          "success": 90,
+          "success_rate": 0.9090909090909091
+        },
+        "O2_policy_error": {
+          "n": 99,
+          "success": 85,
+          "success_rate": 0.8585858585858586
+        },
+        "O3_structured_policy_error": {
+          "n": 99,
+          "success": 87,
+          "success_rate": 0.8787878787878788
+        },
+        "O4_migration_note": {
+          "n": 99,
+          "success": 87,
+          "success_rate": 0.8787878787878788
+        }
+      },
+      "O0_vs_any_visible": {
+        "a_success": 53,
+        "a_n": 99,
+        "b_success": 349,
+        "b_n": 396,
+        "diff": -0.3459595959595959,
+        "fisher_p": 3.889410112789642e-13,
+        "bootstrap_ci": [
+          -0.441919191919192,
+          -0.24747474747474751
+        ]
+      },
+      "O0_vs_O1": {
+        "a_success": 53,
+        "a_n": 99,
+        "b_success": 90,
+        "b_n": 99,
+        "diff": -0.3737373737373737,
+        "fisher_p": 3.8090668685684215e-09,
+        "bootstrap_ci": [
+          -0.4747474747474748,
+          -0.2727272727272727
+        ]
+      },
+      "O1_marginals": {
+        "O2_policy_error": {
+          "a_success": 90,
+          "a_n": 99,
+          "b_success": 85,
+          "b_n": 99,
+          "diff": 0.0505050505050505,
+          "fisher_p": 0.375372380139652,
+          "bootstrap_ci": [
+            -0.02020202020202022,
+            0.12121212121212122
+          ]
+        },
+        "O3_structured_policy_error": {
+          "a_success": 90,
+          "a_n": 99,
+          "b_success": 87,
+          "b_n": 99,
+          "diff": 0.030303030303030276,
+          "fisher_p": 0.6452795475384977,
+          "bootstrap_ci": [
+            -0.04040404040404044,
+            0.101010101010101
+          ]
+        },
+        "O4_migration_note": {
+          "a_success": 90,
+          "a_n": 99,
+          "b_success": 87,
+          "b_n": 99,
+          "diff": 0.030303030303030276,
+          "fisher_p": 0.6452795475384977,
+          "bootstrap_ci": [
+            -0.04040404040404033,
+            0.101010101010101
+          ]
+        }
+      }
+    },
+    "dashscope/qwen-max": {
+      "name": "dashscope/qwen-max",
+      "n_total": 265,
+      "paired_units": 53,
+      "rates": {
+        "O0_silent": {
+          "n": 53,
+          "success": 16,
+          "success_rate": 0.3018867924528302
+        },
+        "O1_generic_error": {
+          "n": 53,
+          "success": 37,
+          "success_rate": 0.6981132075471698
+        },
+        "O2_policy_error": {
+          "n": 53,
+          "success": 39,
+          "success_rate": 0.7358490566037735
+        },
+        "O3_structured_policy_error": {
+          "n": 53,
+          "success": 38,
+          "success_rate": 0.7169811320754716
+        },
+        "O4_migration_note": {
+          "n": 53,
+          "success": 39,
+          "success_rate": 0.7358490566037735
+        }
+      },
+      "O0_vs_any_visible": {
+        "a_success": 16,
+        "a_n": 53,
+        "b_success": 153,
+        "b_n": 212,
+        "diff": -0.419811320754717,
+        "fisher_p": 4.2640653324783286e-08,
+        "bootstrap_ci": [
+          -0.5613207547169812,
+          -0.26415094339622636
+        ]
+      },
+      "O0_vs_O1": {
+        "a_success": 16,
+        "a_n": 53,
+        "b_success": 37,
+        "b_n": 53,
+        "diff": -0.3962264150943396,
+        "fisher_p": 8.481200916472623e-05,
+        "bootstrap_ci": [
+          -0.5660377358490567,
+          -0.2264150943396226
+        ]
+      },
+      "O1_marginals": {
+        "O2_policy_error": {
+          "a_success": 37,
+          "a_n": 53,
+          "b_success": 39,
+          "b_n": 53,
+          "diff": -0.037735849056603765,
+          "fisher_p": 0.8295477162170461,
+          "bootstrap_ci": [
+            -0.20754716981132082,
+            0.13207547169811318
+          ]
+        },
+        "O3_structured_policy_error": {
+          "a_success": 37,
+          "a_n": 53,
+          "b_success": 38,
+          "b_n": 53,
+          "diff": -0.018867924528301883,
+          "fisher_p": 0.999999999999911,
+          "bootstrap_ci": [
+            -0.15094339622641517,
+            0.1132075471698114
+          ]
+        },
+        "O4_migration_note": {
+          "a_success": 37,
+          "a_n": 53,
+          "b_success": 39,
+          "b_n": 53,
+          "diff": -0.037735849056603765,
+          "fisher_p": 0.8295477162170461,
+          "bootstrap_ci": [
+            -0.18867924528301894,
+            0.1132075471698114
+          ]
+        }
+      }
+    },
+    "deepseek/deepseek-v4-flash": {
+      "name": "deepseek/deepseek-v4-flash",
+      "n_total": 515,
+      "paired_units": 103,
+      "rates": {
+        "O0_silent": {
+          "n": 103,
+          "success": 58,
+          "success_rate": 0.5631067961165048
+        },
+        "O1_generic_error": {
+          "n": 103,
+          "success": 90,
+          "success_rate": 0.8737864077669902
+        },
+        "O2_policy_error": {
+          "n": 103,
+          "success": 86,
+          "success_rate": 0.8349514563106796
+        },
+        "O3_structured_policy_error": {
+          "n": 103,
+          "success": 89,
+          "success_rate": 0.8640776699029126
+        },
+        "O4_migration_note": {
+          "n": 103,
+          "success": 90,
+          "success_rate": 0.8737864077669902
+        }
+      },
+      "O0_vs_any_visible": {
+        "a_success": 58,
+        "a_n": 103,
+        "b_success": 355,
+        "b_n": 412,
+        "diff": -0.29854368932038833,
+        "fisher_p": 2.3555327024715393e-10,
+        "bootstrap_ci": [
+          -0.3810679611650486,
+          -0.21359223300970875
+        ]
+      },
+      "O0_vs_O1": {
+        "a_success": 58,
+        "a_n": 103,
+        "b_success": 90,
+        "b_n": 103,
+        "diff": -0.3106796116504854,
+        "fisher_p": 9.813993606838318e-07,
+        "bootstrap_ci": [
+          -0.40776699029126207,
+          -0.2233009708737863
+        ]
+      },
+      "O1_marginals": {
+        "O2_policy_error": {
+          "a_success": 90,
+          "a_n": 103,
+          "b_success": 86,
+          "b_n": 103,
+          "diff": 0.03883495145631066,
+          "fisher_p": 0.5540438770884946,
+          "bootstrap_ci": [
+            -0.03883495145631066,
+            0.1165048543689321
+          ]
+        },
+        "O3_structured_policy_error": {
+          "a_success": 90,
+          "a_n": 103,
+          "b_success": 89,
+          "b_n": 103,
+          "diff": 0.009708737864077666,
+          "fisher_p": 0.9999999999999575,
+          "bootstrap_ci": [
+            -0.06796116504854377,
+            0.0873786407766991
+          ]
+        },
+        "O4_migration_note": {
+          "a_success": 90,
+          "a_n": 103,
+          "b_success": 90,
+          "b_n": 103,
+          "diff": 0.0,
+          "fisher_p": 0.9999999999998963,
+          "bootstrap_ci": [
+            -0.07766990291262144,
+            0.07766990291262144
+          ]
+        }
+      }
+    }
+  },
+  "answer": {
+    "dominant_effect_is_visibility_itself": true,
+    "o1_o4_strict_monotonicity_supported": false,
+    "interpretation": "The dominant effect is visibility itself. The paper should not claim that richer feedback formats strictly dominate simpler ones."
+  }
+}

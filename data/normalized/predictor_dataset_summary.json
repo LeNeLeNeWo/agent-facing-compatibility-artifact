@@ -1,0 +1,115 @@
+{
+  "total_samples": 2174,
+  "positives": 558,
+  "negatives": 1616,
+  "hard_negatives": 1504,
+  "easy_negatives": 112,
+  "by_env": {
+    "airline": 1326,
+    "retail": 848
+  },
+  "by_model": {
+    "dashscope/glm-5.1": 540,
+    "dashscope/kimi-k2.6": 531,
+    "dashscope/qwen-max": 265,
+    "dashscope/qwen3.7-max-2026-06-08": 56,
+    "deepseek/deepseek-v4-flash": 782
+  },
+  "by_mutation_class": {
+    "C": 2148,
+    "A": 26
+  },
+  "by_observability_level": {
+    "O0_silent": 453,
+    "O1_generic_error": 363,
+    "O2_policy_error": 445,
+    "O3_structured_policy_error": 363,
+    "O4_migration_note": 363,
+    "unknown": 187
+  },
+  "by_target_tool": {
+    "book_reservation": 216,
+    "cancel_reservation": 599,
+    "update_reservation_flights": 366,
+    "update_reservation_passengers": 140,
+    "update_reservation_baggages": 1,
+    "send_certificate": 2,
+    "think": 2,
+    "exchange_delivered_order_items": 175,
+    "return_delivered_order_items": 229,
+    "cancel_pending_order": 226,
+    "modify_pending_order_items": 103,
+    "transfer_to_human_agents": 44,
+    "get_order_details": 21,
+    "modify_pending_order_address": 20,
+    "get_product_details": 5,
+    "modify_pending_order_payment": 25
+  },
+  "by_negative_type": {
+    "None": 558,
+    "hard_negative": 1504,
+    "easy_negative": 112
+  },
+  "by_positive_type": {
+    "exposed_c4b_silent_breaking": 254,
+    "None": 1616,
+    "schema_compatible_semantic_breaking": 299,
+    "agent_breaking": 5
+  },
+  "missing_field_rates": {
+    "env": 0.0,
+    "model": 0.0,
+    "task_id": 0.0,
+    "mutation_name": 0.0,
+    "observability_level": 0.08601655933762649,
+    "target_tool": 0.0,
+    "target_policy": 0.0,
+    "failure_mode": 0.0
+  },
+  "artifact_rows": {
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_multimutation_labeled.jsonl": 156,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_multimutation_analysis.jsonl": 156,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_c4_runtime_fixed_labeled.jsonl": 57,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_day10_c4a_c4b_deepseek.jsonl": 52,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_day11_c4a_c4b_qwen_kimi.jsonl": 84,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_day16_airline_deepseek_s0_unused_control.jsonl": 6,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_day16_airline_deepseek_s12_c4a_c4b.jsonl": 22,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\paired_day16_airline_qwen_max_c4a_c4b.jsonl": 8,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\split_day6\\A2_format_change.jsonl": 30,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\split_day6\\C1_unit_scale_drift.jsonl": 30,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\split_day6\\C2_currency_locale_drift.jsonl": 30,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\split_day6\\C3_default_behavior_drift.jsonl": 30,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\split_day6\\C4_business_rule_drift.jsonl": 30,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\observability_gradient_smoke_fake.jsonl": 24,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0000_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0001_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0002_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0003_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0004_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0005_status.jsonl": 25,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0000_status.jsonl": 152,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0001_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0002_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0003_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0004_status.jsonl": 101,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0005_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0006_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0007_status.jsonl": 101,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0008_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0009_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0010_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0011_status.jsonl": 100,
+    "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\airline_observability_from_baseline_0012_status.jsonl": 90
+  },
+  "phase5_observability_included": true,
+  "phase5_observability_samples": 1815,
+  "skipped": {
+    "duplicate_sample": 182,
+    "not_paired_baseline_mutation": 150,
+    "fake_run": 24,
+    "phase5_duplicate_status_row": 54
+  },
+  "warnings": [
+    "dataset is C-class heavy; add more paired A/B/D mutation runs for predictor generalization"
+  ]
+}

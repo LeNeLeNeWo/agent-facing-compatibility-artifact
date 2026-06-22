@@ -1,0 +1,204 @@
+{
+  "confidence_distribution": {
+    "high": 11,
+    "low": 2,
+    "medium": 9
+  },
+  "count_by_mutation_type": {
+    "A2_format_change": 1,
+    "A3_documentation_semantics_change": 1,
+    "B3_enum_value_change": 1,
+    "B4_output_shape_change": 4,
+    "C3_default_behavior_drift": 3,
+    "C4_business_rule_drift": 3,
+    "D2_permission_change": 2,
+    "D3_pagination_change": 2,
+    "D4_rate_limit_change": 3,
+    "D5_error_validation_change": 1,
+    "D6_retry_timeout_change": 1
+  },
+  "count_by_source": {
+    "Anthropic": 2,
+    "GitHub": 1,
+    "Google Calendar": 2,
+    "Microsoft Graph": 1,
+    "OpenAI": 1,
+    "OpenAPI": 1,
+    "PayPal": 3,
+    "Shopify": 3,
+    "Slack": 2,
+    "Square": 4,
+    "Twilio SendGrid": 1,
+    "Twilio TaskRouter": 1
+  },
+  "count_by_taxonomy_class": {
+    "A": 2,
+    "B": 5,
+    "C": 6,
+    "D": 9
+  },
+  "examples_per_class": {
+    "A": [
+      {
+        "confidence": "medium",
+        "mutation_type": "A2_format_change",
+        "source": "PayPal",
+        "title": "BILLTOZIP field correction"
+      },
+      {
+        "confidence": "low",
+        "mutation_type": "A3_documentation_semantics_change",
+        "source": "OpenAPI",
+        "title": "Clarify nullable semantics"
+      }
+    ],
+    "B": [
+      {
+        "confidence": "high",
+        "mutation_type": "B4_output_shape_change",
+        "source": "Shopify",
+        "title": "Deprecated multiLocation field removed"
+      },
+      {
+        "confidence": "high",
+        "mutation_type": "B4_output_shape_change",
+        "source": "Shopify",
+        "title": "StringConnection includes nodes field"
+      },
+      {
+        "confidence": "high",
+        "mutation_type": "B4_output_shape_change",
+        "source": "Square",
+        "title": "Customer cards field retired"
+      },
+      {
+        "confidence": "medium",
+        "mutation_type": "B3_enum_value_change",
+        "source": "Google Calendar",
+        "title": "Events from Gmail use fromGmail event type"
+      }
+    ],
+    "C": [
+      {
+        "confidence": "medium",
+        "mutation_type": "C3_default_behavior_drift",
+        "source": "OpenAI",
+        "title": "GPT-5.5 API release notes"
+      },
+      {
+        "confidence": "low",
+        "mutation_type": "C3_default_behavior_drift",
+        "source": "Anthropic",
+        "title": "Default top_p changed"
+      },
+      {
+        "confidence": "medium",
+        "mutation_type": "C3_default_behavior_drift",
+        "source": "Shopify",
+        "title": "Cart tax and duties calculation moved to checkout"
+      },
+      {
+        "confidence": "high",
+        "mutation_type": "C4_business_rule_drift",
+        "source": "Square",
+        "title": "App Marketplace seller eligibility requirement"
+      }
+    ],
+    "D": [
+      {
+        "confidence": "medium",
+        "mutation_type": "D5_error_validation_change",
+        "source": "Anthropic",
+        "title": "Sampling parameter validation for Opus 4.8"
+      },
+      {
+        "confidence": "high",
+        "mutation_type": "D4_rate_limit_change",
+        "source": "Twilio SendGrid",
+        "title": "Email Activity API rate limit change"
+      },
+      {
+        "confidence": "high",
+        "mutation_type": "D4_rate_limit_change",
+        "source": "Twilio TaskRouter",
+        "title": "TaskRouter endpoint rate limit correction"
+      },
+      {
+        "confidence": "medium",
+        "mutation_type": "D2_permission_change",
+        "source": "Microsoft Graph",
+        "title": "Lesser privileged permissions for user APIs"
+      }
+    ]
+  },
+  "likely_agent_relevant_count": 22,
+  "needs_manual_review_count": 11,
+  "needs_manual_review_item_ids": [
+    "openai_2026_04_24_reasoning_default",
+    "anthropic_2026_05_28_sampling_error",
+    "anthropic_top_p_default",
+    "microsoft_graph_lesser_permissions",
+    "shopify_2025_01_cart_tax_checkout",
+    "square_2025_01_23_node_autopagination",
+    "google_calendar_2024_05_30_fromgmail",
+    "paypal_2023_01_15_billtozip_format",
+    "paypal_2023_01_15_transactionid_response",
+    "paypal_ach_new_accounts",
+    "openapi_nullable_clarification"
+  ],
+  "rubric": {
+    "A": {
+      "name": "Surface / representation",
+      "rules": [
+        "naming changes",
+        "date/time format changes",
+        "field representation changes",
+        "documentation wording changes",
+        "description edits"
+      ]
+    },
+    "B": {
+      "name": "Schema-contract",
+      "rules": [
+        "required field added/removed",
+        "parameter type changed",
+        "enum value added/removed/renamed",
+        "response field added/removed/renamed",
+        "endpoint signature changed"
+      ]
+    },
+    "C": {
+      "name": "Semantic-contract",
+      "rules": [
+        "unit/scale behavior changed",
+        "currency/locale behavior changed",
+        "default behavior changed",
+        "eligibility/business policy changed",
+        "refund/cancel/payment/fare/access rule changed",
+        "behavior changed while schema may remain stable"
+      ]
+    },
+    "D": {
+      "name": "Protocol / operational",
+      "rules": [
+        "pagination behavior changed",
+        "rate limit changed",
+        "authentication/permission changed",
+        "error format changed",
+        "timeout/retry behavior changed",
+        "operational quota / availability behavior changed"
+      ]
+    }
+  },
+  "schema_invisible": 17,
+  "schema_visible": {
+    "false": 17,
+    "true": 5
+  },
+  "scope_note": "Lightweight plausibility grounding only; not a frequency estimate, not a production incident study, and not evidence of real agent failures.",
+  "semantic_change": {
+    "false": 13,
+    "true": 9
+  },
+  "total_changelog_items": 22
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "task_id": "airline_demo_001",
+    "change_id": "airline_cert_card_policy_2026",
+    "baseline_success": true,
+    "mutation_success": false,
+    "hidden_violation": true,
+    "visible_error": false,
+    "recovery_channel": false,
+    "execution_exposed": true,
+    "semantic_rule_relevant": true,
+    "failure_mode": "potential_compliant_semantic_failure",
+    "observability_level": "O0_silent"
+  }
+]

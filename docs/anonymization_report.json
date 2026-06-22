@@ -1,0 +1,252 @@
+{
+  "copied_directories": [
+    "afc_gate",
+    "code",
+    "data",
+    "docs",
+    "figures",
+    "results",
+    "scripts",
+    "tables"
+  ],
+  "copied_files": 284,
+  "excluded_files": [
+    "code/schema_mutation/__pycache__/__init__.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/__init__.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/airline_day16_summary.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/batch_runner.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/batch_runner.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/build_prediction_dataset.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/c4_observability_modes.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/c4_observability_modes.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/evaluate_gate.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/evaluate_predictor_generalization.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/exposure_predictor.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/gate_policies.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/metrics.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/mutator.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/mutator.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/paired_analyzer.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_analyze_nonobviousness.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_generate_real_case_formal_assets.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/phase10_human_review_package.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/phase10_nonobviousness_plan.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_oracle_validation.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_provider_preflight.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/phase10_real_api_grounding.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_real_case_replay.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/phase10_real_case_replay.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_run_nonobviousness_formal.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_run_nonobviousness_smoke.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/phase10_run_nonobviousness_smoke.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_summarize_nonobviousness.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/phase10_summarize_nonobviousness.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_summarize_nonobviousness_formal.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase10_summarize_real_case_replay.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/phase10_summarize_real_case_replay.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/phase5_plan.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/predictor_features.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/predictor_splits.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/run_observability_gradient.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/run_phase5_shard.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/run_phase5_shard.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/runner.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/runner.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/semantic_compat_gate.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/single_cell_runner.cpython-312.pyc",
+    "code/schema_mutation/__pycache__/single_cell_runner.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/static_compat_checker.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/summarize_jsonl.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/summarize_observability_gradient.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/summarize_phase5.cpython-313.pyc",
+    "code/schema_mutation/__pycache__/trajectory_extractor.cpython-313.pyc",
+    "code/schema_mutation/smoke_wyzai.py",
+    "code/schema_mutation/stats_c4_observability.py.bak_round5_stats_figures"
+  ],
+  "generated_at": "2026-06-22T08:52:30+00:00",
+  "missing_inputs": [],
+  "redacted_patterns": [
+    "local Windows project roots",
+    "local WSL home paths",
+    "known author/affiliation placeholders",
+    "obvious secret value patterns"
+  ],
+  "redactions": [
+    {
+      "file": "code/schema_mutation/batch_runner.py",
+      "notes": [
+        "secret_value_redaction:sk-[A-Za-z0-9_\\-]{12,}:1"
+      ]
+    },
+    {
+      "file": "code/schema_mutation/phase10_provider_preflight.py",
+      "notes": [
+        "secret_value_redaction:(?i)(api[_-]?key|token|secret|password)(\\s*[:=]\\s*)[\\\"']?[A-Za-z0-9._/\\-]{8,}[\\\"']?:2"
+      ]
+    },
+    {
+      "file": "code/schema_mutation/phase11_number_audit.py",
+      "notes": [
+        "path_redaction:wsl_project_root:1"
+      ]
+    },
+    {
+      "file": "code/schema_mutation/runner.py",
+      "notes": [
+        "identity_redaction:pattern_5:1",
+        "secret_value_redaction:(?i)(api[_-]?key|token|secret|password)(\\s*[:=]\\s*)[\\\"']?[A-Za-z0-9._/\\-]{8,}[\\\"']?:4"
+      ]
+    },
+    {
+      "file": "code/schema_mutation/stats_c4_observability.py",
+      "notes": [
+        "path_redaction:wsl_project_root:1"
+      ]
+    },
+    {
+      "file": "code/common/llm_client.py",
+      "notes": [
+        "secret_value_redaction:(?i)(api[_-]?key|token|secret|password)(\\s*[:=]\\s*)[\\\"']?[A-Za-z0-9._/\\-]{8,}[\\\"']?:6"
+      ]
+    },
+    {
+      "file": "afc_gate/afc_gate/exposure.py",
+      "notes": [
+        "secret_value_redaction:(?i)(api[_-]?key|token|secret|password)(\\s*[:=]\\s*)[\\\"']?[A-Za-z0-9._/\\-]{8,}[\\\"']?:2"
+      ]
+    },
+    {
+      "file": "data/manifests/ARTIFACT_MANIFEST.md",
+      "notes": [
+        "path_redaction:windows_project_root:1",
+        "path_redaction:wsl_project_root:1"
+      ]
+    },
+    {
+      "file": "data/normalized/predictor_dataset_summary.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:33"
+      ]
+    },
+    {
+      "file": "data/normalized/predictor_dataset.jsonl",
+      "notes": [
+        "path_redaction:windows_json_project_root:2174"
+      ]
+    },
+    {
+      "file": "data/normalized/gate_evaluation_records.jsonl",
+      "notes": [
+        "path_redaction:windows_json_project_root:11922"
+      ]
+    },
+    {
+      "file": "data/review_packets/combined_observability_review_packet.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:43"
+      ]
+    },
+    {
+      "file": "data/review_packets/exposure_control_review_packet.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:10"
+      ]
+    },
+    {
+      "file": "results/main_results/phase5_summary.md",
+      "notes": [
+        "path_redaction:windows_json_project_root:53"
+      ]
+    },
+    {
+      "file": "results/main_results/phase5_summary.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:53"
+      ]
+    },
+    {
+      "file": "results/main_results/combined_observability_review_packet.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:43"
+      ]
+    },
+    {
+      "file": "results/main_results/gate_evaluation_summary.md",
+      "notes": [
+        "path_redaction:windows_project_root:27"
+      ]
+    },
+    {
+      "file": "results/main_results/gate_evaluation_summary.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:78"
+      ]
+    },
+    {
+      "file": "results/main_results/predictor_generalization_summary.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:1"
+      ]
+    },
+    {
+      "file": "results/phase8_exposure_control/exposure_control_review_packet.json",
+      "notes": [
+        "path_redaction:windows_json_project_root:10"
+      ]
+    },
+    {
+      "file": "results/phase8c_semantic_generalization/observability_plateau_report.json",
+      "notes": [
+        "path_segment_redaction:local_unicode_segment"
+      ]
+    },
+    {
+      "file": "results/phase11_audits/trace_case_summary.json",
+      "notes": [
+        "path_segment_redaction:local_unicode_segment"
+      ]
+    },
+    {
+      "file": "results/phase5_observability/status/airline_observability_from_baseline_0004_status.jsonl",
+      "notes": [
+        "path_redaction:windows_json_project_root:3"
+      ]
+    },
+    {
+      "file": "results/phase5_observability/status/airline_observability_from_baseline_0007_status.jsonl",
+      "notes": [
+        "path_redaction:windows_json_project_root:3"
+      ]
+    },
+    {
+      "file": "results/phase5_observability/status/baseline_0002_status.jsonl",
+      "notes": [
+        "path_redaction:windows_json_project_root:120"
+      ]
+    },
+    {
+      "file": "results/phase5_observability/status/airline_baseline_nonwyzlab_0002_status.jsonl",
+      "notes": [
+        "path_redaction:windows_json_project_root:3"
+      ]
+    },
+    {
+      "file": "results/phase10_nonobviousness/status/nonobviousness_0003_status.jsonl",
+      "notes": [
+        "path_redaction:windows_json_project_root:3"
+      ]
+    },
+    {
+      "file": "scripts/anonymize_and_package.py",
+      "notes": [
+        "secret_value_redaction:sk-[A-Za-z0-9_\\-]{12,}:1",
+        "path_segment_redaction:local_unicode_segment",
+        "email_domain_redaction:mail.com"
+      ]
+    }
+  ],
+  "remaining_warnings": [
+    "The package includes environment-variable names such as DEEPSEEK_API_KEY for optional live reruns; these are not secret values.",
+    "License terms are provisional for anonymous review and require author confirmation before public release."
+  ]
+}

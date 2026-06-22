@@ -1,0 +1,21 @@
+{
+  "change_id": "retail_refund_policy_2026",
+  "changed_tool": "return_delivered_order_items",
+  "change_type": "C4_business_rule_drift",
+  "schema_changed": false,
+  "typed_client_compatible": true,
+  "semantic_rule": {
+    "name": "refund_method_policy",
+    "before": "refunds can be routed to any customer-approved method",
+    "after": "refunds must use the original payment method unless manual approval is present"
+  },
+  "observability": {
+    "level": "O3_structured_policy_error",
+    "visible_error": true,
+    "migration_note": null,
+    "structured_diagnostic": {
+      "error": "policy_violation",
+      "offending_field": "refund_method"
+    }
+  }
+}

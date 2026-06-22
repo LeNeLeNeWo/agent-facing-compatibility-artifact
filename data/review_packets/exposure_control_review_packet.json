@@ -1,0 +1,515 @@
+{
+  "by_domain": {
+    "airline": {
+      "exposed_O0": {
+        "N": 258,
+        "failed": 0,
+        "hidden_violation": 105,
+        "hidden_violation_rate": 0.4069767441860465,
+        "ok": 258,
+        "provider_error": 0,
+        "success": 139,
+        "success_rate": 0.5387596899224806,
+        "target_reached": 105,
+        "target_reached_rate": 0.4069767441860465,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      },
+      "hidden_diff": {
+        "ci95": [
+          -0.45348837209302323,
+          -0.32945736434108525
+        ],
+        "diff_unused_minus_exposed": -0.3914728682170543
+      },
+      "success_diff": {
+        "ci95": [
+          0.16666666666666663,
+          0.32170542635658916
+        ],
+        "diff_unused_minus_exposed": 0.2441860465116279
+      },
+      "test": {
+        "chi2": 34.319296187683285,
+        "chi2_p": 4.677212992148721e-09,
+        "fisher_odds_ratio": 0.3238206173558532,
+        "fisher_p": 6.205790203814799e-09,
+        "table": [
+          [
+            139,
+            119
+          ],
+          [
+            202,
+            56
+          ]
+        ]
+      },
+      "unused_tool_control": {
+        "N": 258,
+        "failed": 0,
+        "hidden_violation": 4,
+        "hidden_violation_rate": 0.015503875968992248,
+        "ok": 258,
+        "provider_error": 0,
+        "success": 202,
+        "success_rate": 0.7829457364341085,
+        "target_reached": 4,
+        "target_reached_rate": 0.015503875968992248,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      }
+    },
+    "retail": {
+      "exposed_O0": {
+        "N": 105,
+        "failed": 0,
+        "hidden_violation": 56,
+        "hidden_violation_rate": 0.5333333333333333,
+        "ok": 105,
+        "provider_error": 0,
+        "success": 43,
+        "success_rate": 0.4095238095238095,
+        "target_reached": 56,
+        "target_reached_rate": 0.5333333333333333,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      },
+      "hidden_diff": {
+        "ci95": [
+          -0.6190476190476191,
+          -0.41904761904761906
+        ],
+        "diff_unused_minus_exposed": -0.5238095238095238
+      },
+      "success_diff": {
+        "ci95": [
+          0.2,
+          0.45714285714285713
+        ],
+        "diff_unused_minus_exposed": 0.33333333333333337
+      },
+      "test": {
+        "chi2": 23.888011885968986,
+        "chi2_p": 1.0210563071266982e-06,
+        "fisher_odds_ratio": 0.2400744416873449,
+        "fisher_p": 1.6309501593299088e-06,
+        "table": [
+          [
+            43,
+            62
+          ],
+          [
+            78,
+            27
+          ]
+        ]
+      },
+      "unused_tool_control": {
+        "N": 105,
+        "failed": 0,
+        "hidden_violation": 1,
+        "hidden_violation_rate": 0.009523809523809525,
+        "ok": 105,
+        "provider_error": 0,
+        "success": 78,
+        "success_rate": 0.7428571428571429,
+        "target_reached": 1,
+        "target_reached_rate": 0.009523809523809525,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      }
+    }
+  },
+  "by_model": {
+    "dashscope/glm-5.1": {
+      "exposed_O0": {
+        "N": 108,
+        "failed": 0,
+        "hidden_violation": 50,
+        "hidden_violation_rate": 0.46296296296296297,
+        "ok": 108,
+        "provider_error": 0,
+        "success": 55,
+        "success_rate": 0.5092592592592593,
+        "target_reached": 50,
+        "target_reached_rate": 0.46296296296296297,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      },
+      "hidden_diff": {
+        "ci95": [
+          -0.5555555555555556,
+          -0.37037037037037035
+        ],
+        "diff_unused_minus_exposed": -0.46296296296296297
+      },
+      "success_diff": {
+        "ci95": [
+          0.17592592592592593,
+          0.4166666666666667
+        ],
+        "diff_unused_minus_exposed": 0.2962962962962963
+      },
+      "test": {
+        "chi2": 21.049105443471642,
+        "chi2_p": 4.4766180324059065e-06,
+        "fisher_odds_ratio": 0.2504879635653871,
+        "fisher_p": 6.996961266095305e-06,
+        "table": [
+          [
+            55,
+            53
+          ],
+          [
+            87,
+            21
+          ]
+        ]
+      },
+      "unused_tool_control": {
+        "N": 108,
+        "failed": 0,
+        "hidden_violation": 0,
+        "hidden_violation_rate": 0.0,
+        "ok": 108,
+        "provider_error": 0,
+        "success": 87,
+        "success_rate": 0.8055555555555556,
+        "target_reached": 0,
+        "target_reached_rate": 0.0,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      }
+    },
+    "dashscope/kimi-k2.6": {
+      "exposed_O0": {
+        "N": 99,
+        "failed": 0,
+        "hidden_violation": 39,
+        "hidden_violation_rate": 0.3939393939393939,
+        "ok": 99,
+        "provider_error": 0,
+        "success": 53,
+        "success_rate": 0.5353535353535354,
+        "target_reached": 39,
+        "target_reached_rate": 0.3939393939393939,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      },
+      "hidden_diff": {
+        "ci95": [
+          -0.4747474747474748,
+          -0.2727272727272727
+        ],
+        "diff_unused_minus_exposed": -0.3737373737373737
+      },
+      "success_diff": {
+        "ci95": [
+          0.101010101010101,
+          0.36363636363636365
+        ],
+        "diff_unused_minus_exposed": 0.23232323232323226
+      },
+      "test": {
+        "chi2": 11.767441860465116,
+        "chi2_p": 0.0006027575803019057,
+        "fisher_odds_ratio": 0.34868421052631576,
+        "fisher_p": 0.0009641794461499773,
+        "table": [
+          [
+            53,
+            46
+          ],
+          [
+            76,
+            23
+          ]
+        ]
+      },
+      "unused_tool_control": {
+        "N": 99,
+        "failed": 0,
+        "hidden_violation": 2,
+        "hidden_violation_rate": 0.020202020202020204,
+        "ok": 99,
+        "provider_error": 0,
+        "success": 76,
+        "success_rate": 0.7676767676767676,
+        "target_reached": 2,
+        "target_reached_rate": 0.020202020202020204,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      }
+    },
+    "dashscope/qwen-max": {
+      "exposed_O0": {
+        "N": 53,
+        "failed": 0,
+        "hidden_violation": 29,
+        "hidden_violation_rate": 0.5471698113207547,
+        "ok": 53,
+        "provider_error": 0,
+        "success": 16,
+        "success_rate": 0.3018867924528302,
+        "target_reached": 29,
+        "target_reached_rate": 0.5471698113207547,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      },
+      "hidden_diff": {
+        "ci95": [
+          -0.6415094339622641,
+          -0.339622641509434
+        ],
+        "diff_unused_minus_exposed": -0.49056603773584906
+      },
+      "success_diff": {
+        "ci95": [
+          0.018867924528301883,
+          0.37735849056603776
+        ],
+        "diff_unused_minus_exposed": 0.20754716981132076
+      },
+      "test": {
+        "chi2": 4.734588409007014,
+        "chi2_p": 0.02956192078239855,
+        "fisher_odds_ratio": 0.4164164164164164,
+        "fisher_p": 0.04733732622478259,
+        "table": [
+          [
+            16,
+            37
+          ],
+          [
+            27,
+            26
+          ]
+        ]
+      },
+      "unused_tool_control": {
+        "N": 53,
+        "failed": 0,
+        "hidden_violation": 3,
+        "hidden_violation_rate": 0.05660377358490566,
+        "ok": 53,
+        "provider_error": 0,
+        "success": 27,
+        "success_rate": 0.5094339622641509,
+        "target_reached": 3,
+        "target_reached_rate": 0.05660377358490566,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      }
+    },
+    "deepseek/deepseek-v4-flash": {
+      "exposed_O0": {
+        "N": 103,
+        "failed": 0,
+        "hidden_violation": 43,
+        "hidden_violation_rate": 0.4174757281553398,
+        "ok": 103,
+        "provider_error": 0,
+        "success": 58,
+        "success_rate": 0.5631067961165048,
+        "target_reached": 43,
+        "target_reached_rate": 0.4174757281553398,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      },
+      "hidden_diff": {
+        "ci95": [
+          -0.5145631067961165,
+          -0.32038834951456313
+        ],
+        "diff_unused_minus_exposed": -0.4174757281553398
+      },
+      "success_diff": {
+        "ci95": [
+          0.1941747572815533,
+          0.4271844660194175
+        ],
+        "diff_unused_minus_exposed": 0.3106796116504854
+      },
+      "test": {
+        "chi2": 24.574091332712023,
+        "chi2_p": 7.150671813131047e-07,
+        "fisher_odds_ratio": 0.18617283950617283,
+        "fisher_p": 9.813993606839144e-07,
+        "table": [
+          [
+            58,
+            45
+          ],
+          [
+            90,
+            13
+          ]
+        ]
+      },
+      "unused_tool_control": {
+        "N": 103,
+        "failed": 0,
+        "hidden_violation": 0,
+        "hidden_violation_rate": 0.0,
+        "ok": 103,
+        "provider_error": 0,
+        "success": 90,
+        "success_rate": 0.8737864077669902,
+        "target_reached": 0,
+        "target_reached_rate": 0.0,
+        "timeout": 0,
+        "visible_error": 0,
+        "visible_error_rate": 0.0
+      }
+    }
+  },
+  "exposed_o0_recovered": {
+    "by_env": {
+      "airline": 258,
+      "retail": 105
+    },
+    "by_model": {
+      "dashscope/glm-5.1": 108,
+      "dashscope/kimi-k2.6": 99,
+      "dashscope/qwen-max": 53,
+      "deepseek/deepseek-v4-flash": 103
+    },
+    "count": 363
+  },
+  "generated_artifacts": {
+    "figure_pdf": "<PROJECT_ROOT>\\IEEE_Conference_Template\\figures\\exposure_control_contrast.pdf",
+    "table_tex": "<PROJECT_ROOT>\\IEEE_Conference_Template\\tables\\exposure_control_auto.tex"
+  },
+  "generated_at": "2026-06-18",
+  "integrity": {
+    "completed_formal_latest_rows": 363,
+    "failed": 0,
+    "matched_cells": 363,
+    "no_wyz_gpt_grok": true,
+    "ok": 363,
+    "planned_cells": 363,
+    "provider_error": 0,
+    "retry_duplicates_handled": true,
+    "smoke_excluded": true,
+    "status_files_used": [
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0000_status.jsonl",
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0001_status.jsonl",
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0002_status.jsonl",
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0003_status.jsonl",
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0004_status.jsonl",
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0005_status.jsonl",
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0006_status.jsonl",
+      "<PROJECT_ROOT>\\runs\\schema_mutation\\phase5\\status\\unused_tool_control_0007_status.jsonl"
+    ],
+    "target_unused_tool_called_count": 5,
+    "target_unused_tool_called_rate": 0.013774104683195593,
+    "timeout": 0
+  },
+  "interpretation": {
+    "note": "Unused-tool control is much higher-success and near-zero hidden violation compared with exposed O0; hidden violations occur almost exclusively when the selected unused target tool is unexpectedly reached.",
+    "rules_out_wrapper_global_destabilization": true,
+    "strengthens_finding_2": true,
+    "unused_tool_high_success_low_violation": true
+  },
+  "overall": {
+    "exposed_O0": {
+      "N": 363,
+      "failed": 0,
+      "hidden_violation": 161,
+      "hidden_violation_rate": 0.44352617079889806,
+      "ok": 363,
+      "provider_error": 0,
+      "success": 182,
+      "success_rate": 0.5013774104683195,
+      "target_reached": 161,
+      "target_reached_rate": 0.44352617079889806,
+      "timeout": 0,
+      "visible_error": 0,
+      "visible_error_rate": 0.0
+    },
+    "hidden_diff": {
+      "ci95": [
+        -0.4793388429752067,
+        -0.3774104683195592
+      ],
+      "diff_unused_minus_exposed": -0.4297520661157025
+    },
+    "success_diff": {
+      "ci95": [
+        0.20110192837465568,
+        0.33608815426997246
+      ],
+      "diff_unused_minus_exposed": 0.26997245179063367
+    },
+    "test": {
+      "chi2": 57.166666666666664,
+      "chi2_p": 4.004002668414183e-14,
+      "fisher_odds_ratio": 0.29806629834254145,
+      "fisher_p": 4.382571788116426e-14,
+      "table": [
+        [
+          182,
+          181
+        ],
+        [
+          280,
+          83
+        ]
+      ]
+    },
+    "unused_tool_control": {
+      "N": 363,
+      "failed": 0,
+      "hidden_violation": 5,
+      "hidden_violation_rate": 0.013774104683195593,
+      "ok": 363,
+      "provider_error": 0,
+      "success": 280,
+      "success_rate": 0.7713498622589532,
+      "target_reached": 5,
+      "target_reached_rate": 0.013774104683195593,
+      "timeout": 0,
+      "visible_error": 0,
+      "visible_error_rate": 0.0
+    }
+  },
+  "scope": "Phase 8A cross-model exposure-control unused-tool C4b O0 control",
+  "unused_control": {
+    "by_env": {
+      "airline": 258,
+      "retail": 105
+    },
+    "by_model": {
+      "dashscope/glm-5.1": 108,
+      "dashscope/kimi-k2.6": 99,
+      "dashscope/qwen-max": 53,
+      "deepseek/deepseek-v4-flash": 103
+    },
+    "count": 363,
+    "target_tool_distribution": {
+      "book_reservation": 47,
+      "cancel_pending_order": 9,
+      "cancel_reservation": 46,
+      "exchange_delivered_order_items": 20,
+      "modify_pending_order_address": 22,
+      "modify_pending_order_items": 16,
+      "modify_pending_order_payment": 27,
+      "return_delivered_order_items": 11,
+      "update_reservation_baggages": 59,
+      "update_reservation_flights": 48,
+      "update_reservation_passengers": 58
+    }
+  }
+}

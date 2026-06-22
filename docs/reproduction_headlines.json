@@ -1,0 +1,45 @@
+{
+  "observability_any_visible": {
+    "any_visible": 0.847,
+    "o0": 0.501
+  },
+  "phase10_nonobviousness": {
+    "o0_more_reasoning_success": "3/96",
+    "o0_reflection_success": "6/95",
+    "rule_visible_success": "71/95"
+  },
+  "phase10_real_api_corpus": {
+    "c_class_candidates": 61,
+    "entries": 151,
+    "providers": 9
+  },
+  "phase10_real_replay": {
+    "baseline_success": "24/24",
+    "o0_silent_hidden_violation": "23/23",
+    "o0_silent_success": "0/23",
+    "visible_feedback_success": "22/23"
+  },
+  "phase5_formal_cells": {
+    "airline": 1290,
+    "retail": 525,
+    "total": 1815
+  },
+  "phase8_exposure_control": {
+    "exposed_o0_n": 363,
+    "hidden_violation_exposed_o0": 0.444,
+    "hidden_violation_unused": 0.014,
+    "success_exposed_o0": 0.501,
+    "success_unused": 0.771,
+    "unused_control_n": 363
+  },
+  "relaxed_schema_client_yp": {
+    "agent_breaking": 49,
+    "n": 156,
+    "rate": 0.314
+  },
+  "strict_schema_client": {
+    "agent_breaking": 44,
+    "n": 130,
+    "rate": 0.338
+  }
+}

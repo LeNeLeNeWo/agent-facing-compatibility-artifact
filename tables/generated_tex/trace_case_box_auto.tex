@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Representative trace illustration. The same schema-compatible semantic drift fails silently under O0 but becomes recoverable when structured feedback exposes the changed rule.}
+\label{tab:trace-case-box}
+\begin{tabular}{@{}p{0.15\columnwidth}p{0.25\columnwidth}p{0.27\columnwidth}p{0.16\columnwidth}@{}}
+\toprule
+Condition & Agent action & API feedback & Outcome \\
+\midrule
+O0 silent & Valid booking call mixes certificate \$250 with card \$5. & No visible policy error; hidden oracle checks evolved payment rule. & Reward 0; hidden violation. \\
+O3 structured & After feedback, agent retries with card-only payment. & Structured payment error suggests a single payment method. & Reward 1; no hidden violation. \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,53 @@
+[
+  {
+    "after_semantics": "Official entry: Safer pull_request_target defaults for GitHub Actions checkout",
+    "agent_task_template": "Agent omits an optional setting whose default behavior changed.",
+    "before_semantics": "Use the pre-change behavior described or implied by the official changelog.",
+    "case_id": "real_c3_default_behavior_8b11a458888a",
+    "expected_o0_failure_mode": "Syntactically valid call succeeds at the tool layer but final state violates changed semantics.",
+    "expected_visible_recovery_condition": "Expose the changed rule as a structured policy error or migration note.",
+    "possible_new_api_wrapper_behavior": "New wrapper applies the official changed semantics summarized by: Official changelog entry indicates semantic behavior relevant to C3_default_behavior.",
+    "possible_old_api_wrapper_behavior": "Old wrapper applies the previous default when the optional field is omitted.",
+    "possible_oracle": "Check that omitted optional fields produce the expected changed default outcome.",
+    "possible_tool_schema": "Keep endpoint name and JSON field types stable; change only runtime interpretation.",
+    "provider": "GitHub",
+    "real_change_type": "C3",
+    "risks": "Requires human review of the official entry before paper use; wrapper should not claim a real production outage.",
+    "source_url": "https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout",
+    "why_schema_invisible_or_semantic": "Semantic behavior keyword matched; subclass=C3_default_behavior."
+  },
+  {
+    "after_semantics": "Official entry: Adds validation for billing meter event values with more than 15 digits",
+    "agent_task_template": "Agent must choose an amount, quantity, weight, fee, or threshold whose unit/scale changed.",
+    "before_semantics": "Use the pre-change behavior described or implied by the official changelog.",
+    "case_id": "real_c1_unit_scale_0a2066fde082",
+    "expected_o0_failure_mode": "Syntactically valid call succeeds at the tool layer but final state violates changed semantics.",
+    "expected_visible_recovery_condition": "Expose the changed rule as a structured policy error or migration note.",
+    "possible_new_api_wrapper_behavior": "New wrapper applies the official changed semantics summarized by: Official changelog entry indicates semantic behavior relevant to C1_unit_scale.",
+    "possible_old_api_wrapper_behavior": "Old wrapper interprets numeric value using original unit/scale.",
+    "possible_oracle": "Deterministically check final state value after unit/scale conversion.",
+    "possible_tool_schema": "Keep endpoint name and JSON field types stable; change only runtime interpretation.",
+    "provider": "Stripe",
+    "real_change_type": "C1",
+    "risks": "Requires human review of the official entry before paper use; wrapper should not claim a real production outage.",
+    "source_url": "https://docs.stripe.com/changelog/dahlia/2026-04-22/billing-meter-event-values-validation.md",
+    "why_schema_invisible_or_semantic": "Semantic behavior keyword matched; subclass=C1_unit_scale."
+  },
+  {
+    "after_semantics": "Official entry: Adds card brand restrictions to Payment Links",
+    "agent_task_template": "Agent must satisfy an eligibility, billing, payment, refund, or policy rule that changed.",
+    "before_semantics": "Use the pre-change behavior described or implied by the official changelog.",
+    "case_id": "real_c4_business_rule_323e42cd6611",
+    "expected_o0_failure_mode": "Syntactically valid call succeeds at the tool layer but final state violates changed semantics.",
+    "expected_visible_recovery_condition": "Expose the changed rule as a structured policy error or migration note.",
+    "possible_new_api_wrapper_behavior": "New wrapper applies the official changed semantics summarized by: Official changelog entry indicates semantic behavior relevant to C4_business_rule.",
+    "possible_old_api_wrapper_behavior": "Old wrapper permits the previously accepted business-rule path.",
+    "possible_oracle": "Check that final state satisfies the changed eligibility/policy rule.",
+    "possible_tool_schema": "Keep endpoint name and JSON field types stable; change only runtime interpretation.",
+    "provider": "Stripe",
+    "real_change_type": "C4",
+    "risks": "Requires human review of the official entry before paper use; wrapper should not claim a real production outage.",
+    "source_url": "https://docs.stripe.com/changelog/dahlia/2026-05-27/adds-card-brand-restrictions-to-payment-links.md",
+    "why_schema_invisible_or_semantic": "Semantic behavior keyword matched; subclass=C4_business_rule."
+  }
+]

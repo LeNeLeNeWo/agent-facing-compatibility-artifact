@@ -1,0 +1,188 @@
+{
+  "c_class_entries_by_subclass": {
+    "C1_unit_scale": 3,
+    "C2_currency_locale": 7,
+    "C3_default_behavior": 31,
+    "C4_business_rule": 29,
+    "none": 30
+  },
+  "entries_by_provider": {
+    "Anthropic": 16,
+    "GitHub": 10,
+    "Google Cloud": 18,
+    "OpenAI": 16,
+    "Shopify": 20,
+    "Slack": 18,
+    "Square": 5,
+    "Stripe": 30,
+    "Twilio": 18
+  },
+  "entries_by_taxonomy_class": {
+    "A": 11,
+    "B": 22,
+    "C": 61,
+    "D": 18,
+    "mixed": 39
+  },
+  "fetch_log": [
+    {
+      "bytes": 310108,
+      "content_type": "text/plain; charset=utf-8",
+      "error": null,
+      "provider": "Stripe",
+      "status": 200,
+      "url": "https://docs.stripe.com/changelog.md"
+    },
+    {
+      "bytes": 42823,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "error": null,
+      "provider": "GitHub",
+      "status": 200,
+      "url": "https://github.blog/changelog/feed/"
+    },
+    {
+      "bytes": 454113,
+      "content_type": "text/html; charset=utf-8",
+      "error": null,
+      "provider": "Shopify",
+      "status": 200,
+      "url": "https://shopify.dev/changelog"
+    },
+    {
+      "bytes": 584907,
+      "content_type": "text/html; charset=utf-8",
+      "error": null,
+      "provider": "Slack",
+      "status": 200,
+      "url": "https://docs.slack.dev/changelog/"
+    },
+    {
+      "bytes": 1197380,
+      "content_type": "text/html; charset=utf-8",
+      "error": null,
+      "provider": "Anthropic",
+      "status": 200,
+      "url": "https://docs.anthropic.com/en/release-notes/api"
+    },
+    {
+      "bytes": 440429,
+      "content_type": "text/html; charset=utf-8",
+      "error": null,
+      "provider": "OpenAI",
+      "status": 200,
+      "url": "https://platform.openai.com/docs/changelog"
+    },
+    {
+      "bytes": 614151,
+      "content_type": "text/html;charset=utf-8",
+      "error": null,
+      "provider": "Twilio",
+      "status": 200,
+      "url": "https://www.twilio.com/en-us/changelog"
+    },
+    {
+      "bytes": 583204,
+      "content_type": "text/html; charset=utf-8",
+      "error": null,
+      "provider": "Square",
+      "status": 200,
+      "url": "https://developer.squareup.com/docs/changelog/connect"
+    },
+    {
+      "bytes": 8422254,
+      "content_type": "text/html; charset=utf-8",
+      "error": null,
+      "provider": "Microsoft Graph",
+      "status": 200,
+      "url": "https://developer.microsoft.com/en-us/graph/changelog"
+    },
+    {
+      "bytes": 1231382,
+      "content_type": "text/html; charset=utf-8",
+      "error": null,
+      "provider": "Google Cloud",
+      "status": 200,
+      "url": "https://cloud.google.com/release-notes"
+    },
+    {
+      "bytes": 983613,
+      "content_type": "text/html; charset=\"utf-8\"",
+      "error": null,
+      "provider": "Meta Graph API",
+      "status": 200,
+      "url": "https://developers.facebook.com/docs/graph-api/changelog/"
+    },
+    {
+      "bytes": 1283,
+      "content_type": "text/html",
+      "error": null,
+      "provider": "AWS EC2",
+      "status": 200,
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/DocumentHistory.html"
+    }
+  ],
+  "generated_at": "2026-06-21T16:47:31+0800",
+  "high_confidence_c_class_examples": 2,
+  "limitations": [
+    "Automatic labels are conservative and require human review before paper integration.",
+    "This is a public-changelog corpus estimate, not a production incident frequency estimate.",
+    "Some provider pages are dynamic; parser failures or noisy entries are recorded in fetch_log."
+  ],
+  "provider_count": 9,
+  "providers_successful": [
+    "Anthropic",
+    "GitHub",
+    "Google Cloud",
+    "OpenAI",
+    "Shopify",
+    "Slack",
+    "Square",
+    "Stripe",
+    "Twilio"
+  ],
+  "runtime_visible_distribution": {
+    "True": 18,
+    "unknown": 133
+  },
+  "schema_invisible_c_class_candidates": 61,
+  "top_c_examples": [
+    {
+      "agent_task_relevance": "high",
+      "c_subclass": "C3_default_behavior",
+      "confidence": "high",
+      "date": "2010-04-01",
+      "entry_id": "twilio_054c4de85533",
+      "evidence_snippet": "Starting July 13, 2026 , the Conference list endpoint (GET /2010-04-01/Accounts/{AccountSid}/Conferences.json) will default to returning only in-progress conferences. If you're querying for in-progress conferences",
+      "label_rationale": "Semantic behavior keyword matched; subclass=C3_default_behavior.",
+      "needs_human_review": false,
+      "provider": "Twilio",
+      "runtime_visible": "unknown",
+      "schema_visible": false,
+      "short_paraphrase": "Official changelog entry indicates semantic behavior relevant to C3_default_behavior.",
+      "source_type": "changelog",
+      "taxonomy_class": "C",
+      "title": "Conference list endpoint will default to in-progress conferences only on July 13, 2026",
+      "url": "https://www.twilio.com/en-us/changelog"
+    },
+    {
+      "agent_task_relevance": "high",
+      "c_subclass": "C3_default_behavior",
+      "confidence": "high",
+      "date": "2010-04-01",
+      "entry_id": "twilio_235664e69ad4",
+      "evidence_snippet": "If you're querying for in-progress conferences (the most common use case), no action is needed. Currently, calling this endpoint without a Status filter returns",
+      "label_rationale": "Semantic behavior keyword matched; subclass=C3_default_behavior.",
+      "needs_human_review": false,
+      "provider": "Twilio",
+      "runtime_visible": "unknown",
+      "schema_visible": false,
+      "short_paraphrase": "Official changelog entry indicates semantic behavior relevant to C3_default_behavior.",
+      "source_type": "changelog",
+      "taxonomy_class": "C",
+      "title": "Starting July 13, 2026 , the Conference list endpoint (GET /2010-04-01/Accounts/{AccountSid}/Conferences.json) will default to returning only in-progress conferences.",
+      "url": "https://www.twilio.com/en-us/changelog"
+    }
+  ],
+  "total_entries": 151
+}

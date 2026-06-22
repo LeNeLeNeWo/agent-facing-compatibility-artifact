@@ -1,0 +1,73 @@
+{
+  "audit_rows": [
+    {
+      "after_semantics_clear_enough": true,
+      "agent_task_possible": false,
+      "before_semantics_clear_enough": false,
+      "case_id": "real_c3_default_behavior_8b11a458888a",
+      "deterministic_oracle_possible": false,
+      "deterministic_wrapper_possible": false,
+      "evidence_snippet_exists": true,
+      "official_source_url": "https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout",
+      "official_source_url_exists": true,
+      "provider": "GitHub",
+      "risks": "Requires human review before paper use; replay is grounded in changelog title/evidence and is not a production incident. Exact before/after semantics are under-specified in local evidence.",
+      "selected_for_smoke": false,
+      "selection_reason": "Not selected for this smoke. The local Phase 10A evidence names a safer default and includes a truncated snippet, but it does not specify the exact before/after default needed for a faithful deterministic wrapper.",
+      "semantic_change_class_clear_enough": true,
+      "short_evidence": "The pull_request_target event is one of the most commonly misused triggers in GitHub Actions, leading to vulnerabilities in workflows. Workflows triggered by pull_request_target run",
+      "suitable_for_smoke": false,
+      "taxonomy_class": "C3"
+    },
+    {
+      "after_semantics_clear_enough": true,
+      "agent_task_possible": true,
+      "before_semantics_clear_enough": true,
+      "case_id": "real_c1_unit_scale_0a2066fde082",
+      "deterministic_oracle_possible": true,
+      "deterministic_wrapper_possible": true,
+      "evidence_snippet_exists": true,
+      "official_source_url": "https://docs.stripe.com/changelog/dahlia/2026-04-22/billing-meter-event-values-validation.md",
+      "official_source_url_exists": true,
+      "provider": "Stripe",
+      "risks": "Requires human review before paper use; replay is grounded in changelog title/evidence and is not a production incident.",
+      "selected_for_smoke": true,
+      "selection_reason": "The title gives a concrete validation boundary (>15 digits), enabling a deterministic local oracle.",
+      "semantic_change_class_clear_enough": true,
+      "short_evidence": "Billing | Breaking | api",
+      "suitable_for_smoke": true,
+      "taxonomy_class": "C1"
+    },
+    {
+      "after_semantics_clear_enough": true,
+      "agent_task_possible": true,
+      "before_semantics_clear_enough": true,
+      "case_id": "real_c4_business_rule_323e42cd6611",
+      "deterministic_oracle_possible": true,
+      "deterministic_wrapper_possible": true,
+      "evidence_snippet_exists": true,
+      "official_source_url": "https://docs.stripe.com/changelog/dahlia/2026-05-27/adds-card-brand-restrictions-to-payment-links.md",
+      "official_source_url_exists": true,
+      "provider": "Stripe",
+      "risks": "Requires human review before paper use; replay is grounded in changelog title/evidence and is not a production incident.",
+      "selected_for_smoke": true,
+      "selection_reason": "The title gives a concrete changed payment policy (card-brand restrictions), enabling a deterministic local oracle.",
+      "semantic_change_class_clear_enough": true,
+      "short_evidence": "Paymentlinks | Non-breaking | api",
+      "suitable_for_smoke": true,
+      "taxonomy_class": "C4"
+    }
+  ],
+  "not_selected_case_ids": [
+    "real_c3_default_behavior_8b11a458888a"
+  ],
+  "notes": [
+    "This is real-changelog-grounded replay, not a real production incident replay.",
+    "No real Stripe/GitHub API call is made by the wrapper."
+  ],
+  "phase": "phase10e",
+  "selected_case_ids": [
+    "real_c1_unit_scale_0a2066fde082",
+    "real_c4_business_rule_323e42cd6611"
+  ]
+}

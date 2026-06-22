@@ -1,0 +1,5 @@
+python-dotenv
+litellm
+openai
+git+https://github.com/sierra-research/tau-bench.git
+

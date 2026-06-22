@@ -1,0 +1,874 @@
+{
+  "artifact_status": [
+    {
+      "exists": true,
+      "modified_time": "2026-06-14T11:35:08",
+      "non_empty": true,
+      "path": "IEEE_Conference_Template\\tables\\observability_gradient_auto.tex",
+      "size_bytes": 1675
+    },
+    {
+      "exists": true,
+      "modified_time": "2026-06-14T11:35:12",
+      "non_empty": true,
+      "path": "IEEE_Conference_Template\\figures\\observability_gradient_curve.pdf",
+      "size_bytes": 16715
+    },
+    {
+      "exists": true,
+      "modified_time": "2026-06-14T11:35:13",
+      "non_empty": true,
+      "path": "IEEE_Conference_Template\\figures\\observability_uplift_forest.pdf",
+      "size_bytes": 14223
+    }
+  ],
+  "filters": {
+    "excluded_baseline_success_false": true,
+    "excluded_fake_run": true,
+    "excluded_mutation_candidate": true,
+    "excluded_smoke_status": true,
+    "excluded_wyzlab": true
+  },
+  "generated_at": "2026-06-14T12:15:38",
+  "inputs": {
+    "status_files": [
+      "runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0000_status.jsonl",
+      "runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0001_status.jsonl",
+      "runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0002_status.jsonl",
+      "runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0003_status.jsonl",
+      "runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0004_status.jsonl",
+      "runs\\schema_mutation\\phase5\\status\\observability_from_baseline_0005_status.jsonl"
+    ],
+    "summary_json": "runs\\schema_mutation\\phase5\\phase5_summary.json",
+    "summary_md": "runs\\schema_mutation\\phase5\\phase5_summary.md"
+  },
+  "integrity": {
+    "actual_formal_rows": 525,
+    "baseline_success_false_count": 0,
+    "expected_total": 525,
+    "failed": 0,
+    "fake_run_count": 0,
+    "level_counts": {
+      "O0_silent": 105,
+      "O1_generic_error": 105,
+      "O2_policy_error": 105,
+      "O3_structured_policy_error": 105,
+      "O4_migration_note": 105
+    },
+    "missing_critical_fields_by_field": {
+      "baseline_success": 0,
+      "env": 0,
+      "hidden_business_rule_violation": 0,
+      "migration_note_visible": 0,
+      "model": 0,
+      "observability_level": 0,
+      "provider": 0,
+      "reward": 0,
+      "seed": 0,
+      "structured_policy_error_visible": 0,
+      "task_id": 0,
+      "visible_policy_error": 0
+    },
+    "missing_critical_fields_total": 0,
+    "mutation_candidate_count": 0,
+    "ok": 525,
+    "provider_error": 0,
+    "raw_formal_status_rows_before_filters": 525,
+    "smoke_rows_included": false,
+    "timeout": 0,
+    "wyzlab_count": 0
+  },
+  "interpretation": {
+    "case": "B",
+    "draft": "The results support a weaker but still useful claim: structured diagnostics and migration notes improve recoverability over silent drift, while generic or coarse errors are less reliable."
+  },
+  "monotonicity": [
+    {
+      "env": "retail",
+      "is_non_decreasing": false,
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "rates": {
+        "O0_silent": 0.40625,
+        "O1_generic_error": 0.78125,
+        "O2_policy_error": 0.875,
+        "O3_structured_policy_error": 0.875,
+        "O4_migration_note": 0.84375
+      },
+      "violations": [
+        {
+          "left_rate": 0.875,
+          "position": "O4_migration_note < O3_structured_policy_error",
+          "right_rate": 0.84375
+        }
+      ]
+    },
+    {
+      "env": "retail",
+      "is_non_decreasing": false,
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "rates": {
+        "O0_silent": 0.5,
+        "O1_generic_error": 0.8461538461538461,
+        "O2_policy_error": 0.8076923076923077,
+        "O3_structured_policy_error": 0.8461538461538461,
+        "O4_migration_note": 0.8461538461538461
+      },
+      "violations": [
+        {
+          "left_rate": 0.8461538461538461,
+          "position": "O2_policy_error < O1_generic_error",
+          "right_rate": 0.8076923076923077
+        }
+      ]
+    },
+    {
+      "env": "retail",
+      "is_non_decreasing": false,
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "rates": {
+        "O0_silent": 0.16666666666666666,
+        "O1_generic_error": 0.875,
+        "O2_policy_error": 0.6666666666666666,
+        "O3_structured_policy_error": 0.75,
+        "O4_migration_note": 0.8333333333333334
+      },
+      "violations": [
+        {
+          "left_rate": 0.875,
+          "position": "O2_policy_error < O1_generic_error",
+          "right_rate": 0.6666666666666666
+        }
+      ]
+    },
+    {
+      "env": "retail",
+      "is_non_decreasing": false,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "rates": {
+        "O0_silent": 0.5652173913043478,
+        "O1_generic_error": 0.9565217391304348,
+        "O2_policy_error": 0.8695652173913043,
+        "O3_structured_policy_error": 0.9130434782608695,
+        "O4_migration_note": 0.9130434782608695
+      },
+      "violations": [
+        {
+          "left_rate": 0.9565217391304348,
+          "position": "O2_policy_error < O1_generic_error",
+          "right_rate": 0.8695652173913043
+        }
+      ]
+    }
+  ],
+  "overall_by_level": {
+    "O0_silent": {
+      "hidden_violation_rate": 0.5333333333333333,
+      "mean_reward": 0.4095238095238095,
+      "n": 105,
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 43,
+      "success_rate": 0.4095238095238095,
+      "success_wilson_ci": [
+        0.3202789903760395,
+        0.5051551759254185
+      ],
+      "visible_signal_rate": 0.0
+    },
+    "O1_generic_error": {
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8571428571428571,
+      "n": 105,
+      "recovery_attempted": 10,
+      "recovery_attempted_rate": 0.09523809523809523,
+      "recovery_success": 7,
+      "recovery_success_rate": 0.06666666666666667,
+      "success": 90,
+      "success_rate": 0.8571428571428571,
+      "success_wilson_ci": [
+        0.7776004677299959,
+        0.9114751916063542
+      ],
+      "visible_signal_rate": 0.5428571428571428
+    },
+    "O2_policy_error": {
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8095238095238095,
+      "n": 105,
+      "recovery_attempted": 10,
+      "recovery_attempted_rate": 0.09523809523809523,
+      "recovery_success": 7,
+      "recovery_success_rate": 0.06666666666666667,
+      "success": 85,
+      "success_rate": 0.8095238095238095,
+      "success_wilson_ci": [
+        0.7240239056411013,
+        0.8731749991170688
+      ],
+      "visible_signal_rate": 0.5428571428571428
+    },
+    "O3_structured_policy_error": {
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8476190476190476,
+      "n": 105,
+      "recovery_attempted": 10,
+      "recovery_attempted_rate": 0.09523809523809523,
+      "recovery_success": 6,
+      "recovery_success_rate": 0.05714285714285714,
+      "success": 89,
+      "success_rate": 0.8476190476190476,
+      "success_wilson_ci": [
+        0.7667269516059707,
+        0.9039733568147432
+      ],
+      "visible_signal_rate": 0.5333333333333333
+    },
+    "O4_migration_note": {
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8571428571428571,
+      "n": 105,
+      "recovery_attempted": 7,
+      "recovery_attempted_rate": 0.06666666666666667,
+      "recovery_success": 4,
+      "recovery_success_rate": 0.0380952380952381,
+      "success": 90,
+      "success_rate": 0.8571428571428571,
+      "success_wilson_ci": [
+        0.7776004677299959,
+        0.9114751916063542
+      ],
+      "visible_signal_rate": 1.0
+    }
+  },
+  "per_model_by_level": [
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.5625,
+      "mean_reward": 0.40625,
+      "model": "dashscope/glm-5.1",
+      "n": 32,
+      "observability_level": "O0_silent",
+      "provider": "dashscope",
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 13,
+      "success_rate": 0.40625,
+      "success_wilson_ci": [
+        0.2551963484266544,
+        0.5773997512461713
+      ],
+      "visible_signal_rate": 0.0
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.78125,
+      "model": "dashscope/glm-5.1",
+      "n": 32,
+      "observability_level": "O1_generic_error",
+      "provider": "dashscope",
+      "recovery_attempted": 4,
+      "recovery_attempted_rate": 0.125,
+      "recovery_success": 3,
+      "recovery_success_rate": 0.09375,
+      "success": 25,
+      "success_rate": 0.78125,
+      "success_wilson_ci": [
+        0.6124500635075647,
+        0.8897616374739581
+      ],
+      "visible_signal_rate": 0.59375
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.875,
+      "model": "dashscope/glm-5.1",
+      "n": 32,
+      "observability_level": "O2_policy_error",
+      "provider": "dashscope",
+      "recovery_attempted": 5,
+      "recovery_attempted_rate": 0.15625,
+      "recovery_success": 4,
+      "recovery_success_rate": 0.125,
+      "success": 28,
+      "success_rate": 0.875,
+      "success_wilson_ci": [
+        0.7193169451834978,
+        0.9502986561251991
+      ],
+      "visible_signal_rate": 0.625
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.875,
+      "model": "dashscope/glm-5.1",
+      "n": 32,
+      "observability_level": "O3_structured_policy_error",
+      "provider": "dashscope",
+      "recovery_attempted": 5,
+      "recovery_attempted_rate": 0.15625,
+      "recovery_success": 3,
+      "recovery_success_rate": 0.09375,
+      "success": 28,
+      "success_rate": 0.875,
+      "success_wilson_ci": [
+        0.7193169451834978,
+        0.9502986561251991
+      ],
+      "visible_signal_rate": 0.625
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.84375,
+      "model": "dashscope/glm-5.1",
+      "n": 32,
+      "observability_level": "O4_migration_note",
+      "provider": "dashscope",
+      "recovery_attempted": 2,
+      "recovery_attempted_rate": 0.0625,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 27,
+      "success_rate": 0.84375,
+      "success_wilson_ci": [
+        0.682458504024696,
+        0.9313557971749429
+      ],
+      "visible_signal_rate": 1.0
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.5,
+      "mean_reward": 0.5,
+      "model": "dashscope/kimi-k2.6",
+      "n": 26,
+      "observability_level": "O0_silent",
+      "provider": "dashscope",
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 13,
+      "success_rate": 0.5,
+      "success_wilson_ci": [
+        0.3206059352575905,
+        0.6793940647424095
+      ],
+      "visible_signal_rate": 0.0
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8461538461538461,
+      "model": "dashscope/kimi-k2.6",
+      "n": 26,
+      "observability_level": "O1_generic_error",
+      "provider": "dashscope",
+      "recovery_attempted": 3,
+      "recovery_attempted_rate": 0.11538461538461539,
+      "recovery_success": 1,
+      "recovery_success_rate": 0.038461538461538464,
+      "success": 22,
+      "success_rate": 0.8461538461538461,
+      "success_wilson_ci": [
+        0.6646880067178652,
+        0.9384996627642165
+      ],
+      "visible_signal_rate": 0.5
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8076923076923077,
+      "model": "dashscope/kimi-k2.6",
+      "n": 26,
+      "observability_level": "O2_policy_error",
+      "provider": "dashscope",
+      "recovery_attempted": 3,
+      "recovery_attempted_rate": 0.11538461538461539,
+      "recovery_success": 1,
+      "recovery_success_rate": 0.038461538461538464,
+      "success": 21,
+      "success_rate": 0.8076923076923077,
+      "success_wilson_ci": [
+        0.6212374288068301,
+        0.9149293885105758
+      ],
+      "visible_signal_rate": 0.5
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8461538461538461,
+      "model": "dashscope/kimi-k2.6",
+      "n": 26,
+      "observability_level": "O3_structured_policy_error",
+      "provider": "dashscope",
+      "recovery_attempted": 3,
+      "recovery_attempted_rate": 0.11538461538461539,
+      "recovery_success": 1,
+      "recovery_success_rate": 0.038461538461538464,
+      "success": 22,
+      "success_rate": 0.8461538461538461,
+      "success_wilson_ci": [
+        0.6646880067178652,
+        0.9384996627642165
+      ],
+      "visible_signal_rate": 0.5
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8461538461538461,
+      "model": "dashscope/kimi-k2.6",
+      "n": 26,
+      "observability_level": "O4_migration_note",
+      "provider": "dashscope",
+      "recovery_attempted": 2,
+      "recovery_attempted_rate": 0.07692307692307693,
+      "recovery_success": 1,
+      "recovery_success_rate": 0.038461538461538464,
+      "success": 22,
+      "success_rate": 0.8461538461538461,
+      "success_wilson_ci": [
+        0.6646880067178652,
+        0.9384996627642165
+      ],
+      "visible_signal_rate": 1.0
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.625,
+      "mean_reward": 0.16666666666666666,
+      "model": "dashscope/qwen-max",
+      "n": 24,
+      "observability_level": "O0_silent",
+      "provider": "dashscope",
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 4,
+      "success_rate": 0.16666666666666666,
+      "success_wilson_ci": [
+        0.06678676328632951,
+        0.3585307064969906
+      ],
+      "visible_signal_rate": 0.0
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.875,
+      "model": "dashscope/qwen-max",
+      "n": 24,
+      "observability_level": "O1_generic_error",
+      "provider": "dashscope",
+      "recovery_attempted": 2,
+      "recovery_attempted_rate": 0.08333333333333333,
+      "recovery_success": 2,
+      "recovery_success_rate": 0.08333333333333333,
+      "success": 21,
+      "success_rate": 0.875,
+      "success_wilson_ci": [
+        0.6899611872949993,
+        0.9565566591987655
+      ],
+      "visible_signal_rate": 0.5833333333333334
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.6666666666666666,
+      "model": "dashscope/qwen-max",
+      "n": 24,
+      "observability_level": "O2_policy_error",
+      "provider": "dashscope",
+      "recovery_attempted": 2,
+      "recovery_attempted_rate": 0.08333333333333333,
+      "recovery_success": 2,
+      "recovery_success_rate": 0.08333333333333333,
+      "success": 16,
+      "success_rate": 0.6666666666666666,
+      "success_wilson_ci": [
+        0.4670631683813174,
+        0.8202780967270225
+      ],
+      "visible_signal_rate": 0.5833333333333334
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.75,
+      "model": "dashscope/qwen-max",
+      "n": 24,
+      "observability_level": "O3_structured_policy_error",
+      "provider": "dashscope",
+      "recovery_attempted": 2,
+      "recovery_attempted_rate": 0.08333333333333333,
+      "recovery_success": 2,
+      "recovery_success_rate": 0.08333333333333333,
+      "success": 18,
+      "success_rate": 0.75,
+      "success_wilson_ci": [
+        0.55100555994846,
+        0.8800063377140499
+      ],
+      "visible_signal_rate": 0.5416666666666666
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8333333333333334,
+      "model": "dashscope/qwen-max",
+      "n": 24,
+      "observability_level": "O4_migration_note",
+      "provider": "dashscope",
+      "recovery_attempted": 3,
+      "recovery_attempted_rate": 0.125,
+      "recovery_success": 3,
+      "recovery_success_rate": 0.125,
+      "success": 20,
+      "success_rate": 0.8333333333333334,
+      "success_wilson_ci": [
+        0.6414692935030095,
+        0.9332132367136705
+      ],
+      "visible_signal_rate": 1.0
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.43478260869565216,
+      "mean_reward": 0.5652173913043478,
+      "model": "deepseek/deepseek-v4-flash",
+      "n": 23,
+      "observability_level": "O0_silent",
+      "provider": "deepseek",
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 13,
+      "success_rate": 0.5652173913043478,
+      "success_wilson_ci": [
+        0.3681137508501646,
+        0.743653646743258
+      ],
+      "visible_signal_rate": 0.0
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.9565217391304348,
+      "model": "deepseek/deepseek-v4-flash",
+      "n": 23,
+      "observability_level": "O1_generic_error",
+      "provider": "deepseek",
+      "recovery_attempted": 1,
+      "recovery_attempted_rate": 0.043478260869565216,
+      "recovery_success": 1,
+      "recovery_success_rate": 0.043478260869565216,
+      "success": 22,
+      "success_rate": 0.9565217391304348,
+      "success_wilson_ci": [
+        0.7900884492974114,
+        0.9922833338565469
+      ],
+      "visible_signal_rate": 0.4782608695652174
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.8695652173913043,
+      "model": "deepseek/deepseek-v4-flash",
+      "n": 23,
+      "observability_level": "O2_policy_error",
+      "provider": "deepseek",
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 20,
+      "success_rate": 0.8695652173913043,
+      "success_wilson_ci": [
+        0.6787251772990404,
+        0.9546234090636876
+      ],
+      "visible_signal_rate": 0.43478260869565216
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.9130434782608695,
+      "model": "deepseek/deepseek-v4-flash",
+      "n": 23,
+      "observability_level": "O3_structured_policy_error",
+      "provider": "deepseek",
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 21,
+      "success_rate": 0.9130434782608695,
+      "success_wilson_ci": [
+        0.7320401892425634,
+        0.9758199955157796
+      ],
+      "visible_signal_rate": 0.43478260869565216
+    },
+    {
+      "env": "retail",
+      "hidden_violation_rate": 0.0,
+      "mean_reward": 0.9130434782608695,
+      "model": "deepseek/deepseek-v4-flash",
+      "n": 23,
+      "observability_level": "O4_migration_note",
+      "provider": "deepseek",
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0,
+      "success": 21,
+      "success_rate": 0.9130434782608695,
+      "success_wilson_ci": [
+        0.7320401892425634,
+        0.9758199955157796
+      ],
+      "visible_signal_rate": 1.0
+    }
+  ],
+  "semantic_flags": {
+    "O0_silent": {
+      "generic_error_visible_rate": 0.0,
+      "hidden_business_rule_violation_rate": 0.5333333333333333,
+      "migration_note_visible_rate": 0.0,
+      "n": 105,
+      "structured_policy_error_visible_rate": 0.0,
+      "visible_policy_error_rate": 0.0,
+      "visible_signal_rate": 0.0
+    },
+    "O1_generic_error": {
+      "generic_error_visible_rate": 0.5428571428571428,
+      "hidden_business_rule_violation_rate": 0.0,
+      "migration_note_visible_rate": 0.0,
+      "n": 105,
+      "structured_policy_error_visible_rate": 0.0,
+      "visible_policy_error_rate": 0.5428571428571428,
+      "visible_signal_rate": 0.5428571428571428
+    },
+    "O2_policy_error": {
+      "generic_error_visible_rate": 0.0,
+      "hidden_business_rule_violation_rate": 0.0,
+      "migration_note_visible_rate": 0.0,
+      "n": 105,
+      "structured_policy_error_visible_rate": 0.0,
+      "visible_policy_error_rate": 0.5428571428571428,
+      "visible_signal_rate": 0.5428571428571428
+    },
+    "O3_structured_policy_error": {
+      "generic_error_visible_rate": 0.0,
+      "hidden_business_rule_violation_rate": 0.0,
+      "migration_note_visible_rate": 0.0,
+      "n": 105,
+      "structured_policy_error_visible_rate": 0.5333333333333333,
+      "visible_policy_error_rate": 0.5333333333333333,
+      "visible_signal_rate": 0.5333333333333333
+    },
+    "O4_migration_note": {
+      "generic_error_visible_rate": 0.0,
+      "hidden_business_rule_violation_rate": 0.0,
+      "migration_note_visible_rate": 1.0,
+      "n": 105,
+      "structured_policy_error_visible_rate": 0.5142857142857142,
+      "visible_policy_error_rate": 0.5142857142857142,
+      "visible_signal_rate": 1.0
+    }
+  },
+  "summary_smoke_exclusion": {
+    "fake_rows_excluded": 4,
+    "latest_rows": 825,
+    "observability_gradient_paired_total": 525,
+    "observability_gradient_rows": 20,
+    "raw_rows": 846,
+    "smoke_rows_excluded": 21,
+    "warnings": [
+      "excluded 4 local_fake smoke rows",
+      "excluded 21 smoke rows"
+    ]
+  },
+  "uplift_by_model": [
+    {
+      "O1_generic_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.15625,
+          0.59375
+        ],
+        "point_estimate": 0.375
+      },
+      "O2_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.25,
+          0.65625
+        ],
+        "point_estimate": 0.46875
+      },
+      "O3_structured_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.25,
+          0.65625
+        ],
+        "point_estimate": 0.46875
+      },
+      "O4_migration_note-O0_silent": {
+        "bootstrap_95_ci": [
+          0.21875,
+          0.65625
+        ],
+        "point_estimate": 0.4375
+      },
+      "env": "retail",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope"
+    },
+    {
+      "O1_generic_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.11538461538461531,
+          0.5769230769230769
+        ],
+        "point_estimate": 0.34615384615384615
+      },
+      "O2_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.07692307692307687,
+          0.5384615384615385
+        ],
+        "point_estimate": 0.3076923076923077
+      },
+      "O3_structured_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.11538461538461531,
+          0.5769230769230769
+        ],
+        "point_estimate": 0.34615384615384615
+      },
+      "O4_migration_note-O0_silent": {
+        "bootstrap_95_ci": [
+          0.11538461538461542,
+          0.576923076923077
+        ],
+        "point_estimate": 0.34615384615384615
+      },
+      "env": "retail",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope"
+    },
+    {
+      "O1_generic_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.49999999999999994,
+          0.875
+        ],
+        "point_estimate": 0.7083333333333334
+      },
+      "O2_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.24999999999999997,
+          0.75
+        ],
+        "point_estimate": 0.5
+      },
+      "O3_structured_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.33333333333333337,
+          0.7916666666666667
+        ],
+        "point_estimate": 0.5833333333333334
+      },
+      "O4_migration_note-O0_silent": {
+        "bootstrap_95_ci": [
+          0.4583333333333333,
+          0.875
+        ],
+        "point_estimate": 0.6666666666666667
+      },
+      "env": "retail",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope"
+    },
+    {
+      "O1_generic_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.17391304347826086,
+          0.6086956521739131
+        ],
+        "point_estimate": 0.39130434782608703
+      },
+      "O2_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.0434782608695653,
+          0.5652173913043478
+        ],
+        "point_estimate": 0.30434782608695654
+      },
+      "O3_structured_policy_error-O0_silent": {
+        "bootstrap_95_ci": [
+          0.13043478260869568,
+          0.5652173913043479
+        ],
+        "point_estimate": 0.34782608695652173
+      },
+      "O4_migration_note-O0_silent": {
+        "bootstrap_95_ci": [
+          0.13043478260869557,
+          0.5652173913043479
+        ],
+        "point_estimate": 0.34782608695652173
+      },
+      "env": "retail",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek"
+    }
+  ],
+  "uplift_overall": {
+    "O1_generic_error-O0_silent": {
+      "bootstrap_95_ci": [
+        0.3333333333333333,
+        0.5619047619047619
+      ],
+      "point_estimate": 0.4476190476190476
+    },
+    "O2_policy_error-O0_silent": {
+      "bootstrap_95_ci": [
+        0.2857142857142857,
+        0.5238095238095237
+      ],
+      "point_estimate": 0.4
+    },
+    "O3_structured_policy_error-O0_silent": {
+      "bootstrap_95_ci": [
+        0.32380952380952377,
+        0.5523809523809524
+      ],
+      "point_estimate": 0.4380952380952381
+    },
+    "O4_migration_note-O0_silent": {
+      "bootstrap_95_ci": [
+        0.3333333333333333,
+        0.5619047619047619
+      ],
+      "point_estimate": 0.4476190476190476
+    }
+  }
+}

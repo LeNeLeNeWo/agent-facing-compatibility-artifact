@@ -1,0 +1,14 @@
+TAU-BENCH ToolCallingAgent initial message skeleton:
+
+[
+  {"role": "system", "content": "<isolated_env.wiki>"},
+  {"role": "user", "content": "<initial observation returned by env.reset(task_index=...)>"}
+]
+
+The system message content is the TAU-BENCH environment wiki. It is dynamic by
+environment/task package state and was not emitted as a standalone rendered
+artifact for each formal cell.
+
+Tool schemas are provided through the LiteLLM `tools` argument as `tools_info`;
+they are not inlined into this text template by the installed TAU-BENCH
+ToolCallingAgent.

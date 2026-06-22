@@ -1,0 +1,943 @@
+{
+  "generated_at": "2026-06-16",
+  "scope": "Phase 5D airline formal observability gradient, non-WYZLab baseline-successful cells only",
+  "integrity": {
+    "expected_total": 1290,
+    "raw_status_rows_in_formal_files": 1344,
+    "deduplicated_latest_rows": 1290,
+    "actual_formal_rows": 1290,
+    "duplicate_rows_removed_by_cell_key": 54,
+    "ok": 1290,
+    "provider_error": 0,
+    "timeout": 0,
+    "failed": 0,
+    "fake_run_count": 0,
+    "baseline_success_false_count": 0,
+    "wyzlab_count": 0,
+    "mutation_candidate_count": 0,
+    "smoke_rows_included": false,
+    "smoke_rows_included_count": 0,
+    "missing_critical_fields_count": 0,
+    "status_files_used": [
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0000_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0001_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0002_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0003_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0004_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0005_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0006_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0007_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0008_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0009_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0010_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0011_status.jsonl",
+      "runs/schema_mutation/phase5/status/airline_observability_from_baseline_0012_status.jsonl"
+    ],
+    "standalone_retry_status_files_excluded": [
+      "airline_observability_from_baseline_0000_retry_provider_error_status.jsonl",
+      "airline_observability_from_baseline_0004_retry_provider_error_status.jsonl",
+      "airline_observability_from_baseline_0007_retry_provider_error_status.jsonl"
+    ],
+    "level_counts": {
+      "O0_silent": 258,
+      "O1_generic_error": 258,
+      "O2_policy_error": 258,
+      "O3_structured_policy_error": 258,
+      "O4_migration_note": 258
+    },
+    "status_pass": true
+  },
+  "overall_by_level": {
+    "O0_silent": {
+      "n": 258,
+      "success": 139,
+      "success_rate": 0.5387596899224806,
+      "success_rate_percent": 53.88,
+      "wilson_ci95": [
+        0.47780879532587195,
+        0.5985733027959376
+      ],
+      "wilson_ci95_percent": [
+        47.78,
+        59.86
+      ],
+      "mean_reward": 0.5387596899224806,
+      "hidden_violation_rate": 0.4069767441860465,
+      "hidden_violation_rate_percent": 40.7,
+      "visible_signal_rate": 0.0,
+      "visible_signal_rate_percent": 0.0,
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0
+    },
+    "O1_generic_error": {
+      "n": 258,
+      "success": 216,
+      "success_rate": 0.8372093023255814,
+      "success_rate_percent": 83.72,
+      "wilson_ci95": [
+        0.7872735226599361,
+        0.8772507309998065
+      ],
+      "wilson_ci95_percent": [
+        78.73,
+        87.73
+      ],
+      "mean_reward": 0.8372093023255814,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.4263565891472868,
+      "visible_signal_rate_percent": 42.64,
+      "recovery_attempted": 48,
+      "recovery_attempted_rate": 0.18604651162790697,
+      "recovery_success": 26,
+      "recovery_success_rate": 0.10077519379844961
+    },
+    "O2_policy_error": {
+      "n": 258,
+      "success": 222,
+      "success_rate": 0.8604651162790697,
+      "success_rate_percent": 86.05,
+      "wilson_ci95": [
+        0.8128750896101187,
+        0.8974784229227095
+      ],
+      "wilson_ci95_percent": [
+        81.29,
+        89.75
+      ],
+      "mean_reward": 0.8604651162790697,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.44573643410852715,
+      "visible_signal_rate_percent": 44.57,
+      "recovery_attempted": 48,
+      "recovery_attempted_rate": 0.18604651162790697,
+      "recovery_success": 26,
+      "recovery_success_rate": 0.10077519379844961
+    },
+    "O3_structured_policy_error": {
+      "n": 258,
+      "success": 220,
+      "success_rate": 0.8527131782945736,
+      "success_rate_percent": 85.27,
+      "wilson_ci95": [
+        0.804302571515108,
+        0.8907745213933584
+      ],
+      "wilson_ci95_percent": [
+        80.43,
+        89.08
+      ],
+      "mean_reward": 0.8527131782945736,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.42248062015503873,
+      "visible_signal_rate_percent": 42.25,
+      "recovery_attempted": 42,
+      "recovery_attempted_rate": 0.16279069767441862,
+      "recovery_success": 21,
+      "recovery_success_rate": 0.08139534883720931
+    },
+    "O4_migration_note": {
+      "n": 258,
+      "success": 218,
+      "success_rate": 0.8449612403100775,
+      "success_rate_percent": 84.5,
+      "wilson_ci95": [
+        0.7957695005216071,
+        0.8840311727624973
+      ],
+      "wilson_ci95_percent": [
+        79.58,
+        88.4
+      ],
+      "mean_reward": 0.8449612403100775,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 1.0,
+      "visible_signal_rate_percent": 100.0,
+      "recovery_attempted": 47,
+      "recovery_attempted_rate": 0.1821705426356589,
+      "recovery_success": 28,
+      "recovery_success_rate": 0.10852713178294573
+    }
+  },
+  "per_model_by_level": [
+    {
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "level": "O0_silent",
+      "n": 76,
+      "success": 42,
+      "success_rate": 0.5526315789473685,
+      "success_rate_percent": 55.26,
+      "wilson_ci95": [
+        0.4410051506448649,
+        0.6591934193482787
+      ],
+      "wilson_ci95_percent": [
+        44.1,
+        65.92
+      ],
+      "mean_reward": 0.5526315789473685,
+      "hidden_violation_rate": 0.42105263157894735,
+      "hidden_violation_rate_percent": 42.11,
+      "visible_signal_rate": 0.0,
+      "visible_signal_rate_percent": 0.0,
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "level": "O1_generic_error",
+      "n": 76,
+      "success": 64,
+      "success_rate": 0.8421052631578947,
+      "success_rate_percent": 84.21,
+      "wilson_ci95": [
+        0.743985675457256,
+        0.9073050294981764
+      ],
+      "wilson_ci95_percent": [
+        74.4,
+        90.73
+      ],
+      "mean_reward": 0.8421052631578947,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.4605263157894737,
+      "visible_signal_rate_percent": 46.05,
+      "recovery_attempted": 13,
+      "recovery_attempted_rate": 0.17105263157894737,
+      "recovery_success": 6,
+      "recovery_success_rate": 0.07894736842105263
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "level": "O2_policy_error",
+      "n": 76,
+      "success": 69,
+      "success_rate": 0.9078947368421053,
+      "success_rate_percent": 90.79,
+      "wilson_ci95": [
+        0.8218729215106378,
+        0.9546659959362239
+      ],
+      "wilson_ci95_percent": [
+        82.19,
+        95.47
+      ],
+      "mean_reward": 0.9078947368421053,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.4605263157894737,
+      "visible_signal_rate_percent": 46.05,
+      "recovery_attempted": 12,
+      "recovery_attempted_rate": 0.15789473684210525,
+      "recovery_success": 7,
+      "recovery_success_rate": 0.09210526315789473
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "level": "O3_structured_policy_error",
+      "n": 76,
+      "success": 67,
+      "success_rate": 0.881578947368421,
+      "success_rate_percent": 88.16,
+      "wilson_ci95": [
+        0.7900078224920806,
+        0.9364318099582094
+      ],
+      "wilson_ci95_percent": [
+        79.0,
+        93.64
+      ],
+      "mean_reward": 0.881578947368421,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.4473684210526316,
+      "visible_signal_rate_percent": 44.74,
+      "recovery_attempted": 11,
+      "recovery_attempted_rate": 0.14473684210526316,
+      "recovery_success": 5,
+      "recovery_success_rate": 0.06578947368421052
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "level": "O4_migration_note",
+      "n": 76,
+      "success": 65,
+      "success_rate": 0.8552631578947368,
+      "success_rate_percent": 85.53,
+      "wilson_ci95": [
+        0.7591255101452948,
+        0.9172148373084233
+      ],
+      "wilson_ci95_percent": [
+        75.91,
+        91.72
+      ],
+      "mean_reward": 0.8552631578947368,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 1.0,
+      "visible_signal_rate_percent": 100.0,
+      "recovery_attempted": 11,
+      "recovery_attempted_rate": 0.14473684210526316,
+      "recovery_success": 6,
+      "recovery_success_rate": 0.07894736842105263
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "level": "O0_silent",
+      "n": 73,
+      "success": 40,
+      "success_rate": 0.547945205479452,
+      "success_rate_percent": 54.79,
+      "wilson_ci95": [
+        0.43424321509808306,
+        0.6568534416732852
+      ],
+      "wilson_ci95_percent": [
+        43.42,
+        65.69
+      ],
+      "mean_reward": 0.547945205479452,
+      "hidden_violation_rate": 0.3561643835616438,
+      "hidden_violation_rate_percent": 35.62,
+      "visible_signal_rate": 0.0,
+      "visible_signal_rate_percent": 0.0,
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "level": "O1_generic_error",
+      "n": 73,
+      "success": 68,
+      "success_rate": 0.9315068493150684,
+      "success_rate_percent": 93.15,
+      "wilson_ci95": [
+        0.8494789495941522,
+        0.9703909613481618
+      ],
+      "wilson_ci95_percent": [
+        84.95,
+        97.04
+      ],
+      "mean_reward": 0.9315068493150684,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.3698630136986301,
+      "visible_signal_rate_percent": 36.99,
+      "recovery_attempted": 10,
+      "recovery_attempted_rate": 0.136986301369863,
+      "recovery_success": 9,
+      "recovery_success_rate": 0.1232876712328767
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "level": "O2_policy_error",
+      "n": 73,
+      "success": 64,
+      "success_rate": 0.8767123287671232,
+      "success_rate_percent": 87.67,
+      "wilson_ci95": [
+        0.7819969564497797,
+        0.9337624896109706
+      ],
+      "wilson_ci95_percent": [
+        78.2,
+        93.38
+      ],
+      "mean_reward": 0.8767123287671232,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.410958904109589,
+      "visible_signal_rate_percent": 41.1,
+      "recovery_attempted": 13,
+      "recovery_attempted_rate": 0.1780821917808219,
+      "recovery_success": 8,
+      "recovery_success_rate": 0.1095890410958904
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "level": "O3_structured_policy_error",
+      "n": 73,
+      "success": 65,
+      "success_rate": 0.8904109589041096,
+      "success_rate_percent": 89.04,
+      "wilson_ci95": [
+        0.7983737801279477,
+        0.9434132821531936
+      ],
+      "wilson_ci95_percent": [
+        79.84,
+        94.34
+      ],
+      "mean_reward": 0.8904109589041096,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.3561643835616438,
+      "visible_signal_rate_percent": 35.62,
+      "recovery_attempted": 9,
+      "recovery_attempted_rate": 0.1232876712328767,
+      "recovery_success": 5,
+      "recovery_success_rate": 0.0684931506849315
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "level": "O4_migration_note",
+      "n": 73,
+      "success": 65,
+      "success_rate": 0.8904109589041096,
+      "success_rate_percent": 89.04,
+      "wilson_ci95": [
+        0.7983737801279477,
+        0.9434132821531936
+      ],
+      "wilson_ci95_percent": [
+        79.84,
+        94.34
+      ],
+      "mean_reward": 0.8904109589041096,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 1.0,
+      "visible_signal_rate_percent": 100.0,
+      "recovery_attempted": 10,
+      "recovery_attempted_rate": 0.136986301369863,
+      "recovery_success": 7,
+      "recovery_success_rate": 0.0958904109589041
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "level": "O0_silent",
+      "n": 29,
+      "success": 12,
+      "success_rate": 0.41379310344827586,
+      "success_rate_percent": 41.38,
+      "wilson_ci95": [
+        0.255131773413224,
+        0.5926216401212141
+      ],
+      "wilson_ci95_percent": [
+        25.51,
+        59.26
+      ],
+      "mean_reward": 0.41379310344827586,
+      "hidden_violation_rate": 0.4827586206896552,
+      "hidden_violation_rate_percent": 48.28,
+      "visible_signal_rate": 0.0,
+      "visible_signal_rate_percent": 0.0,
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "level": "O1_generic_error",
+      "n": 29,
+      "success": 16,
+      "success_rate": 0.5517241379310345,
+      "success_rate_percent": 55.17,
+      "wilson_ci95": [
+        0.37547963210970914,
+        0.7158683197696281
+      ],
+      "wilson_ci95_percent": [
+        37.55,
+        71.59
+      ],
+      "mean_reward": 0.5517241379310345,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.5517241379310345,
+      "visible_signal_rate_percent": 55.17,
+      "recovery_attempted": 10,
+      "recovery_attempted_rate": 0.3448275862068966,
+      "recovery_success": 4,
+      "recovery_success_rate": 0.13793103448275862
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "level": "O2_policy_error",
+      "n": 29,
+      "success": 23,
+      "success_rate": 0.7931034482758621,
+      "success_rate_percent": 79.31,
+      "wilson_ci95": [
+        0.6160990959613211,
+        0.9015392980215897
+      ],
+      "wilson_ci95_percent": [
+        61.61,
+        90.15
+      ],
+      "mean_reward": 0.7931034482758621,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.5862068965517241,
+      "visible_signal_rate_percent": 58.62,
+      "recovery_attempted": 10,
+      "recovery_attempted_rate": 0.3448275862068966,
+      "recovery_success": 6,
+      "recovery_success_rate": 0.20689655172413793
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "level": "O3_structured_policy_error",
+      "n": 29,
+      "success": 20,
+      "success_rate": 0.6896551724137931,
+      "success_rate_percent": 68.97,
+      "wilson_ci95": [
+        0.5076986576690685,
+        0.8272438325551679
+      ],
+      "wilson_ci95_percent": [
+        50.77,
+        82.72
+      ],
+      "mean_reward": 0.6896551724137931,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.5517241379310345,
+      "visible_signal_rate_percent": 55.17,
+      "recovery_attempted": 9,
+      "recovery_attempted_rate": 0.3103448275862069,
+      "recovery_success": 5,
+      "recovery_success_rate": 0.1724137931034483
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "level": "O4_migration_note",
+      "n": 29,
+      "success": 19,
+      "success_rate": 0.6551724137931034,
+      "success_rate_percent": 65.52,
+      "wilson_ci95": [
+        0.47345104090476137,
+        0.80059281473325
+      ],
+      "wilson_ci95_percent": [
+        47.35,
+        80.06
+      ],
+      "mean_reward": 0.6551724137931034,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 1.0,
+      "visible_signal_rate_percent": 100.0,
+      "recovery_attempted": 12,
+      "recovery_attempted_rate": 0.41379310344827586,
+      "recovery_success": 7,
+      "recovery_success_rate": 0.2413793103448276
+    },
+    {
+      "env": "airline",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "level": "O0_silent",
+      "n": 80,
+      "success": 45,
+      "success_rate": 0.5625,
+      "success_rate_percent": 56.25,
+      "wilson_ci95": [
+        0.4534113429694972,
+        0.6658613908385618
+      ],
+      "wilson_ci95_percent": [
+        45.34,
+        66.59
+      ],
+      "mean_reward": 0.5625,
+      "hidden_violation_rate": 0.4125,
+      "hidden_violation_rate_percent": 41.25,
+      "visible_signal_rate": 0.0,
+      "visible_signal_rate_percent": 0.0,
+      "recovery_attempted": 0,
+      "recovery_attempted_rate": 0.0,
+      "recovery_success": 0,
+      "recovery_success_rate": 0.0
+    },
+    {
+      "env": "airline",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "level": "O1_generic_error",
+      "n": 80,
+      "success": 68,
+      "success_rate": 0.85,
+      "success_rate_percent": 85.0,
+      "wilson_ci95": [
+        0.7558677143867665,
+        0.9120595949383645
+      ],
+      "wilson_ci95_percent": [
+        75.59,
+        91.21
+      ],
+      "mean_reward": 0.85,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.4,
+      "visible_signal_rate_percent": 40.0,
+      "recovery_attempted": 15,
+      "recovery_attempted_rate": 0.1875,
+      "recovery_success": 7,
+      "recovery_success_rate": 0.0875
+    },
+    {
+      "env": "airline",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "level": "O2_policy_error",
+      "n": 80,
+      "success": 66,
+      "success_rate": 0.825,
+      "success_rate_percent": 82.5,
+      "wilson_ci95": [
+        0.7274245802116865,
+        0.8927936355902206
+      ],
+      "wilson_ci95_percent": [
+        72.74,
+        89.28
+      ],
+      "mean_reward": 0.825,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.4125,
+      "visible_signal_rate_percent": 41.25,
+      "recovery_attempted": 13,
+      "recovery_attempted_rate": 0.1625,
+      "recovery_success": 5,
+      "recovery_success_rate": 0.0625
+    },
+    {
+      "env": "airline",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "level": "O3_structured_policy_error",
+      "n": 80,
+      "success": 68,
+      "success_rate": 0.85,
+      "success_rate_percent": 85.0,
+      "wilson_ci95": [
+        0.7558677143867665,
+        0.9120595949383645
+      ],
+      "wilson_ci95_percent": [
+        75.59,
+        91.21
+      ],
+      "mean_reward": 0.85,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 0.4125,
+      "visible_signal_rate_percent": 41.25,
+      "recovery_attempted": 13,
+      "recovery_attempted_rate": 0.1625,
+      "recovery_success": 6,
+      "recovery_success_rate": 0.075
+    },
+    {
+      "env": "airline",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "level": "O4_migration_note",
+      "n": 80,
+      "success": 69,
+      "success_rate": 0.8625,
+      "success_rate_percent": 86.25,
+      "wilson_ci95": [
+        0.7703289993301339,
+        0.9214528567566089
+      ],
+      "wilson_ci95_percent": [
+        77.03,
+        92.15
+      ],
+      "mean_reward": 0.8625,
+      "hidden_violation_rate": 0.0,
+      "hidden_violation_rate_percent": 0.0,
+      "visible_signal_rate": 1.0,
+      "visible_signal_rate_percent": 100.0,
+      "recovery_attempted": 14,
+      "recovery_attempted_rate": 0.175,
+      "recovery_success": 8,
+      "recovery_success_rate": 0.1
+    }
+  ],
+  "overall_uplift_vs_O0": {
+    "O1-O0": 0.29844961240310086,
+    "O2-O0": 0.32170542635658916,
+    "O3-O0": 0.313953488372093,
+    "O4-O0": 0.3062015503875969
+  },
+  "overall_O4_minus_O0_bootstrap": {
+    "uplift": 0.3062015503875969,
+    "ci95": [
+      0.2325581395348837,
+      0.37984496124031014
+    ],
+    "iterations": 5000,
+    "method": "paired-independent percentile bootstrap by level"
+  },
+  "per_model_uplift_vs_O0": [
+    {
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "O1-O0": 0.2894736842105262,
+      "O2-O0": 0.35526315789473684,
+      "O3-O0": 0.32894736842105254,
+      "O4-O0": 0.30263157894736836,
+      "O4-O0_bootstrap": {
+        "uplift": 0.30263157894736836,
+        "ci95": [
+          0.1578947368421053,
+          0.4342105263157895
+        ],
+        "iterations": 3000,
+        "method": "paired-independent percentile bootstrap by level"
+      }
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "O1-O0": 0.3835616438356164,
+      "O2-O0": 0.3287671232876712,
+      "O3-O0": 0.34246575342465757,
+      "O4-O0": 0.34246575342465757,
+      "O4-O0_bootstrap": {
+        "uplift": 0.34246575342465757,
+        "ci95": [
+          0.20547945205479445,
+          0.4794520547945205
+        ],
+        "iterations": 3000,
+        "method": "paired-independent percentile bootstrap by level"
+      }
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "O1-O0": 0.13793103448275862,
+      "O2-O0": 0.37931034482758624,
+      "O3-O0": 0.2758620689655173,
+      "O4-O0": 0.24137931034482757,
+      "O4-O0_bootstrap": {
+        "uplift": 0.24137931034482757,
+        "ci95": [
+          0.0,
+          0.4827586206896552
+        ],
+        "iterations": 3000,
+        "method": "paired-independent percentile bootstrap by level"
+      }
+    },
+    {
+      "env": "airline",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "O1-O0": 0.2875,
+      "O2-O0": 0.26249999999999996,
+      "O3-O0": 0.2875,
+      "O4-O0": 0.30000000000000004,
+      "O4-O0_bootstrap": {
+        "uplift": 0.30000000000000004,
+        "ci95": [
+          0.1625000000000001,
+          0.43749999999999994
+        ],
+        "iterations": 3000,
+        "method": "paired-independent percentile bootstrap by level"
+      }
+    }
+  ],
+  "monotonicity": [
+    {
+      "env": "airline",
+      "model": "dashscope/glm-5.1",
+      "provider": "dashscope",
+      "rates": {
+        "O0_silent": 0.5526315789473685,
+        "O1_generic_error": 0.8421052631578947,
+        "O2_policy_error": 0.9078947368421053,
+        "O3_structured_policy_error": 0.881578947368421,
+        "O4_migration_note": 0.8552631578947368
+      },
+      "is_monotone_non_decreasing": false,
+      "violations": [
+        "O3 < O2",
+        "O4 < O3"
+      ]
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/kimi-k2.6",
+      "provider": "dashscope",
+      "rates": {
+        "O0_silent": 0.547945205479452,
+        "O1_generic_error": 0.9315068493150684,
+        "O2_policy_error": 0.8767123287671232,
+        "O3_structured_policy_error": 0.8904109589041096,
+        "O4_migration_note": 0.8904109589041096
+      },
+      "is_monotone_non_decreasing": false,
+      "violations": [
+        "O2 < O1"
+      ]
+    },
+    {
+      "env": "airline",
+      "model": "dashscope/qwen-max",
+      "provider": "dashscope",
+      "rates": {
+        "O0_silent": 0.41379310344827586,
+        "O1_generic_error": 0.5517241379310345,
+        "O2_policy_error": 0.7931034482758621,
+        "O3_structured_policy_error": 0.6896551724137931,
+        "O4_migration_note": 0.6551724137931034
+      },
+      "is_monotone_non_decreasing": false,
+      "violations": [
+        "O3 < O2",
+        "O4 < O3"
+      ]
+    },
+    {
+      "env": "airline",
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "deepseek",
+      "rates": {
+        "O0_silent": 0.5625,
+        "O1_generic_error": 0.85,
+        "O2_policy_error": 0.825,
+        "O3_structured_policy_error": 0.85,
+        "O4_migration_note": 0.8625
+      },
+      "is_monotone_non_decreasing": false,
+      "violations": [
+        "O2 < O1"
+      ]
+    }
+  ],
+  "flag_sanity": {
+    "O0_silent": {
+      "n": 258,
+      "oracle_rule_violation_n": 105,
+      "visible_policy_error_true_rate": 0.0,
+      "generic_error_visible_true_rate": 0.0,
+      "structured_policy_error_visible_true_rate": 0.0,
+      "migration_note_visible_true_rate": 0.0,
+      "hidden_business_rule_violation_true_rate": 0.4069767441860465,
+      "visible_policy_error_true_given_oracle_violation_rate": 0.0,
+      "structured_policy_error_visible_true_given_oracle_violation_rate": 0.0,
+      "migration_note_visible_true_given_oracle_violation_rate": 0.0
+    },
+    "O1_generic_error": {
+      "n": 258,
+      "oracle_rule_violation_n": 110,
+      "visible_policy_error_true_rate": 0.4263565891472868,
+      "generic_error_visible_true_rate": 0.4263565891472868,
+      "structured_policy_error_visible_true_rate": 0.0,
+      "migration_note_visible_true_rate": 0.0,
+      "hidden_business_rule_violation_true_rate": 0.0,
+      "visible_policy_error_true_given_oracle_violation_rate": 1.0,
+      "structured_policy_error_visible_true_given_oracle_violation_rate": 0.0,
+      "migration_note_visible_true_given_oracle_violation_rate": 0.0
+    },
+    "O2_policy_error": {
+      "n": 258,
+      "oracle_rule_violation_n": 115,
+      "visible_policy_error_true_rate": 0.44573643410852715,
+      "generic_error_visible_true_rate": 0.0,
+      "structured_policy_error_visible_true_rate": 0.0,
+      "migration_note_visible_true_rate": 0.0,
+      "hidden_business_rule_violation_true_rate": 0.0,
+      "visible_policy_error_true_given_oracle_violation_rate": 1.0,
+      "structured_policy_error_visible_true_given_oracle_violation_rate": 0.0,
+      "migration_note_visible_true_given_oracle_violation_rate": 0.0
+    },
+    "O3_structured_policy_error": {
+      "n": 258,
+      "oracle_rule_violation_n": 109,
+      "visible_policy_error_true_rate": 0.42248062015503873,
+      "generic_error_visible_true_rate": 0.0,
+      "structured_policy_error_visible_true_rate": 0.42248062015503873,
+      "migration_note_visible_true_rate": 0.0,
+      "hidden_business_rule_violation_true_rate": 0.0,
+      "visible_policy_error_true_given_oracle_violation_rate": 1.0,
+      "structured_policy_error_visible_true_given_oracle_violation_rate": 1.0,
+      "migration_note_visible_true_given_oracle_violation_rate": 0.0
+    },
+    "O4_migration_note": {
+      "n": 258,
+      "oracle_rule_violation_n": 115,
+      "visible_policy_error_true_rate": 0.44573643410852715,
+      "generic_error_visible_true_rate": 0.0,
+      "structured_policy_error_visible_true_rate": 0.44573643410852715,
+      "migration_note_visible_true_rate": 1.0,
+      "hidden_business_rule_violation_true_rate": 0.0,
+      "visible_policy_error_true_given_oracle_violation_rate": 1.0,
+      "structured_policy_error_visible_true_given_oracle_violation_rate": 1.0,
+      "migration_note_visible_true_given_oracle_violation_rate": 1.0
+    }
+  },
+  "flag_checks": {
+    "O0_visible_policy_error_false_rate": 1.0,
+    "O1_visible_signal_rate": 0.4263565891472868,
+    "O2_visible_policy_error_rate": 0.44573643410852715,
+    "O3_structured_rate_given_oracle_violation": 1.0,
+    "O4_migration_note_rate": 1.0
+  },
+  "interpretation_case": "B_partial_gradient",
+  "interpretation": "The results support a weaker but useful claim: structured diagnostics and migration notes improve recoverability over silent drift, while the full airline curve is not strictly monotonic across all models.",
+  "supports_retail_gradient_conclusion": true,
+  "notes": [
+    "Provider errors/timeouts are treated as infrastructure outcomes, not agent-facing regressions.",
+    "Standalone retry status files are excluded from the source set; retry rows appended to original shard status files are deduplicated by latest cell_key.",
+    "Smoke rows are excluded from this review packet."
+  ]
+}
