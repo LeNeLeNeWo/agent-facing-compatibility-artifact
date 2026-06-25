@@ -505,7 +505,7 @@ def main() -> int:
         "--target-policy",
         default="random",
         choices=["random", "used_tool", "unused_tool", "intent_aligned", "unused_intent_aligned", "random_intent_aligned"],
-        help="random = current protocol; used_tool = mutate baseline-used tools; unused_tool = negative control; intent_aligned = used_tool + ta<REDACTED_SECRET> C4 drift; unused_intent_aligned/random_intent_aligned are runtime C4 controls",
+        help="random = current protocol; used_tool = mutate baseline-used tools; unused_tool = negative control; intent_aligned = used_tool + tau-bench C4 drift; unused_intent_aligned/random_intent_aligned are runtime C4 controls",
     )
     p.add_argument(
         "--c4-runtime-mode",

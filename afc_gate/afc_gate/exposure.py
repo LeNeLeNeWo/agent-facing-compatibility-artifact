@@ -135,8 +135,8 @@ def _tokens(text: str) -> list[str]:
         if ch.isalnum() or ch == "_":
             token.append(ch)
         elif token:
-            <REDACTED_SECRET>("".join(token))
+            out.append("".join(token))
             token = []
     if token:
-        <REDACTED_SECRET>("".join(token))
+        out.append("".join(token))
     return out

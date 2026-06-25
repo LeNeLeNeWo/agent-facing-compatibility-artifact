@@ -1,9 +1,13 @@
 {
   "archive": {
-    "path": "../artifact_release_4open.tar.gz",
-    "sha256": "8756F4079EC6A65E669F31D2B3978A88DEAE1205615054C978EE487CC34DCB73"
+    "path": "../artifact_release_4open_updated.tar.gz",
+    "sha256": "D993CEFE3A4B6C9CF0BF18AA4249D3574099CB51C9CF84D7E76AA977DC643EDD"
   },
   "excluded_patterns": [
+    ".git",
+    "__pycache__",
+    ".pytest_cache",
+    ".venv",
     ".env",
     "*.err",
     "*.log",
@@ -22,7 +26,7 @@
     "*WYZAI*",
     "*provider_preflight.md"
   ],
-  "file_count": 321,
+  "file_count": 352,
   "files": [
     {
       "path": ".gitattributes",
@@ -56,8 +60,8 @@
     },
     {
       "path": "afc_gate/afc_gate/exposure.py",
-      "sha256": "d52375b9fe66ed87334af5f04f572bd71a69d9dd42c8abc6bef7545bbd479df7",
-      "size": 5363
+      "sha256": "a0d65da1d05bef61aad4dd47de0c080d0cc755882eb56cf755525e1a102738a2",
+      "size": 5341
     },
     {
       "path": "afc_gate/afc_gate/io_utils.py",
@@ -241,8 +245,8 @@
     },
     {
       "path": "code/common/llm_client.py",
-      "sha256": "693de313e0684ed7ed1aae4aa4911339ae3cfe7024feb375ea8925cd999dcae3",
-      "size": 16111
+      "sha256": "9a4f0963b99697f7d1d1396aaa79ed5f0af178810ee64e5e7f636947045e384e",
+      "size": 15995
     },
     {
       "path": "code/common/runner.py",
@@ -271,8 +275,8 @@
     },
     {
       "path": "code/schema_mutation/batch_runner.py",
-      "sha256": "f58b47459901f753920b34c1aa88fdb306f5b867cd2dd6a745fe2b56fbc6e4a3",
-      "size": 26148
+      "sha256": "8d25f2c3b88ddc8673d562f2740907e6e56a43bcb3b7691945d547e769b4cf8b",
+      "size": 26138
     },
     {
       "path": "code/schema_mutation/build_combined_observability_review.py",
@@ -386,8 +390,8 @@
     },
     {
       "path": "code/schema_mutation/phase10_provider_preflight.py",
-      "sha256": "5ad448fa3cd8821f9de7f3e4cc07da3b9e390bb82595dc86aeaf4a98695c5c03",
-      "size": 7835
+      "sha256": "d75c6889763255573359beee12978577a55f581a27051f9d5b534766865a1ad7",
+      "size": 7811
     },
     {
       "path": "code/schema_mutation/phase10_real_api_grounding.py",
@@ -476,8 +480,8 @@
     },
     {
       "path": "code/schema_mutation/runner.py",
-      "sha256": "781400f526cc1b1d12870f2c4d964cb830efcdd0697bec2f8a6c5f6ad7cda8df",
-      "size": 45300
+      "sha256": "a55d84af4388a5cab0cf74795a645140ffb82923db3d1898c8db1e5bd7bbad14",
+      "size": 45051
     },
     {
       "path": "code/schema_mutation/select_baseline_tasks.py",
@@ -705,6 +709,21 @@
       "size": 2533
     },
     {
+      "path": "data/real_api_grounding/supplemental_public_changelog_case.jsonl",
+      "sha256": "61ba554dae973a8be76bf5429cbe516f02bac663b80a5ce98b49475cd4e68b82",
+      "size": 1678
+    },
+    {
+      "path": "data/real_case_replay/address_element_case_spec.json",
+      "sha256": "5a7185491563000c5387fbe571b100def03680d04de44c6b0678b54466756447",
+      "size": 1726
+    },
+    {
+      "path": "data/real_case_replay/address_element_case_spec.md",
+      "sha256": "e51d84b0cc81c79b8a0d8e894ed93ebde0ebdab14f83e4cc43018aa35e06e880",
+      "size": 1741
+    },
+    {
       "path": "data/real_case_replay/real_case_audit.json",
       "sha256": "bf09c8251b2a591b732e1458f31b78128570a36faa58f380e9207aede286140b",
       "size": 3815
@@ -816,8 +835,13 @@
     },
     {
       "path": "DATASET_CARD.md",
-      "sha256": "f33af331339f91457ddf472bc0ee4d639cbcd4c525ae9b59d15e3cafac89f89b",
-      "size": 1601
+      "sha256": "4c28012545c2730531e4ce47d4615ca9ea0be9ffdb6863c908f4bd41cdc8fee0",
+      "size": 2164
+    },
+    {
+      "path": "docs/4open_refresh_instructions.md",
+      "sha256": "b5b6cb7e6f89f65b7f63afdf92e0c3a5b522858e5ab4229401c2db6783390d36",
+      "size": 635
     },
     {
       "path": "docs/4open_release_instructions.md",
@@ -836,18 +860,8 @@
     },
     {
       "path": "docs/artifact_inventory.md",
-      "sha256": "9a8cfa85cb9a36c586947feeb6978e3bbb5ab8bfd3db7cb3044760ee7f243fc6",
-      "size": 344
-    },
-    {
-      "path": "docs/artifact_manifest.json",
-      "sha256": "36c99a9181d3d914ae508ec3d58021a6af5204a0916df20d5c062d38d4e97ecc",
-      "size": 60189
-    },
-    {
-      "path": "docs/artifact_manifest.md",
-      "sha256": "f5d5aa64b9e29327a25cce1ff938220eec9bebcff2fbd59dcc145ba984df1ec6",
-      "size": 525
+      "sha256": "2722f1b317df38505a5197da08cd3eb676a54bf3c13cbc40d2a26f491e2d2a67",
+      "size": 560
     },
     {
       "path": "docs/detector_families.md",
@@ -856,8 +870,8 @@
     },
     {
       "path": "docs/known_limitations.md",
-      "sha256": "d47c484e92bcde48abec258bf35f2f6992b2dccfce5a7ae4a68fc78ca52f86f2",
-      "size": 525
+      "sha256": "2015d8c557574145daf90f13eba3b1dff7e39986e1b2cf584aff99159fd3eca2",
+      "size": 731
     },
     {
       "path": "docs/label_schema.md",
@@ -871,8 +885,8 @@
     },
     {
       "path": "docs/offline_reproduction_report.json",
-      "sha256": "ca9790f69656ca9d3fb5fa3937c65ea68649bc6ebfaf0f880807b32527a3db36",
-      "size": 41
+      "sha256": "2676c6533c6d4e34f2ebeb341058541c793689aded8bde6d0135f3f8ee1cd752",
+      "size": 45
     },
     {
       "path": "docs/prompt_archive/agent_prompt_construction.md",
@@ -906,18 +920,18 @@
     },
     {
       "path": "docs/reproduction_headlines.json",
-      "sha256": "a89aaff804bc94537525279156d361967899f1e520ce1772162e9b94f580f4d4",
-      "size": 1025
+      "sha256": "e47d0518f61f55fc86a9496f8b481d9eed41d81c9180d200e254d8100a979518",
+      "size": 1559
     },
     {
       "path": "docs/secret_scan_report.json",
-      "sha256": "e8289a35c4d010e7636e66986bf7fd1182645ca609eecd2d06f65b14c3f7637b",
-      "size": 24912
+      "sha256": "4039c66d1154fafb65a5c723dcdc813a4f513c27975c85f361940f789210d395",
+      "size": 26154
     },
     {
       "path": "docs/secret_scan_report.md",
-      "sha256": "a18233d0e196af71ad92fc881c391b9a78fbe41aaa659bf263942d5468b8268e",
-      "size": 13153
+      "sha256": "52acd3a8a8c5f5a57799b4b9a0341c86f0a704c9904977b2bd53039ba7301dd3",
+      "size": 13494
     },
     {
       "path": "docs/taxonomy.md",
@@ -943,6 +957,11 @@
       "path": "figures/pdf/exposure_control_contrast.pdf",
       "sha256": "221d038e2ba45b8d55ce6dd2d9de65a5d0cbc3f3c9bf092a96397405fa96b86a",
       "size": 12277
+    },
+    {
+      "path": "figures/pdf/fig1_compliant_semantic_failure.pdf",
+      "sha256": "496d29a3dfd6c8ac764bde3fbed9620679cf51a87b7bae353973e8a45a8e25f6",
+      "size": 83362
     },
     {
       "path": "figures/pdf/gate_recall_cost_tradeoff.pdf",
@@ -975,6 +994,11 @@
       "size": 2493
     },
     {
+      "path": "figures/png/fig1_compliant_semantic_failure.png",
+      "sha256": "e6eb5c6a55efef64674a530013b1e2fbbe6c9556fe1449b522b180d5f5e280bb",
+      "size": 128114
+    },
+    {
       "path": "figures/source/README.md",
       "sha256": "62fb3f2464cab36392afc8f68e54e89599669e66f999b38b791a21f9dcb12e94",
       "size": 78
@@ -985,14 +1009,19 @@
       "size": 1391
     },
     {
+      "path": "paper/main_anonymous.pdf",
+      "sha256": "a71e228be02c8cbfc1931d258127461b6a917e401117ca51e68f173e77888e2d",
+      "size": 415457
+    },
+    {
       "path": "README.md",
-      "sha256": "3411d3a0552e8f3be0c1bd35321832904452364f4ce26e39dfee1daaed31b547",
-      "size": 2965
+      "sha256": "282dcc7ead5ea868892ccafbc777a7a5964efd579d01529636995145ea5b94eb",
+      "size": 3520
     },
     {
       "path": "REPRODUCTION_GUIDE.md",
-      "sha256": "e5d25bc57f0627e28706a97ead675a6a1614dcf15c156706aa806962e2b920d2",
-      "size": 978
+      "sha256": "1b89a75ba1ab3234ea41c2ce21a350d693febe0d4d356dc16f7a2f4c01c3e7ac",
+      "size": 1220
     },
     {
       "path": "REQUIREMENTS.md",
@@ -1228,6 +1257,131 @@
       "path": "results/phase11_audits/trace_case_summary.md",
       "sha256": "3b7b7cf73d106fb910f140b27c664896c00205b840550139b097a32d6da03eeb",
       "size": 1375
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/address_element_formal_plan.jsonl",
+      "sha256": "7c4af524590b1eb6bcaf50e7912d46a21701b049b01a989b239bbed2561f4e5f",
+      "size": 110415
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/address_element_formal_plan.md",
+      "sha256": "f4a05287b4c7733ed042368cbdeee1c6c52b317bf5e9db4194f2d33a6cdd4488",
+      "size": 9867
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/address_element_formal_summary.json",
+      "sha256": "f81bc43312fceee3319ef558cb8204956e1ef3d806a024698b3acc1f6375102c",
+      "size": 20400
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/address_element_formal_summary.md",
+      "sha256": "851d488d2f98a61fbbe4191ad69d9e03767be74fc256e1417f51a26b083ebd3a",
+      "size": 5789
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/logs/address_element_formal_run.log",
+      "sha256": "b290d9242a778ffa33116aa8f35b44211288b84948631b0fc659c96a392fa05a",
+      "size": 6180
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/metadata/address_element_run_metadata.json",
+      "sha256": "541f15458e3b569d9d43425596aadf1674c020d19be4a1e807b3e69533098c8f",
+      "size": 462
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/raw/address_element_formal_raw.jsonl",
+      "sha256": "695d1d06351e5a936c870298d2fd73aaaf0ad475a853f95cdf1923701b6fd19e",
+      "size": 269902
+    },
+    {
+      "path": "results/phase12_address_element_replay/formal/status/address_element_formal_status.jsonl",
+      "sha256": "08bcc6caf3ad19930bc6487fdade2d77532b4b0f7ec6ae208b9fd46cab2d31e0",
+      "size": 35205
+    },
+    {
+      "path": "results/phase12_address_element_replay/paper_patch_suggestion.md",
+      "sha256": "2f5cf145f487fbd84239a8c9a474b0a5887b883ae58ba62452528a7794842d0b",
+      "size": 1581
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12i_public_changelog_example_report.md",
+      "sha256": "2d47ddab669edb94c51dbe0724f4259d2d2d1a19ea562685051b1d0198879373",
+      "size": 3085
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12j_address_element_replay_report.md",
+      "sha256": "632e8775f90dca4cfe997031972aaabf16a81946c01c9552a08d74e37d160eaa",
+      "size": 3914
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12k_address_element_integration_report.md",
+      "sha256": "733ff9f63e3ddf5dfb157431093b87f34834e92e3ba5a18c96268930c1d39765",
+      "size": 3972
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12l_final_consistency_audit.json",
+      "sha256": "06900351d90eac5269d3f33ce7d1de3b96833fb8e075354579f51479eb640afd",
+      "size": 4809
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12l_final_consistency_audit.md",
+      "sha256": "2650d0df8d7ed88a00bf68c96849dcb2fc36b11eefbdd19e8d3f4dd053b0f14b",
+      "size": 4296
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12l_final_submission_audit_report.md",
+      "sha256": "c1baeb6300d4fdc455e3187808c726e57547d10a15c43476c7abf82c7abfccac",
+      "size": 2127
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12l_number_reconciliation_after_address_element.json",
+      "sha256": "350bdae16cb0a0f78ba09f231e0d5f5afcc15dcec50e6e35c4ebde438ac16e3c",
+      "size": 1408
+    },
+    {
+      "path": "results/phase12_address_element_replay/phase12l_number_reconciliation_after_address_element.md",
+      "sha256": "71e515baad6187c0fed03ed8114516e7a195eee5b514cb27ad923801a13b1a20",
+      "size": 1259
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/address_element_smoke_plan.jsonl",
+      "sha256": "dafdd3bab82abc4c21f69e0702a5525819966666535afd0b60ac60497b93def7",
+      "size": 18419
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/address_element_smoke_plan.md",
+      "sha256": "8f9b0390fc9022f9c15298cb9f99b91cd2239a9859f469582e5f2c30044a98e8",
+      "size": 1970
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/address_element_smoke_summary.json",
+      "sha256": "f22ca2a1bf8532fafa770306a5d64c8b086871a7895b63b77f3fa3ecc040ebca",
+      "size": 13841
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/address_element_smoke_summary.md",
+      "sha256": "5655710f80c991027a8786141d540f13181ca554e799e01f8c0ed69b292e429a",
+      "size": 4142
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/logs/address_element_smoke_run.log",
+      "sha256": "ddb658701cebb9b30bca38f9ae5eb89cedd6d3784678cedf01394db18fc1c5e1",
+      "size": 2084
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/metadata/address_element_run_metadata.json",
+      "sha256": "70a20277b15693d09c4d6d30f13a80ac34c1d27654428a829f13e20d507483dd",
+      "size": 455
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/raw/address_element_smoke_raw.jsonl",
+      "sha256": "a57e430167dcf4fb946eb1a5a2e175aa1e5425c5b6b6cf1eb4457d5dc3e835a9",
+      "size": 89889
+    },
+    {
+      "path": "results/phase12_address_element_replay/smoke/status/address_element_smoke_status.jsonl",
+      "sha256": "30ae77eac87aaba028e0899f396327324db0c40a66463344c24b571ed7f41831",
+      "size": 11768
     },
     {
       "path": "results/phase5_observability/status/airline_baseline_nonwyzlab_0000_status.jsonl",
@@ -1496,13 +1650,13 @@
     },
     {
       "path": "scripts/anonymize_and_package.py",
-      "sha256": "720d46c4c84bec2d5a4c6934ade151e7f0a8f058f479a2e6073827e500cd773f",
-      "size": 60687
+      "sha256": "1f307dc35439de3f7cdea8ad042b415b7cfa49ace146bf098268cd04430cd0a0",
+      "size": 60677
     },
     {
       "path": "scripts/offline_verify_results.py",
-      "sha256": "079260b2410cee1b9cefd79f212a4247f713703e8776a486bc9dcb95f3513129",
-      "size": 3923
+      "sha256": "7b121c26873e1ac2a30e885f531cf4fe652a076b7b36dd30bee98d19a2b1ff06",
+      "size": 5054
     },
     {
       "path": "scripts/reproduce_audits.sh",
@@ -1521,8 +1675,8 @@
     },
     {
       "path": "scripts/scan_for_secrets.py",
-      "sha256": "ef99b8522e71f27e877b0bb691a48642b466b2057cbdaa070d4ada90ebbc5c3a",
-      "size": 4185
+      "sha256": "e357f72209bdf11fa98d0d17d086d0e58cada878ffb8cc7aa58dfae2562b38bd",
+      "size": 4210
     },
     {
       "path": "scripts/smoke_test.sh",
@@ -1533,6 +1687,11 @@
       "path": "tables/generated_csv/README.md",
       "sha256": "d1e2919905dfb6bd5329ea1ac40e4a2d295a2686b2ce7165cb46b49ce2fa8a70",
       "size": 110
+    },
+    {
+      "path": "tables/generated_tex/address_element_replay_auto.tex",
+      "sha256": "1ee60820317c70ce35bbb9e13005ad0668b5751d4d60013fd69a17504c7ac965",
+      "size": 720
     },
     {
       "path": "tables/generated_tex/airline_baseline_audit_auto.tex",
@@ -1616,8 +1775,8 @@
     },
     {
       "path": "tests/test_artifact_integrity.py",
-      "sha256": "e3e3cd9fa43a9ea8adbcc942320d41fa36411e0fad5d3fc96570e4ee61290bf9",
-      "size": 2726
+      "sha256": "e7ea25787fb6606a3dc4a729ffea93cb7d143e988276cf86760ea38a496c242d",
+      "size": 4278
     },
     {
       "path": "tests/test_no_secrets.py",
@@ -1630,18 +1789,21 @@
       "size": 515
     }
   ],
-  "generated_at": "2026-06-22T08:56:22+00:00",
+  "generated_utc": "2026-06-24T15:15:13+00:00",
   "major_directories": [
     "afc_gate",
     "code",
     "data",
     "docs",
     "figures",
+    "paper",
     "results",
     "scripts",
     "tables",
     "tests"
   ],
-  "title": "Compliant Semantic Failures: Testing Agent-Facing Compatibility of Evolving Tool APIs",
-  "total_size_bytes": 22774980
+  "notes": [
+    "artifact_manifest.json and artifact_manifest.md are excluded from their own file-hash list."
+  ],
+  "total_size_bytes": 23981118
 }

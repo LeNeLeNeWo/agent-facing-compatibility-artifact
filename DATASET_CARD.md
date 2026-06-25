@@ -9,6 +9,8 @@
 - Phase 10 non-obviousness control summaries.
 - Real-changelog-grounded replay cases implemented as deterministic local
   wrappers.
+- Supplemental Stripe Address Element public-changelog-grounded replay outputs
+  from Phase 12.
 
 ## Data Fields
 
@@ -30,6 +32,10 @@ The corpus is a public-changelog sample, not a production telemetry sample.
 The replay cases are deterministic local wrappers grounded in changelog
 evidence, not live third-party service tests. Human review packets are included,
 but human-validated labels should not be claimed unless review is completed.
+
+## Supplemental Public Changelog Example and Address Element Replay
+
+The artifact includes an additional Stripe Address Element public-changelog-grounded replay case. This case is based on a public Stripe changelog entry in which the Address Element state field default formatting changed. The replay uses a deterministic local wrapper and does not call the live Stripe API. It should not be interpreted as a production incident or production frequency measurement.
 
 ## Privacy and Anonymity
 

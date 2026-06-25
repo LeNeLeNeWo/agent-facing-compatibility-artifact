@@ -1,0 +1,60 @@
+{
+  "address_element_totals": {
+    "baseline_old_api": {
+      "hidden": 0,
+      "ok": 12,
+      "success": 12
+    },
+    "evolved_o0_silent": {
+      "hidden": 6,
+      "ok": 12,
+      "success": 6
+    },
+    "evolved_visible_feedback": {
+      "hidden": 0,
+      "ok": 12,
+      "success": 12
+    }
+  },
+  "all_headline_checks_pass": true,
+  "combined_real_replay_totals": {
+    "baseline_old_api": {
+      "hidden": 0,
+      "ok": 36,
+      "success": 36
+    },
+    "evolved_o0_silent": {
+      "hidden": 29,
+      "ok": 35,
+      "success": 6
+    },
+    "evolved_visible_feedback": {
+      "hidden": 0,
+      "ok": 35,
+      "success": 34
+    }
+  },
+  "headline_checks": {
+    "151 public API entries": true,
+    "1815 formal cells": true,
+    "288 non-obviousness": true,
+    "363 exposed / 363 unused": true,
+    "44.4% vs 1.4%": true,
+    "44/130": true,
+    "480 C1-C3": true,
+    "49/156": true,
+    "50.1% vs 77.1%": true,
+    "525 retail / 1290 airline": true,
+    "61 C-class candidates": true,
+    "O0-to-visible 50.1 -> 84.7": true,
+    "non-obviousness 3/96": true,
+    "non-obviousness 6/95": true,
+    "non-obviousness 71/95": true,
+    "real replay O0 6/35 29/35": true,
+    "real replay baseline 36/36 0/36": true,
+    "real replay visible 34/35 0/35": true
+  },
+  "page_count": 10,
+  "reference_count": 32,
+  "status": "pass"
+}

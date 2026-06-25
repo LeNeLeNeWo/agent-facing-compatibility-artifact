@@ -112,7 +112,7 @@ class MimoClient:
     """OpenAI-compatible client targeting Mimo.
 
     Args:
-        api_key:    <REDACTED_SECRET> MIMO_API_KEY env var
+        api_key:    overrides MIMO_API_KEY env var
         base_url:   overrides MIMO_BASE_URL env var
         model:      overrides MIMO_MODEL env var
         timeout:    request timeout seconds
@@ -121,16 +121,14 @@ class MimoClient:
 
     def __init__(
         self,
-        api_key: <REDACTED_SECRET>[str] = None,
+        api_key: Optional[str] = None,
         base_url: Optional[str] = None,
         model: Optional[str] = None,
         timeout: Optional[float] = None,
         max_retries: Optional[int] = None,
     ) -> None:
         self.api_key = api_key or os.getenv("MIMO_API_KEY")
-        self.base_url = base_url or os.getenv(
-            "MIMO_BASE_URL", "https://token-plan-cn.xiaomimimo.com/v1"
-        )
+        self.base_url = base_url or os.getenv("MIMO_BASE_URL")
         self.model = model or os.getenv("MIMO_MODEL", "mimo-v2.5-pro")
         self.timeout = float(timeout or os.getenv("PILOT_REQUEST_TIMEOUT", "60"))
         self.max_retries = int(max_retries or os.getenv("PILOT_MAX_RETRIES", "3"))
@@ -141,7 +139,7 @@ class MimoClient:
             )
 
         self._client = OpenAI(
-            api_key=<REDACTED_SECRET>,
+            api_key=self.api_key,
             base_url=self.base_url,
             timeout=self.timeout,
             max_retries=0,  # 我们自己用 tenacity 控制
@@ -274,7 +272,7 @@ class DeepSeekClient(MimoClient):
 
     def __init__(
         self,
-        api_key: <REDACTED_SECRET>[str] = None,
+        api_key: Optional[str] = None,
         base_url: Optional[str] = None,
         model: Optional[str] = None,
         **kwargs: Any,
@@ -323,7 +321,7 @@ class DashScopeClient(MimoClient):
 
     def __init__(
         self,
-        api_key: <REDACTED_SECRET>[str] = None,
+        api_key: Optional[str] = None,
         base_url: Optional[str] = None,
         model: Optional[str] = None,
         **kwargs: Any,
@@ -362,7 +360,7 @@ class SiliconFlowClient(MimoClient):
 
     def __init__(
         self,
-        api_key: <REDACTED_SECRET>[str] = None,
+        api_key: Optional[str] = None,
         base_url: Optional[str] = None,
         model: Optional[str] = None,
         **kwargs: Any,

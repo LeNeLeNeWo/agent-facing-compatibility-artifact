@@ -1,0 +1,15 @@
+{
+  "completed_cells": 36,
+  "elapsed_s": 172.76,
+  "not_live_stripe_api": true,
+  "output_dir": "runs/schema_mutation/phase12/address_element_replay/formal",
+  "phase": "phase12j",
+  "plan": "runs/schema_mutation/phase12/address_element_replay/formal/address_element_formal_plan.jsonl",
+  "planned_cells": 36,
+  "real_third_party_api_call_attempted": false,
+  "status": "completed",
+  "status_counts": {
+    "ok": 36
+  },
+  "stop_reason": null
+}

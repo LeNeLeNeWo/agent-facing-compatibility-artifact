@@ -16,7 +16,8 @@ rerunning expensive LLM-agent experiments.
   real-changelog replay plans.
 - `results/`: frozen main results, Phase 5 observability summaries, Phase 8
   exposure and semantic-generalization controls, Phase 10 grounding/control
-  outputs, Phase 11 audits, and AFC-Gate demo outputs.
+  outputs, the supplemental Phase 12 Address Element replay, Phase 11/12
+  audits, and AFC-Gate demo outputs.
 - `figures/` and `tables/`: generated paper-ready PDFs and LaTeX tables.
 - `afc_gate/`: artifact implementation of the AFC-Gate prototype, with toy
   example input/output and tests. It is not a separately evaluated production
@@ -50,6 +51,10 @@ The offline checks should confirm the headline counts recorded in
 `docs/reproduction_headlines.json`, including 1815 formal main cells, 151 public
 API entries, 61 C-class candidates, non-obviousness control rates, and the
 real-changelog-grounded replay results.
+
+## Supplemental Public Changelog Example and Address Element Replay
+
+The artifact includes an additional Stripe Address Element public-changelog-grounded replay case. This case is based on a public Stripe changelog entry in which the Address Element state field default formatting changed. The replay uses a deterministic local wrapper and does not call the live Stripe API. It is reported as a supplemental Phase 12 replay and is also folded into the paper's combined real-changelog replay totals.
 
 ## Known Limitations
 

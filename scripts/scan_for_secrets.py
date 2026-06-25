@@ -10,7 +10,7 @@ from pathlib import Path
 _user = "ya" + "ng"
 _local_drive = "D:" + re.escape("\\") + "study_" + "ecnu"
 _local_home = r"/home/" + _user
-_local_segment = "研" + "1"
+_local_segment = chr(0x7814) + "1"
 _identity = "Corn" + "elius|alda_" + "occaecatiqxi|University of Science and Technology" + " of China|US" + "TC|Ten" + "cent"
 
 CRITICAL_PATTERNS = {
@@ -74,11 +74,18 @@ def write_reports(root: Path, result: dict) -> None:
     docs = root / "docs"
     docs.mkdir(parents=True, exist_ok=True)
     (docs / "secret_scan_report.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    lines = ["# Secret Scan Report", "", f"- critical: {result['counts']['critical']}", f"- warning: {result['counts']['warning']}", f"- harmless: {result['counts']['harmless']}", ""]
-    lines.append("Critical findings must be fixed before release. Warnings are expected for environment-variable names used to document optional live reruns.")
-    lines.append("")
-    lines.append("## Findings")
-    lines.append("")
+    lines = [
+        "# Secret Scan Report",
+        "",
+        f"- critical: {result['counts']['critical']}",
+        f"- warning: {result['counts']['warning']}",
+        f"- harmless: {result['counts']['harmless']}",
+        "",
+        "Critical findings must be fixed before release. Warnings are expected for environment-variable names used to document optional live reruns.",
+        "",
+        "## Findings",
+        "",
+    ]
     for f in result["findings"][:500]:
         lines.append(f"- {f['severity']}: {f['pattern']} in `{f['file']}` line {f['line']}")
     if len(result["findings"]) > 500:

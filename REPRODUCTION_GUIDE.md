@@ -9,6 +9,7 @@ No execution required. Review:
 - `results/main_results/`
 - `results/phase10_nonobviousness/`
 - `results/phase10_real_case_replay/`
+- `results/phase12_address_element_replay/`
 - `figures/pdf/`
 - `tables/generated_tex/`
 - `results/phase11_audits/`
@@ -27,6 +28,10 @@ python -m pytest tests/
 ```
 
 The commands do not run agents and do not call provider APIs.
+
+The supplemental Address Element replay artifacts are frozen outputs under
+`results/phase12_address_element_replay/`. They can be inspected offline; the
+artifact does not call the live Stripe API.
 
 ## Level 2: Optional Live Rerun
 

@@ -1,0 +1,733 @@
+{
+  "all_status_record_counts": {
+    "ok": 36
+  },
+  "all_status_records": 36,
+  "by_case": {
+    "stripe_address_element_state_format_20260325": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 12,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 12,
+        "planned_or_observed_n": 12,
+        "recovery_success_n": 7,
+        "recovery_success_rate": 0.5833333333333334,
+        "status_counts": {
+          "ok": 12
+        },
+        "success_n": 12,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 12,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 6,
+        "hidden_violation_rate": 0.5,
+        "ok_n": 12,
+        "planned_or_observed_n": 12,
+        "recovery_success_n": 6,
+        "recovery_success_rate": 0.5,
+        "status_counts": {
+          "ok": 12
+        },
+        "success_n": 6,
+        "success_rate": 0.5,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 12,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 12,
+        "planned_or_observed_n": 12,
+        "recovery_success_n": 12,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 12
+        },
+        "success_n": 12,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 12,
+        "visible_rule_exposed_rate": 1.0
+      }
+    }
+  },
+  "by_condition": {
+    "baseline_old_api": {
+      "deterministic_oracle_ok_n": 12,
+      "deterministic_oracle_ok_rate": 1.0,
+      "hidden_violation_n": 0,
+      "hidden_violation_rate": 0.0,
+      "ok_n": 12,
+      "planned_or_observed_n": 12,
+      "recovery_success_n": 7,
+      "recovery_success_rate": 0.5833333333333334,
+      "status_counts": {
+        "ok": 12
+      },
+      "success_n": 12,
+      "success_rate": 1.0,
+      "visible_rule_exposed_n": 0,
+      "visible_rule_exposed_rate": 0.0
+    },
+    "evolved_o0_silent": {
+      "deterministic_oracle_ok_n": 12,
+      "deterministic_oracle_ok_rate": 1.0,
+      "hidden_violation_n": 6,
+      "hidden_violation_rate": 0.5,
+      "ok_n": 12,
+      "planned_or_observed_n": 12,
+      "recovery_success_n": 6,
+      "recovery_success_rate": 0.5,
+      "status_counts": {
+        "ok": 12
+      },
+      "success_n": 6,
+      "success_rate": 0.5,
+      "visible_rule_exposed_n": 0,
+      "visible_rule_exposed_rate": 0.0
+    },
+    "evolved_visible_feedback": {
+      "deterministic_oracle_ok_n": 12,
+      "deterministic_oracle_ok_rate": 1.0,
+      "hidden_violation_n": 0,
+      "hidden_violation_rate": 0.0,
+      "ok_n": 12,
+      "planned_or_observed_n": 12,
+      "recovery_success_n": 12,
+      "recovery_success_rate": 1.0,
+      "status_counts": {
+        "ok": 12
+      },
+      "success_n": 12,
+      "success_rate": 1.0,
+      "visible_rule_exposed_n": 12,
+      "visible_rule_exposed_rate": 1.0
+    }
+  },
+  "by_model": {
+    "dashscope/glm-5.1": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 0,
+        "recovery_success_rate": 0.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 3,
+        "visible_rule_exposed_rate": 1.0
+      }
+    },
+    "dashscope/kimi-k2.6": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 1,
+        "recovery_success_rate": 0.3333333333333333,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 3,
+        "hidden_violation_rate": 1.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 0,
+        "recovery_success_rate": 0.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 0,
+        "success_rate": 0.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 3,
+        "visible_rule_exposed_rate": 1.0
+      }
+    },
+    "dashscope/qwen-max": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 3,
+        "hidden_violation_rate": 1.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 0,
+        "recovery_success_rate": 0.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 0,
+        "success_rate": 0.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 3,
+        "visible_rule_exposed_rate": 1.0
+      }
+    },
+    "deepseek/deepseek-v4-flash": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 3,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 3,
+        "planned_or_observed_n": 3,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 3
+        },
+        "success_n": 3,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 3,
+        "visible_rule_exposed_rate": 1.0
+      }
+    }
+  },
+  "by_seed": {
+    "0": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 3,
+        "recovery_success_rate": 0.75,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 4,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 2,
+        "hidden_violation_rate": 0.5,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 2,
+        "recovery_success_rate": 0.5,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 2,
+        "success_rate": 0.5,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 4,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 4,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 4,
+        "visible_rule_exposed_rate": 1.0
+      }
+    },
+    "1": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 2,
+        "recovery_success_rate": 0.5,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 4,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 2,
+        "hidden_violation_rate": 0.5,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 2,
+        "recovery_success_rate": 0.5,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 2,
+        "success_rate": 0.5,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 4,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 4,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 4,
+        "visible_rule_exposed_rate": 1.0
+      }
+    },
+    "2": {
+      "baseline_old_api": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 2,
+        "recovery_success_rate": 0.5,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 4,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_o0_silent": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 2,
+        "hidden_violation_rate": 0.5,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 2,
+        "recovery_success_rate": 0.5,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 2,
+        "success_rate": 0.5,
+        "visible_rule_exposed_n": 0,
+        "visible_rule_exposed_rate": 0.0
+      },
+      "evolved_visible_feedback": {
+        "deterministic_oracle_ok_n": 4,
+        "deterministic_oracle_ok_rate": 1.0,
+        "hidden_violation_n": 0,
+        "hidden_violation_rate": 0.0,
+        "ok_n": 4,
+        "planned_or_observed_n": 4,
+        "recovery_success_n": 4,
+        "recovery_success_rate": 1.0,
+        "status_counts": {
+          "ok": 4
+        },
+        "success_n": 4,
+        "success_rate": 1.0,
+        "visible_rule_exposed_n": 4,
+        "visible_rule_exposed_rate": 1.0
+      }
+    }
+  },
+  "case_id": "stripe_address_element_state_format_20260325",
+  "deterministic_oracle_worked": true,
+  "fake_run_rows": [],
+  "formal_recommended_or_integratable": true,
+  "input_dir": "runs/schema_mutation/phase12/address_element_replay/formal",
+  "metadata": {
+    "completed_cells": 36,
+    "elapsed_s": 172.76,
+    "not_live_stripe_api": true,
+    "output_dir": "runs/schema_mutation/phase12/address_element_replay/formal",
+    "phase": "phase12j",
+    "plan": "runs/schema_mutation/phase12/address_element_replay/formal/address_element_formal_plan.jsonl",
+    "planned_cells": 36,
+    "real_third_party_api_call_attempted": false,
+    "status": "completed",
+    "status_counts": {
+      "ok": 36
+    },
+    "stop_reason": null
+  },
+  "phase": "phase12j",
+  "plan_path": "runs/schema_mutation/phase12/address_element_replay/formal/address_element_formal_plan.jsonl",
+  "planned_cells": 36,
+  "provider_error_timeout_failed_not_counted_as_agent_failures": true,
+  "raw_records": 36,
+  "real_third_party_api_call_rows": [],
+  "recommendation_reason": "Baseline succeeds, silent evolved condition hidden-violates, and visible condition recovers.",
+  "rule_leakage_rows": [],
+  "run_cells": 36,
+  "statistics": {
+    "bootstrap_hidden_violation_differences": {
+      "baseline_old_api_vs_evolved_o0_silent": {
+        "ci95": {
+          "hi": -0.25,
+          "lo": -0.75
+        },
+        "n_a": 12,
+        "n_b": 12,
+        "n_boot": 10000,
+        "point": -0.5
+      },
+      "baseline_old_api_vs_evolved_visible_feedback": {
+        "ci95": {
+          "hi": 0.0,
+          "lo": 0.0
+        },
+        "n_a": 12,
+        "n_b": 12,
+        "n_boot": 10000,
+        "point": 0.0
+      },
+      "evolved_o0_silent_vs_evolved_visible_feedback": {
+        "ci95": {
+          "hi": 0.75,
+          "lo": 0.25
+        },
+        "n_a": 12,
+        "n_b": 12,
+        "n_boot": 10000,
+        "point": 0.5
+      }
+    },
+    "bootstrap_hidden_violation_rates": {
+      "baseline_old_api": {
+        "ci95": {
+          "hi": 0.0,
+          "lo": 0.0
+        },
+        "n": 12,
+        "n_boot": 10000,
+        "point": 0.0
+      },
+      "evolved_o0_silent": {
+        "ci95": {
+          "hi": 0.75,
+          "lo": 0.25
+        },
+        "n": 12,
+        "n_boot": 10000,
+        "point": 0.5
+      },
+      "evolved_visible_feedback": {
+        "ci95": {
+          "hi": 0.0,
+          "lo": 0.0
+        },
+        "n": 12,
+        "n_boot": 10000,
+        "point": 0.0
+      }
+    },
+    "bootstrap_success_differences": {
+      "baseline_old_api_vs_evolved_o0_silent": {
+        "ci95": {
+          "hi": 0.75,
+          "lo": 0.25
+        },
+        "n_a": 12,
+        "n_b": 12,
+        "n_boot": 10000,
+        "point": 0.5
+      },
+      "baseline_old_api_vs_evolved_visible_feedback": {
+        "ci95": {
+          "hi": 0.0,
+          "lo": 0.0
+        },
+        "n_a": 12,
+        "n_b": 12,
+        "n_boot": 10000,
+        "point": 0.0
+      },
+      "evolved_o0_silent_vs_evolved_visible_feedback": {
+        "ci95": {
+          "hi": -0.25,
+          "lo": -0.75
+        },
+        "n_a": 12,
+        "n_b": 12,
+        "n_boot": 10000,
+        "point": -0.5
+      }
+    },
+    "bootstrap_success_rates": {
+      "baseline_old_api": {
+        "ci95": {
+          "hi": 1.0,
+          "lo": 1.0
+        },
+        "n": 12,
+        "n_boot": 10000,
+        "point": 1.0
+      },
+      "evolved_o0_silent": {
+        "ci95": {
+          "hi": 0.75,
+          "lo": 0.25
+        },
+        "n": 12,
+        "n_boot": 10000,
+        "point": 0.5
+      },
+      "evolved_visible_feedback": {
+        "ci95": {
+          "hi": 1.0,
+          "lo": 1.0
+        },
+        "n": 12,
+        "n_boot": 10000,
+        "point": 1.0
+      }
+    },
+    "tests_hidden_violation": {
+      "baseline_old_api_vs_evolved_o0_silent": {
+        "chi_square_p": 0.004677734981047265,
+        "fisher_p": 0.013729977116704805,
+        "table": [
+          [
+            0,
+            12
+          ],
+          [
+            6,
+            6
+          ]
+        ]
+      },
+      "baseline_old_api_vs_evolved_visible_feedback": {
+        "chi_square_p": null,
+        "fisher_p": 1.0,
+        "table": [
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            12
+          ]
+        ]
+      },
+      "evolved_o0_silent_vs_evolved_visible_feedback": {
+        "chi_square_p": 0.004677734981047265,
+        "fisher_p": 0.013729977116704805,
+        "table": [
+          [
+            6,
+            6
+          ],
+          [
+            0,
+            12
+          ]
+        ]
+      }
+    },
+    "tests_success": {
+      "baseline_old_api_vs_evolved_o0_silent": {
+        "chi_square_p": 0.004677734981047265,
+        "fisher_p": 0.013729977116704805,
+        "table": [
+          [
+            12,
+            0
+          ],
+          [
+            6,
+            6
+          ]
+        ]
+      },
+      "baseline_old_api_vs_evolved_visible_feedback": {
+        "chi_square_p": null,
+        "fisher_p": 1.0,
+        "table": [
+          [
+            12,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ]
+      },
+      "evolved_o0_silent_vs_evolved_visible_feedback": {
+        "chi_square_p": 0.004677734981047265,
+        "fisher_p": 0.013729977116704805,
+        "table": [
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "status_counts": {
+    "ok": 36
+  }
+}

@@ -19,6 +19,21 @@
     "o0_silent_success": "0/23",
     "visible_feedback_success": "22/23"
   },
+  "phase12_address_element_replay": {
+    "baseline_success": "12/12",
+    "o0_silent_hidden_violation": "6/12",
+    "o0_silent_success": "6/12",
+    "visible_feedback_hidden_violation": "0/12",
+    "visible_feedback_success": "12/12"
+  },
+  "real_replay_combined_after_address_element": {
+    "baseline_hidden_violation": "0/36",
+    "baseline_success": "36/36",
+    "o0_silent_hidden_violation": "29/35",
+    "o0_silent_success": "6/35",
+    "visible_feedback_hidden_violation": "0/35",
+    "visible_feedback_success": "34/35"
+  },
   "phase5_formal_cells": {
     "airline": 1290,
     "retail": 525,

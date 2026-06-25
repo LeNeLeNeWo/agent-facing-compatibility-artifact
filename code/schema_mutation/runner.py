@@ -89,10 +89,9 @@ from code.schema_mutation.c4_observability_modes import (  # noqa: E402
 # ---------------------------------------------------------------------------
 
 _PROVIDER_PREFIXES = ("mimo/", "deepseek/", "dashscope/", "siliconflow/", "wyzlab/", "wyzai/")
-# Python OpenAI/LiteLLM clients expect the OpenAI-compatible API root. The JS
-# example can use https://shell.wyzlab.ai, but the Python smoke test returns
-# usable content only with the /v1 API root.
-_WYZ_DEFAULT_BASE_URL = "https://shell.wyzlab.ai/v1"
+# No private provider endpoint is shipped in the anonymous artifact. Configure
+# optional WYZ-compatible reruns explicitly through environment variables.
+_WYZ_DEFAULT_BASE_URL = None
 
 
 def _resolve_provider(model_name: str) -> tuple[str, Optional[str], Optional[str]]:
@@ -105,14 +104,12 @@ def _resolve_provider(model_name: str) -> tuple[str, Optional[str], Optional[str
         if model_name.startswith(pfx):
             tag = pfx.rstrip("/").upper()  # e.g. "MIMO"
             if tag in {"WYZLAB", "WYZAI"}:
-                # WYZ AI is OpenAI-compatible at shell.wyzlab.ai. Prefer the
-                # new WYZAI_* variables, fall back to the old key variable, and
-                # avoid using legacy WYZLAB_BASE_URL values such as token/v1
-                # unless the caller explicitly sets WYZLAB_API_BASE.
-                api_key = <REDACTED_SECRET>("WYZAI_API_KEY") or os.getenv("WYZLAB_API_KEY")
+                # Prefer the new WYZAI_* variables, fall back to the old key
+                # variable, and require callers to configure the API base.
+                api_key = os.getenv("WYZAI_API_KEY") or os.getenv("WYZLAB_API_KEY")
                 api_base = os.getenv("WYZAI_API_BASE") or os.getenv("WYZLAB_API_BASE") or _WYZ_DEFAULT_BASE_URL
             else:
-                api_key = <REDACTED_SECRET>(f"{tag}_API_KEY")
+                api_key = os.getenv(f"{tag}_API_KEY")
                 api_base = os.getenv(f"{tag}_BASE_URL")
             clean = model_name[len(pfx):]
             if not api_key:
@@ -621,7 +618,7 @@ def _wrap_step_for_business_rules(
 # ---------------------------------------------------------------------------
 
 def _setup_litellm_routing(
-    model_name: str, api_base: Optional[str], api_key: <REDACTED_SECRET>[str]
+    model_name: str, api_base: Optional[str], api_key: Optional[str]
 ) -> None:
     """Monkey-patch LiteLLM routing for OpenAI-compatible custom endpoints.
 
@@ -744,7 +741,7 @@ def run(input: dict[str, dict], **kwargs) -> dict[str, Any]:
     # that validation path while preserving model_name support for direct use.
     raw_model = kwargs.get("agent_model_name") or kwargs.get("model_name")
     assert raw_model, "model_name or agent_model_name is required"
-    model_name, api_base, api_key = <REDACTED_SECRET>(raw_model)
+    model_name, api_base, api_key = _resolve_provider(raw_model)
 
     mutation_type = kwargs.get("mutation_type")
     seed = int(kwargs.get("seed", 0))

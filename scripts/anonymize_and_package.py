@@ -885,7 +885,7 @@ def detector_families_text() -> str:
 - SchemaCheckerOnly: static schema/client compatibility check.
 - RandomReplayGate: randomly selected replay cells.
 - UsedToolReplayGate: replay over tools observed in a baseline trajectory.
-- IntentAlignedReplayGate: replay over ta<REDACTED_SECRET> tools.
+- IntentAlignedReplayGate: replay over tau-bench tools.
 - AFCGate: artifact implementation combining schema checks and targeted replay
   heuristics.
 - ExhaustiveReplayOracle: high-cost reference replay over all available cells.

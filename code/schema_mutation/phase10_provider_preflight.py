@@ -80,7 +80,7 @@ def provider_config(model_id: str) -> tuple[str, str, str | None, str]:
     cfg = PROVIDERS.get(provider)
     if cfg is None:
         return provider, model, None, ""
-    api_key = <REDACTED_SECRET>(cfg["key"])
+    api_key = os.getenv(cfg["key"])
     base_url = os.getenv(cfg["base"]) or os.getenv(cfg["base_alias"]) or cfg["default_base"]
     return provider, model, api_key, base_url
 
@@ -112,7 +112,7 @@ def check_model(model_id: str, timeout_s: int) -> dict[str, Any]:
         result.update({"status": "failed", "error": "unsupported provider prefix"})
         return result
     if not api_key:
-        <REDACTED_SECRET>({"status": "provider_error", "error": f"{PROVIDERS[provider]['key']} not set"})
+        result.update({"status": "provider_error", "error": f"{PROVIDERS[provider]['key']} not set"})
         return result
     try:
         client = OpenAI(api_key=api_key, base_url=base_url, timeout=timeout_s, max_retries=0)

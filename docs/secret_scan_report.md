@@ -1,21 +1,13 @@
 # Secret Scan Report
 
 - critical: 0
-- warning: 151
+- warning: 152
 - harmless: 14
 
 Critical findings must be fixed before release. Warnings are expected for environment-variable names used to document optional live reruns.
 
 ## Findings
 
-- warning: env_api_key_name in `ANONYMIZATION.md` line 37
-- warning: generic_secret_word in `ANONYMIZATION.md` line 33
-- warning: generic_secret_word in `ANONYMIZATION.md` line 37
-- warning: generic_secret_word in `ANONYMIZATION.md` line 42
-- warning: generic_secret_word in `ARTIFACT_EVALUATION.md` line 15
-- warning: generic_secret_word in `README.md` line 24
-- warning: generic_secret_word in `README.md` line 42
-- warning: generic_secret_word in `REPRODUCTION_GUIDE.md` line 19
 - warning: generic_secret_word in `afc_gate/afc_gate/exposure.py` line 132
 - warning: generic_secret_word in `afc_gate/afc_gate/exposure.py` line 136
 - warning: generic_secret_word in `afc_gate/afc_gate/exposure.py` line 137
@@ -23,42 +15,47 @@ Critical findings must be fixed before release. Warnings are expected for enviro
 - warning: generic_secret_word in `afc_gate/afc_gate/exposure.py` line 139
 - warning: generic_secret_word in `afc_gate/afc_gate/exposure.py` line 140
 - warning: generic_secret_word in `afc_gate/afc_gate/exposure.py` line 141
-- warning: env_api_key_name in `code/common/llm_client.py` line 267
-- warning: env_api_key_name in `code/common/llm_client.py` line 282
-- warning: env_api_key_name in `code/common/llm_client.py` line 285
-- warning: env_api_key_name in `code/common/llm_client.py` line 313
-- warning: env_api_key_name in `code/common/llm_client.py` line 331
-- warning: env_api_key_name in `code/common/llm_client.py` line 334
+- warning: env_api_key_name in `ANONYMIZATION.md` line 37
+- warning: generic_secret_word in `ANONYMIZATION.md` line 33
+- warning: generic_secret_word in `ANONYMIZATION.md` line 37
+- warning: generic_secret_word in `ANONYMIZATION.md` line 42
+- warning: generic_secret_word in `ARTIFACT_EVALUATION.md` line 15
+- warning: env_api_key_name in `code/common/llm_client.py` line 265
+- warning: env_api_key_name in `code/common/llm_client.py` line 280
+- warning: env_api_key_name in `code/common/llm_client.py` line 283
+- warning: env_api_key_name in `code/common/llm_client.py` line 311
+- warning: env_api_key_name in `code/common/llm_client.py` line 329
+- warning: env_api_key_name in `code/common/llm_client.py` line 332
 - warning: generic_secret_word in `code/common/llm_client.py` line 6
 - warning: generic_secret_word in `code/common/llm_client.py` line 115
 - warning: generic_secret_word in `code/common/llm_client.py` line 124
 - warning: generic_secret_word in `code/common/llm_client.py` line 130
 - warning: generic_secret_word in `code/common/llm_client.py` line 130
-- warning: generic_secret_word in `code/common/llm_client.py` line 132
+- warning: generic_secret_word in `code/common/llm_client.py` line 136
 - warning: generic_secret_word in `code/common/llm_client.py` line 138
-- warning: generic_secret_word in `code/common/llm_client.py` line 140
-- warning: generic_secret_word in `code/common/llm_client.py` line 144
-- warning: generic_secret_word in `code/common/llm_client.py` line 277
-- warning: generic_secret_word in `code/common/llm_client.py` line 282
-- warning: generic_secret_word in `code/common/llm_client.py` line 282
+- warning: generic_secret_word in `code/common/llm_client.py` line 142
+- warning: generic_secret_word in `code/common/llm_client.py` line 142
+- warning: generic_secret_word in `code/common/llm_client.py` line 275
+- warning: generic_secret_word in `code/common/llm_client.py` line 280
+- warning: generic_secret_word in `code/common/llm_client.py` line 280
+- warning: generic_secret_word in `code/common/llm_client.py` line 281
 - warning: generic_secret_word in `code/common/llm_client.py` line 283
-- warning: generic_secret_word in `code/common/llm_client.py` line 285
-- warning: generic_secret_word in `code/common/llm_client.py` line 288
-- warning: generic_secret_word in `code/common/llm_client.py` line 288
-- warning: generic_secret_word in `code/common/llm_client.py` line 326
-- warning: generic_secret_word in `code/common/llm_client.py` line 331
-- warning: generic_secret_word in `code/common/llm_client.py` line 331
-- warning: generic_secret_word in `code/common/llm_client.py` line 332
-- warning: generic_secret_word in `code/common/llm_client.py` line 335
-- warning: generic_secret_word in `code/common/llm_client.py` line 338
-- warning: generic_secret_word in `code/common/llm_client.py` line 338
-- warning: generic_secret_word in `code/common/llm_client.py` line 365
-- warning: generic_secret_word in `code/common/llm_client.py` line 370
-- warning: generic_secret_word in `code/common/llm_client.py` line 370
-- warning: generic_secret_word in `code/common/llm_client.py` line 371
-- warning: generic_secret_word in `code/common/llm_client.py` line 374
-- warning: generic_secret_word in `code/common/llm_client.py` line 377
-- warning: generic_secret_word in `code/common/llm_client.py` line 377
+- warning: generic_secret_word in `code/common/llm_client.py` line 286
+- warning: generic_secret_word in `code/common/llm_client.py` line 286
+- warning: generic_secret_word in `code/common/llm_client.py` line 324
+- warning: generic_secret_word in `code/common/llm_client.py` line 329
+- warning: generic_secret_word in `code/common/llm_client.py` line 329
+- warning: generic_secret_word in `code/common/llm_client.py` line 330
+- warning: generic_secret_word in `code/common/llm_client.py` line 333
+- warning: generic_secret_word in `code/common/llm_client.py` line 336
+- warning: generic_secret_word in `code/common/llm_client.py` line 336
+- warning: generic_secret_word in `code/common/llm_client.py` line 363
+- warning: generic_secret_word in `code/common/llm_client.py` line 368
+- warning: generic_secret_word in `code/common/llm_client.py` line 368
+- warning: generic_secret_word in `code/common/llm_client.py` line 369
+- warning: generic_secret_word in `code/common/llm_client.py` line 372
+- warning: generic_secret_word in `code/common/llm_client.py` line 375
+- warning: generic_secret_word in `code/common/llm_client.py` line 375
 - warning: env_api_key_name in `code/schema_mutation/phase10_provider_preflight.py` line 37
 - warning: env_api_key_name in `code/schema_mutation/phase10_provider_preflight.py` line 43
 - warning: generic_secret_word in `code/schema_mutation/phase10_provider_preflight.py` line 67
@@ -91,18 +88,17 @@ Critical findings must be fixed before release. Warnings are expected for enviro
 - warning: env_api_key_name in `code/schema_mutation/runner.py` line 20
 - warning: env_api_key_name in `code/schema_mutation/runner.py` line 21
 - warning: env_api_key_name in `code/schema_mutation/runner.py` line 62
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 99
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 110
+- warning: generic_secret_word in `code/schema_mutation/runner.py` line 98
+- warning: generic_secret_word in `code/schema_mutation/runner.py` line 109
 - warning: generic_secret_word in `code/schema_mutation/runner.py` line 112
 - warning: generic_secret_word in `code/schema_mutation/runner.py` line 115
 - warning: generic_secret_word in `code/schema_mutation/runner.py` line 118
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 121
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 624
+- warning: generic_secret_word in `code/schema_mutation/runner.py` line 621
+- warning: generic_secret_word in `code/schema_mutation/runner.py` line 650
 - warning: generic_secret_word in `code/schema_mutation/runner.py` line 653
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 656
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 656
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 747
-- warning: generic_secret_word in `code/schema_mutation/runner.py` line 777
+- warning: generic_secret_word in `code/schema_mutation/runner.py` line 653
+- warning: generic_secret_word in `code/schema_mutation/runner.py` line 744
+- warning: generic_secret_word in `code/schema_mutation/runner.py` line 774
 - warning: generic_secret_word in `data/real_api_grounding/api_evolution_corpus.jsonl` line 93
 - warning: generic_secret_word in `data/real_api_grounding/api_evolution_corpus.jsonl` line 94
 - warning: generic_secret_word in `data/real_api_grounding/api_evolution_corpus.jsonl` line 107
@@ -134,6 +130,11 @@ Critical findings must be fixed before release. Warnings are expected for enviro
 - warning: generic_secret_word in `docs/anonymization_report.md` line 30
 - warning: generic_secret_word in `docs/anonymization_report.md` line 35
 - harmless: generic_secret_word in `docs/secret_scan_report.md` line 1
+- warning: generic_secret_word in `README.md` line 25
+- warning: generic_secret_word in `README.md` line 43
+- warning: generic_secret_word in `REPRODUCTION_GUIDE.md` line 20
+- warning: generic_secret_word in `results/phase12_address_element_replay/phase12l_final_consistency_audit.json` line 47
+- warning: generic_secret_word in `results/phase12_address_element_replay/phase12l_final_consistency_audit.md` line 160
 - warning: env_api_key_name in `scripts/anonymize_and_package.py` line 413
 - warning: env_api_key_name in `scripts/anonymize_and_package.py` line 971
 - warning: env_api_key_name in `scripts/anonymize_and_package.py` line 971
@@ -169,7 +170,7 @@ Critical findings must be fixed before release. Warnings are expected for enviro
 - harmless: generic_secret_word in `scripts/scan_for_secrets.py` line 28
 - harmless: generic_secret_word in `scripts/scan_for_secrets.py` line 28
 - harmless: generic_secret_word in `scripts/scan_for_secrets.py` line 28
-- harmless: generic_secret_word in `scripts/scan_for_secrets.py` line 77
+- harmless: generic_secret_word in `scripts/scan_for_secrets.py` line 78
 - harmless: authorization_literal in `scripts/scan_for_secrets.py` line 19
 - harmless: authorization_literal in `scripts/scan_for_secrets.py` line 29
 - harmless: bearer_literal in `scripts/scan_for_secrets.py` line 19

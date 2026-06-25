@@ -44,6 +44,19 @@ def verify_phase10():
     assert_equal(replay["by_condition"]["evolved_visible_feedback"]["success_n"], 22, "real replay visible")
 
 
+def verify_phase12():
+    address = load_json("results/phase12_address_element_replay/formal/address_element_formal_summary.json")
+    assert_equal(address["status_counts"], {"ok": 36}, "address element status")
+    assert_equal(address["by_condition"]["baseline_old_api"]["success_n"], 12, "address baseline")
+    assert_equal(address["by_condition"]["evolved_o0_silent"]["success_n"], 6, "address silent success")
+    assert_equal(address["by_condition"]["evolved_o0_silent"]["hidden_violation_n"], 6, "address silent hidden")
+    assert_equal(address["by_condition"]["evolved_visible_feedback"]["success_n"], 12, "address visible success")
+    h = load_json("docs/reproduction_headlines.json")
+    assert_equal(h["real_replay_combined_after_address_element"]["baseline_success"], "36/36", "combined baseline")
+    assert_equal(h["real_replay_combined_after_address_element"]["o0_silent_success"], "6/35", "combined silent")
+    assert_equal(h["real_replay_combined_after_address_element"]["visible_feedback_success"], "34/35", "combined visible")
+
+
 def verify_figures():
     required = [
         "figures/pdf/combined_observability_gradient_curve.pdf",
@@ -73,12 +86,14 @@ def verify_audits():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--section", choices=["all", "main", "phase10", "figures", "audits"], default="all")
+    ap.add_argument("--section", choices=["all", "main", "phase10", "phase12", "figures", "audits"], default="all")
     args = ap.parse_args()
     if args.section in {"all", "main"}:
         verify_main()
     if args.section in {"all", "phase10"}:
         verify_phase10()
+    if args.section in {"all", "phase12"}:
+        verify_phase12()
     if args.section in {"all", "figures"}:
         verify_figures()
     if args.section in {"all", "audits"}:

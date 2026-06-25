@@ -21,8 +21,14 @@ def test_required_files_exist():
         "results/main_results/phase5_summary.json",
         "results/phase10_nonobviousness/nonobviousness_analysis_report.json",
         "results/phase10_real_case_replay/real_case_formal_summary.json",
+        "results/phase12_address_element_replay/formal/address_element_formal_summary.json",
+        "results/phase12_address_element_replay/phase12j_address_element_replay_report.md",
+        "results/phase12_address_element_replay/phase12l_final_submission_audit_report.md",
         "tables/generated_tex/nonobviousness_control_auto.tex",
         "tables/generated_tex/real_case_replay_auto.tex",
+        "tables/generated_tex/address_element_replay_auto.tex",
+        "figures/pdf/fig1_compliant_semantic_failure.pdf",
+        "figures/png/fig1_compliant_semantic_failure.png",
         "figures/pdf/real_case_replay.pdf",
     ]
     missing = [rel for rel in required if not (ROOT / rel).exists()]
@@ -41,6 +47,13 @@ def test_headline_numbers():
     assert h["phase10_real_replay"]["baseline_success"] == "24/24"
     assert h["phase10_real_replay"]["o0_silent_success"] == "0/23"
     assert h["phase10_real_replay"]["visible_feedback_success"] == "22/23"
+    assert h["phase12_address_element_replay"]["baseline_success"] == "12/12"
+    assert h["phase12_address_element_replay"]["o0_silent_success"] == "6/12"
+    assert h["phase12_address_element_replay"]["o0_silent_hidden_violation"] == "6/12"
+    assert h["real_replay_combined_after_address_element"]["baseline_success"] == "36/36"
+    assert h["real_replay_combined_after_address_element"]["o0_silent_success"] == "6/35"
+    assert h["real_replay_combined_after_address_element"]["o0_silent_hidden_violation"] == "29/35"
+    assert h["real_replay_combined_after_address_element"]["visible_feedback_success"] == "34/35"
     assert h["phase10_nonobviousness"]["o0_more_reasoning_success"] == "3/96"
     assert h["phase10_nonobviousness"]["o0_reflection_success"] == "6/95"
     assert h["phase10_nonobviousness"]["rule_visible_success"] == "71/95"
@@ -52,6 +65,12 @@ def test_phase10_summary_values():
     assert replay["by_condition"]["baseline_old_api"]["success_n"] == 24
     assert replay["by_condition"]["evolved_o0_silent"]["hidden_violation_n"] == 23
     assert replay["by_condition"]["evolved_visible_feedback"]["success_n"] == 22
+    address = load_json("results/phase12_address_element_replay/formal/address_element_formal_summary.json")
+    assert address["status_counts"] == {"ok": 36}
+    assert address["by_condition"]["baseline_old_api"]["success_n"] == 12
+    assert address["by_condition"]["evolved_o0_silent"]["success_n"] == 6
+    assert address["by_condition"]["evolved_o0_silent"]["hidden_violation_n"] == 6
+    assert address["by_condition"]["evolved_visible_feedback"]["success_n"] == 12
     nonobv = load_json("results/phase10_nonobviousness/nonobviousness_analysis_report.json")
     by_cond = nonobv.get("condition_summary") or nonobv.get("condition_results")
     assert by_cond["O0_increased_reasoning_budget"]["success_n"] == 3
